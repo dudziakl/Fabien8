@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17e62d8d078be49cf8ad9ebe2efcaeb2, type: 3}
   m_Name: SpeechManager
   m_EditorClassIdentifier: 
-  scrollSubtitles: 1
+  scrollSubtitles: 0
   scrollNarration: 0
   textScrollSpeed: 50
   textScrollCLip: {fileID: 0}
