@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b776810ebfa374d7ba8f0fb5ed6e3265, type: 3}
   m_Name: SettingsManager
   m_EditorClassIdentifier: 
-  saveFileName: 
+  saveFileName: Fabien8
   saveTimeDisplay: 0
   takeSaveScreenshots: 0
   useProfiles: 0
@@ -23,7 +23,7 @@ MonoBehaviour:
   actionListOnStart: {fileID: 0}
   blackOutWhenSkipping: 0
   playerSwitching: 1
-  player: {fileID: 0}
+  player: {fileID: 114568351702485430, guid: f67e37890536f4242a5c290752427090, type: 2}
   players: []
   shareInventory: 0
   movementMethod: 0
@@ -99,7 +99,7 @@ MonoBehaviour:
   forceAspectRatio: 0
   wantedAspectRatio: 1.5
   landscapeModeOnly: 1
-  cameraPerspective: 2
+  cameraPerspective: 0
   movingTurning: 3
   hotspotDetection: 0
   placeDistantHotspotsOnSeparateLayer: 1
