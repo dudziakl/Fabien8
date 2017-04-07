@@ -9,17 +9,34 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1690415474306228}
+  m_RootGameObject: {fileID: 1019451205552828}
   m_IsPrefabParent: 1
---- !u!1 &1289448929842456
+--- !u!1 &1019451205552828
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4866074084353780}
-  - component: {fileID: 212787852599167470}
+  - component: {fileID: 4074747562938100}
+  - component: {fileID: 114384306499402466}
+  - component: {fileID: 114973961564989710}
+  m_Layer: 0
+  m_Name: FabienPlayer
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1966434138645518
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4897677232648120}
+  - component: {fileID: 212411171520157604}
   m_Layer: 0
   m_Name: Fabien
   m_TagString: Untagged
@@ -27,56 +44,39 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1690415474306228
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4389386884942040}
-  - component: {fileID: 114283837707742832}
-  - component: {fileID: 114568351702485430}
-  m_Layer: 0
-  m_Name: MyPlayer
-  m_TagString: Player
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4389386884942040
+--- !u!4 &4074747562938100
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1690415474306228}
+  m_GameObject: {fileID: 1019451205552828}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -3.98, y: -1.77, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4866074084353780}
+  - {fileID: 4897677232648120}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4866074084353780
+--- !u!4 &4897677232648120
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1289448929842456}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.81, y: -1.63, z: 0}
-  m_LocalScale: {x: 0.03, y: 0.03, z: 1}
+  m_GameObject: {fileID: 1966434138645518}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.020084739, y: 0.020084748, z: 0.020084748}
   m_Children: []
-  m_Father: {fileID: 4389386884942040}
+  m_Father: {fileID: 4074747562938100}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114283837707742832
+--- !u!114 &114384306499402466
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1690415474306228}
+  m_GameObject: {fileID: 1019451205552828}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db50f5eff40d94cfdac2b1ad5c44d735, type: 3}
@@ -90,12 +90,12 @@ MonoBehaviour:
   teleportToStart: 0
   affectY: 0
   nodePause: 0
---- !u!114 &114568351702485430
+--- !u!114 &114973961564989710
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1690415474306228}
+  m_GameObject: {fileID: 1019451205552828}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5e75a04a147624aa9b6f89d5d4759155, type: 3}
@@ -156,7 +156,7 @@ MonoBehaviour:
   headLayer: 1
   mouthLayer: 2
   customAnimator: {fileID: 0}
-  spriteChild: {fileID: 4866074084353780}
+  spriteChild: {fileID: 4897677232648120}
   rotateSprite3D: 0
   idleAnimSprite: idle
   walkAnimSprite: walk
@@ -201,12 +201,12 @@ MonoBehaviour:
   jumpParameter: Jump
   ID: 0
   hotspotDetector: {fileID: 0}
---- !u!212 &212787852599167470
+--- !u!212 &212411171520157604
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1289448929842456}
+  m_GameObject: {fileID: 1966434138645518}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
