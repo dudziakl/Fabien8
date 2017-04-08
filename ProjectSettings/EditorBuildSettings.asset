@@ -11,3 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/OgrodZielarza.unity
     guid: 5f9fb5e2a27431847957f9d7671bafd7
+  - enabled: 1
+    path: Assets/DomZielarza.unity
+    guid: d4e9043d36e4de74e9ddada4ccc0cc8b
