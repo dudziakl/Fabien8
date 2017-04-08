@@ -11,7 +11,55 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5a2543a119f842959d20e84db3140dd, type: 3}
   m_Name: InventoryManager
   m_EditorClassIdentifier: 
-  items: []
+  items:
+  - label: Klamka
+    id: 0
+    altLabel: 
+    carryOnStart: 0
+    carryOnStartNotDefault: 0
+    carryOnStartID: 0
+    vars: []
+    canCarryMultiple: 0
+    count: 1
+    useSeparateSlots: 0
+    tex: {fileID: 2800000, guid: c875f47d1708e20458ccf06b17c06c4a, type: 3}
+    activeTex: {fileID: 0}
+    selectedTex: {fileID: 0}
+    linkedPrefab: {fileID: 0}
+    cursorIcon:
+      texture: {fileID: 0}
+      isAnimated: 0
+      numFrames: 1
+      numRows: 1
+      numCols: 1
+      size: 0.04
+      animSpeed: 4
+      endAnimOnLastFrame: 0
+      clickOffset: {x: 0, y: 0}
+      dontCycle: 0
+      label: Icon 1
+      lineID: -1
+      id: 0
+    lineID: -1
+    useIconID: 0
+    binID: -1
+    isEditing: 1
+    recipeSlot: -1
+    lastInteractionIndex: 0
+    overrideUseSyntax: 0
+    hotspotPrefix1:
+      label: Use
+      lineID: -1
+    hotspotPrefix2:
+      label: on
+      lineID: -1
+    useActionList: {fileID: 0}
+    lookActionList: {fileID: 11400000, guid: 14dd894caeb357441a7c65e20377c741, type: 2}
+    interactions: []
+    combineActionList: []
+    combineID: 
+    unhandledActionList: {fileID: 0}
+    unhandledCombineActionList: {fileID: 0}
   bins: []
   invVars: []
   unhandledCombine: {fileID: 0}
