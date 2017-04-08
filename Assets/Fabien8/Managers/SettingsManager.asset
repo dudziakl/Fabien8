@@ -97,8 +97,8 @@ MonoBehaviour:
   firstPersonTouchScreen: 1
   touchUpWhenPaused: 0
   forceAspectRatio: 0
-  wantedAspectRatio: 1.5
-  landscapeModeOnly: 1
+  wantedAspectRatio: 2
+  landscapeModeOnly: 0
   cameraPerspective: 0
   movingTurning: 3
   hotspotDetection: 0
