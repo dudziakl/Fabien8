@@ -37,6 +37,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4897677232648120}
   - component: {fileID: 212411171520157604}
+  - component: {fileID: 114339576362052074}
   m_Layer: 0
   m_Name: Fabien
   m_TagString: Untagged
@@ -71,6 +72,23 @@ Transform:
   m_Father: {fileID: 4074747562938100}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114339576362052074
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1966434138645518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6c23c0cd1c274961a26f4e9cd5378d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lockSorting: 0
+  affectChildren: 1
+  followSortingMap: 1
+  customSortingMap: {fileID: 0}
+  offsetOriginal: 0
+  livePreview: 0
 --- !u!114 &114384306499402466
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -109,7 +127,7 @@ MonoBehaviour:
   speechLabel: 
   lineID: -1
   displayLineID: -1
-  speechColor: {r: 1, g: 1, b: 1, a: 1}
+  speechColor: {r: 0.85294116, g: 0.5539792, b: 0.17560555, a: 1}
   portraitIcon:
     texture: {fileID: 0}
     isAnimated: 0

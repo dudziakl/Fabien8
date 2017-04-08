@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/LasZielarza.unity
+    guid: d7e4fcab32ac44a48a5f51c0e1497158
+  - enabled: 1
+    path: Assets/OgrodZielarza.unity
+    guid: 5f9fb5e2a27431847957f9d7671bafd7
