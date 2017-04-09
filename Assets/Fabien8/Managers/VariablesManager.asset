@@ -11,6 +11,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e62f4daee811464dbcf224bb5b367b4, type: 3}
   m_Name: VariablesManager
   m_EditorClassIdentifier: 
-  vars: []
+  vars:
+  - label: Otwarta Furtka
+    id: 0
+    type: 0
+    val: 0
+    floatVal: 0
+    textVal: 
+    popUps: []
+    link: 0
+    pmVar: 
+    updateLinkOnStart: 0
+    isEditing: 1
+    canTranslate: 1
+    textValLineID: -1
+    popUpsLineID: -1
   varPresets: []
   updateRuntime: 1
