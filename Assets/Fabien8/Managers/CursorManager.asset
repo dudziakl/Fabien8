@@ -40,12 +40,12 @@ MonoBehaviour:
     endAnimOnLastFrame: 0
     clickOffset: {x: 0, y: 0}
   pointerIcon:
-    texture: {fileID: 2800000, guid: 5c83780962ed843c0928648679746938, type: 3}
+    texture: {fileID: 2800000, guid: cf1157046e847dc4cb96a74f72fd364a, type: 3}
     isAnimated: 0
     numFrames: 1
     numRows: 1
     numCols: 1
-    size: 0.015
+    size: 0.06
     animSpeed: 4
     endAnimOnLastFrame: 0
     clickOffset: {x: 0, y: 0}
@@ -96,12 +96,12 @@ MonoBehaviour:
     label: Use
     lineID: 63
     id: 0
-  - texture: {fileID: 2800000, guid: f03835de3da7f442f92582f0dd5e5863, type: 3}
+  - texture: {fileID: 2800000, guid: d128604cd34ecbb4380ba883cbcdccb1, type: 3}
     isAnimated: 0
     numFrames: 1
     numRows: 1
     numCols: 1
-    size: 0.04
+    size: 0.06
     animSpeed: 4
     endAnimOnLastFrame: 0
     clickOffset: {x: 0, y: 0}
@@ -109,12 +109,12 @@ MonoBehaviour:
     label: Talk to
     lineID: 64
     id: 1
-  - texture: {fileID: 2800000, guid: e0394f989f329496584e377a81d4031f, type: 3}
+  - texture: {fileID: 2800000, guid: c4d69d4eb73ea4548b1982f7b084a839, type: 3}
     isAnimated: 0
     numFrames: 1
     numRows: 1
     numCols: 1
-    size: 0.04
+    size: 0.06
     animSpeed: 4
     endAnimOnLastFrame: 0
     clickOffset: {x: 0, y: 0}

@@ -1676,7 +1676,7 @@ MonoBehaviour:
   rectTransformID: 14532472
   uiTransitionType: 1
   uiPositionType: 0
-  isEditing: 1
+  isEditing: 0
   isLocked: 0
   id: 9
   title: Subtitles
@@ -4277,7 +4277,7 @@ MonoBehaviour:
   rectTransformID: 1765320
   uiTransitionType: 1
   uiPositionType: 0
-  isEditing: 0
+  isEditing: 1
   isLocked: 0
   id: 3
   title: Inventory
@@ -4285,7 +4285,7 @@ MonoBehaviour:
   positionType: 1
   manualPosition: {x: 508.5, y: 20.605953}
   positionSmoothing: 0
-  alignment: 0
+  alignment: 1
   toggleKey: 
   ignoreMouseClicks: 0
   pauseWhenEnabled: 0
