@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4074747562938100}
   - component: {fileID: 114384306499402466}
   - component: {fileID: 114973961564989710}
+  - component: {fileID: 50766687025545364}
+  - component: {fileID: 58098171048093160}
   m_Layer: 0
   m_Name: FabienPlayer
   m_TagString: Player
@@ -52,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1019451205552828}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.98, y: -1.77, z: 0}
+  m_LocalPosition: {x: -5.44, y: -2.38, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4897677232648120}
@@ -72,6 +74,41 @@ Transform:
   m_Father: {fileID: 4074747562938100}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50766687025545364
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1019451205552828}
+  m_BodyType: 2
+  m_Simulated: 0
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!58 &58098171048093160
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1019451205552828}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0044201612, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.30109465
 --- !u!114 &114339576362052074
 MonoBehaviour:
   m_ObjectHideFlags: 1

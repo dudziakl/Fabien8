@@ -162,6 +162,73 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a9d4e17cb5a8745ccad47e11f075de33, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &36101491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed656dc9f403a441f8fe89408c7a7189, type: 3}
+  m_Name: (Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 4
+  title: Play speech
+  description: "Makes a Character talk, or \u2013 if no Character is specified \u2013
+    displays a message. Subtitles only appear if they are enabled from the Options
+    menu. A 'thinking' effect can be produced by opting to not play any animation."
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 1
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 2
+  skipAction: 2
+  skipActionActual: {fileID: 1440505663}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 364
+    y: 30
+    width: 300
+    height: 202
+  nodeHeight: 0
+  constantID: 0
+  parameterID: -1
+  messageParameterID: -1
+  isPlayer: 1
+  speaker: {fileID: 0}
+  messageText: "Witaj Zielarzu, czy m\xF3g\u0142by\u015B mi pom\xF3c? potrzebuje kilka
+    zi\xF3\u0142ek"
+  lineID: -1
+  multiLineIDs: 
+  isBackground: 0
+  noAnimation: 0
+  headClip: {fileID: 0}
+  mouthClip: {fileID: 0}
+  play2DHeadAnim: 0
+  headClip2D: 
+  headLayer: 0
+  play2DMouthAnim: 0
+  mouthClip2D: 
+  mouthLayer: 0
+  waitTimeOffset: -1
 --- !u!114 &57881727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,6 +337,108 @@ Transform:
   m_Father: {fileID: 1251616522}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &115482819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0730368720d23479f8f782e46d149b0c, type: 3}
+  m_Name: (Clone)(Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 6
+  title: Enable or disable
+  description: Turns a Hotspot on or off. To record the state of a Hotspot in save
+    games, be sure to add the RememberHotspot script to the Hotspot in question.
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 1
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 0
+  skipAction: -1
+  skipActionActual: {fileID: 0}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 14
+    y: 177
+    width: 300
+    height: 122
+  nodeHeight: 0
+  parameterID: -1
+  constantID: 0
+  hotspot: {fileID: 1009243078}
+  affectChildren: 0
+  changeType: 1
+--- !u!114 &158481195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0730368720d23479f8f782e46d149b0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 6
+  title: Enable or disable
+  description: Turns a Hotspot on or off. To record the state of a Hotspot in save
+    games, be sure to add the RememberHotspot script to the Hotspot in question.
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 1
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 0
+  skipAction: -1
+  skipActionActual: {fileID: 0}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 164
+    y: 231
+    width: 300
+    height: 122
+  nodeHeight: 0
+  parameterID: -1
+  constantID: 0
+  hotspot: {fileID: 0}
+  affectChildren: 0
+  changeType: 1
 --- !u!1 &158568731
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,6 +467,16 @@ Transform:
   m_Father: {fileID: 1251616522}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &160822846 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11400000, guid: 863cd5d53c44945c2b30dca66dfce16e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1079830503}
+  m_Script: {fileID: 11500000, guid: 3adbc08fa3d5641d4bf0544d11b7fb59, type: 3}
+--- !u!4 &160822847 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400000, guid: 863cd5d53c44945c2b30dca66dfce16e, type: 2}
+  m_PrefabInternal: {fileID: 1079830503}
 --- !u!4 &181088221 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
@@ -319,11 +498,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.68
+      value: 0.54
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1
+      value: -1.03
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
       propertyPath: m_LocalPosition.z
@@ -510,6 +689,57 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c71db86e1d5c94f12b17d37a41970b9f, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &219672299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0730368720d23479f8f782e46d149b0c, type: 3}
+  m_Name: (Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 6
+  title: Enable or disable
+  description: Turns a Hotspot on or off. To record the state of a Hotspot in save
+    games, be sure to add the RememberHotspot script to the Hotspot in question.
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 1
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 0
+  skipAction: -1
+  skipActionActual: {fileID: 0}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 164
+    y: 231
+    width: 300
+    height: 122
+  nodeHeight: 0
+  parameterID: -1
+  constantID: 0
+  hotspot: {fileID: 0}
+  affectChildren: 0
+  changeType: 1
 --- !u!1 &222786774
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,6 +801,62 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &248962643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a20a14d7555494a439c838ed9465bb15, type: 3}
+  m_Name: (Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 4
+  title: Start conversation
+  description: Enters Conversation mode, and displays the available dialogue options
+    in a specified conversation.
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 1
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 1
+  skipAction: -1
+  skipActionActual: {fileID: 0}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 14
+    y: 14
+    width: 300
+    height: 104
+  nodeHeight: 0
+  endings:
+  - resultAction: 0
+    skipAction: -1
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  parameterID: -1
+  constantID: 0
+  conversation: {fileID: 1379100837}
+  overrideOptions: 1
 --- !u!1 &258949552
 GameObject:
   m_ObjectHideFlags: 0
@@ -611,7 +897,127 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 640040239}
   m_Script: {fileID: 11500000, guid: bbbbb3c8d2a7340dab40d45d6033e69e, type: 3}
---- !u!114 &294918656
+--- !u!1 &307236727
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 307236728}
+  m_Layer: 0
+  m_Name: _Markers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &307236728
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 307236727}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 270272322}
+  - {fileID: 1080508800}
+  - {fileID: 1545439081}
+  m_Father: {fileID: 1251616522}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &368061491
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 368061492}
+  m_Layer: 0
+  m_Name: _Triggers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &368061492
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 368061491}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 239726749}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &389404877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1d11677f69f745f88dbe9922511d53f, type: 3}
+  m_Name: (Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 14
+  title: Switch
+  description: 'Moves the Player to a new scene. The scene must be listed in Unity''s
+    Build Settings. By default, the screen will cut to black during the transition,
+    but the last frame of the current scene can instead be overlayed. This allows
+    for cinematic effects: if the next scene fades in, it will cause a crossfade effect;
+    if the next scene doesn''t fade, it will cause a straight cut.'
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 0
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 1
+  skipAction: -1
+  skipActionActual: {fileID: 0}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 14
+    y: 14
+    width: 300
+    height: 150
+  nodeHeight: 0
+  chooseSceneBy: 1
+  sceneNumber: 0
+  sceneNumberParameterID: -1
+  sceneName: LasZielarza
+  sceneNameParameterID: -1
+  assignScreenOverlay: 0
+  onlyPreload: 0
+  relativePosition: 0
+  relativeMarker: {fileID: 0}
+  relativeMarkerID: 0
+  relativeMarkerParameterID: -1
+  forceReload: 0
+--- !u!114 &409118656
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -667,65 +1073,76 @@ MonoBehaviour:
   amount: 1
   setPlayer: 0
   playerID: 0
---- !u!1 &307236727
+--- !u!1 &442379741
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 307236728}
+  - component: {fileID: 442379742}
+  - component: {fileID: 442379743}
   m_Layer: 0
-  m_Name: _Markers
+  m_Name: zielarz
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &307236728
+--- !u!4 &442379742
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 307236727}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 270272322}
-  - {fileID: 1080508800}
-  m_Father: {fileID: 1251616522}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &368061491
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 368061492}
-  m_Layer: 0
-  m_Name: _Triggers
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &368061492
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 368061491}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_GameObject: {fileID: 442379741}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 239726749}
-  m_RootOrder: 4
+  m_Father: {fileID: 1948435447}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &399459204
+--- !u!212 &442379743
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 442379741}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: a29e18c3e1f4f5d4aae61d9ff1f42a72, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.7, y: 2.7}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+--- !u!114 &451158348
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -733,14 +1150,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0730368720d23479f8f782e46d149b0c, type: 3}
-  m_Name: (Clone)(Clone)
+  m_Script: {fileID: 11500000, guid: d33593da7d3524e1998da7151086b1b3, type: 3}
+  m_Name: (Clone)
   m_EditorClassIdentifier: 
   id: 0
-  category: 6
-  title: Enable or disable
-  description: Turns a Hotspot on or off. To record the state of a Hotspot in save
-    games, be sure to add the RememberHotspot script to the Hotspot in question.
+  category: 11
+  title: Visibility
+  description: Hides or shows a GameObject. Can optionally affect the GameObject's
+    children.
   isDisplayed: 1
   showComment: 0
   comment: 
@@ -755,7 +1172,7 @@ MonoBehaviour:
     skipActionActual: {fileID: 0}
     linkedCutscene: {fileID: 0}
     linkedAsset: {fileID: 0}
-  endAction: 0
+  endAction: 1
   skipAction: -1
   skipActionActual: {fileID: 0}
   linkedCutscene: {fileID: 0}
@@ -766,16 +1183,16 @@ MonoBehaviour:
   isBreakPoint: 0
   nodeRect:
     serializedVersion: 2
-    x: 14
-    y: 177
+    x: 161
+    y: 388
     width: 300
     height: 122
   nodeHeight: 0
   parameterID: -1
   constantID: 0
-  hotspot: {fileID: 1009243078}
+  obToAffect: {fileID: 935744816}
   affectChildren: 0
-  changeType: 1
+  visState: 1
 --- !u!1 &537500879
 GameObject:
   m_ObjectHideFlags: 0
@@ -900,10 +1317,83 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 822772652}
   m_Father: {fileID: 239726749}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &580498033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdaacaae7eb224bd2b2b6d336bb7b1a8, type: 3}
+  m_Name: (Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 17
+  title: Check
+  description: Queries the value of both Global and Local Variables declared in the
+    Variables Manager. Variables can be compared with a fixed value, or with the values
+    of other Variables.
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 2
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 0
+  skipAction: -1
+  skipActionActual: {fileID: 0}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 14
+    y: 14
+    width: 300
+    height: 158
+  nodeHeight: 0
+  resultActionTrue: 0
+  skipActionTrue: -1
+  skipActionTrueActual: {fileID: 0}
+  linkedCutsceneTrue: {fileID: 0}
+  linkedAssetTrue: {fileID: 0}
+  resultActionFail: 1
+  skipActionFail: -1
+  skipActionFailActual: {fileID: 0}
+  linkedCutsceneFail: {fileID: 0}
+  linkedAssetFail: {fileID: 0}
+  parameterID: -1
+  variableID: 1
+  variableNumber: 1
+  checkParameterID: -1
+  getVarMethod: 0
+  compareVariableID: 0
+  intValue: 0
+  floatValue: 0
+  intCondition: 0
+  isAdditive: 0
+  boolValue: 1
+  boolCondition: 0
+  stringValue: 
+  checkCase: 1
+  location: 0
 --- !u!1001 &640040239
 Prefab:
   m_ObjectHideFlags: 0
@@ -955,6 +1445,73 @@ Transform:
   m_PrefabParentObject: {fileID: 4707092542730772, guid: 68335a8cdb8f6854e82edff67fb6b208,
     type: 2}
   m_PrefabInternal: {fileID: 1881167153}
+--- !u!114 &746812081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed656dc9f403a441f8fe89408c7a7189, type: 3}
+  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 4
+  title: Play speech
+  description: "Makes a Character talk, or \u2013 if no Character is specified \u2013
+    displays a message. Subtitles only appear if they are enabled from the Options
+    menu. A 'thinking' effect can be produced by opting to not play any animation."
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 1
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 2
+  skipAction: 2
+  skipActionActual: {fileID: 1440505663}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 364
+    y: 30
+    width: 300
+    height: 202
+  nodeHeight: 0
+  constantID: 0
+  parameterID: -1
+  messageParameterID: -1
+  isPlayer: 1
+  speaker: {fileID: 0}
+  messageText: "Witaj Zielarzu, czy m\xF3g\u0142by\u015B mi pom\xF3c? potrzebuje kilka
+    zi\xF3\u0142ek"
+  lineID: -1
+  multiLineIDs: 
+  isBackground: 0
+  noAnimation: 0
+  headClip: {fileID: 0}
+  mouthClip: {fileID: 0}
+  play2DHeadAnim: 0
+  headClip2D: 
+  headLayer: 0
+  play2DMouthAnim: 0
+  mouthClip2D: 
+  mouthLayer: 0
+  waitTimeOffset: -1
 --- !u!1 &756891139
 GameObject:
   m_ObjectHideFlags: 0
@@ -1042,6 +1599,10 @@ Prefab:
       propertyPath: sortingMap
       value: 
       objectReference: {fileID: 1498276284}
+    - target: {fileID: 11400016, guid: 5a39e31ce28cc48b096320990773071b, type: 2}
+      propertyPath: cutsceneOnStart
+      value: 
+      objectReference: {fileID: 160822846}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5a39e31ce28cc48b096320990773071b, type: 2}
   m_IsPrefabParent: 0
@@ -1105,6 +1666,147 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &822772651
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 550921150}
+    m_Modifications:
+    - target: {fileID: 11400000, guid: 2717cd305cfee493483c535fff2bfe0a, type: 2}
+      propertyPath: options.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2717cd305cfee493483c535fff2bfe0a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2717cd305cfee493483c535fff2bfe0a, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2717cd305cfee493483c535fff2bfe0a, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2717cd305cfee493483c535fff2bfe0a, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2717cd305cfee493483c535fff2bfe0a, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2717cd305cfee493483c535fff2bfe0a, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2717cd305cfee493483c535fff2bfe0a, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2717cd305cfee493483c535fff2bfe0a, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2717cd305cfee493483c535fff2bfe0a, type: 2}
+      propertyPath: m_Name
+      value: ZielarzConv
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 2717cd305cfee493483c535fff2bfe0a, type: 2}
+      propertyPath: constantID
+      value: 323292
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 2717cd305cfee493483c535fff2bfe0a, type: 2}
+      propertyPath: options.Array.data[0].lineID
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 2717cd305cfee493483c535fff2bfe0a, type: 2}
+      propertyPath: options.Array.data[0].isOn
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 2717cd305cfee493483c535fff2bfe0a, type: 2}
+      propertyPath: options.Array.data[0].ID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 2717cd305cfee493483c535fff2bfe0a, type: 2}
+      propertyPath: options.Array.data[0].isEditing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 2717cd305cfee493483c535fff2bfe0a, type: 2}
+      propertyPath: selectedOption.ID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 2717cd305cfee493483c535fff2bfe0a, type: 2}
+      propertyPath: selectedOption.isEditing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 2717cd305cfee493483c535fff2bfe0a, type: 2}
+      propertyPath: options.Array.data[0].label
+      value: "potrzebuje kilka zi\xF3\u0142ek"
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 2717cd305cfee493483c535fff2bfe0a, type: 2}
+      propertyPath: selectedOption.label
+      value: "potrzebuje kilka zi\xF3\u0142ek"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 2717cd305cfee493483c535fff2bfe0a, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &822772652 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400000, guid: 2717cd305cfee493483c535fff2bfe0a, type: 2}
+  m_PrefabInternal: {fileID: 822772651}
+--- !u!114 &826526804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d33593da7d3524e1998da7151086b1b3, type: 3}
+  m_Name: (Clone)(Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 11
+  title: Visibility
+  description: Hides or shows a GameObject. Can optionally affect the GameObject's
+    children.
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 1
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 0
+  skipAction: -1
+  skipActionActual: {fileID: 0}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 14
+    y: 14
+    width: 300
+    height: 122
+  nodeHeight: 0
+  parameterID: -1
+  constantID: 0
+  obToAffect: {fileID: 935744816}
+  affectChildren: 0
+  visState: 1
 --- !u!1 &862907922
 GameObject:
   m_ObjectHideFlags: 0
@@ -1213,67 +1915,6 @@ MonoBehaviour:
   obToAffect: {fileID: 935744816}
   affectChildren: 0
   visState: 1
---- !u!114 &902895688
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1d11677f69f745f88dbe9922511d53f, type: 3}
-  m_Name: (Clone)
-  m_EditorClassIdentifier: 
-  id: 0
-  category: 14
-  title: Switch
-  description: 'Moves the Player to a new scene. The scene must be listed in Unity''s
-    Build Settings. By default, the screen will cut to black during the transition,
-    but the last frame of the current scene can instead be overlayed. This allows
-    for cinematic effects: if the next scene fades in, it will cause a crossfade effect;
-    if the next scene doesn''t fade, it will cause a straight cut.'
-  isDisplayed: 1
-  showComment: 0
-  comment: 
-  showOutputSockets: 1
-  numSockets: 0
-  willWait: 0
-  defaultPauseTime: 0.1
-  isRunning: 0
-  lastResult:
-    resultAction: 0
-    skipAction: -10
-    skipActionActual: {fileID: 0}
-    linkedCutscene: {fileID: 0}
-    linkedAsset: {fileID: 0}
-  endAction: 1
-  skipAction: -1
-  skipActionActual: {fileID: 0}
-  linkedCutscene: {fileID: 0}
-  linkedAsset: {fileID: 0}
-  isEnabled: 1
-  isAssetFile: 0
-  isMarked: 0
-  isBreakPoint: 0
-  nodeRect:
-    serializedVersion: 2
-    x: 14
-    y: 14
-    width: 300
-    height: 150
-  nodeHeight: 0
-  chooseSceneBy: 1
-  sceneNumber: 0
-  sceneNumberParameterID: -1
-  sceneName: LasZielarza
-  sceneNameParameterID: -1
-  assignScreenOverlay: 0
-  onlyPreload: 0
-  relativePosition: 0
-  relativeMarker: {fileID: 0}
-  relativeMarkerID: 0
-  relativeMarkerParameterID: -1
-  forceReload: 0
 --- !u!1 &935744816
 GameObject:
   m_ObjectHideFlags: 0
@@ -1297,8 +1938,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 935744816}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.65, y: -1.06, z: 0}
-  m_LocalScale: {x: 0.40171552, y: 0.40171558, z: 0.40171558}
+  m_LocalPosition: {x: 0.62, y: -1.09, z: 0}
+  m_LocalScale: {x: 0.25344172, y: 0.25344178, z: 0.25344178}
   m_Children: []
   m_Father: {fileID: 795884699}
   m_RootOrder: 1
@@ -1343,6 +1984,62 @@ SpriteRenderer:
   m_Size: {x: 2.5, y: 2.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+--- !u!114 &948161123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a20a14d7555494a439c838ed9465bb15, type: 3}
+  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 4
+  title: Start conversation
+  description: Enters Conversation mode, and displays the available dialogue options
+    in a specified conversation.
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 1
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 1
+  skipAction: -1
+  skipActionActual: {fileID: 0}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 14
+    y: 14
+    width: 300
+    height: 104
+  nodeHeight: 0
+  endings:
+  - resultAction: 0
+    skipAction: -1
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  parameterID: -1
+  constantID: 0
+  conversation: {fileID: 1379100837}
+  overrideOptions: 1
 --- !u!1 &975080230
 GameObject:
   m_ObjectHideFlags: 0
@@ -1507,57 +2204,68 @@ Transform:
   m_Father: {fileID: 1251616522}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1065529817
-MonoBehaviour:
+--- !u!1001 &1079830503
+Prefab:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d33593da7d3524e1998da7151086b1b3, type: 3}
-  m_Name: (Clone)(Clone)
-  m_EditorClassIdentifier: 
-  id: 0
-  category: 11
-  title: Visibility
-  description: Hides or shows a GameObject. Can optionally affect the GameObject's
-    children.
-  isDisplayed: 1
-  showComment: 0
-  comment: 
-  showOutputSockets: 1
-  numSockets: 1
-  willWait: 0
-  defaultPauseTime: 0.1
-  isRunning: 0
-  lastResult:
-    resultAction: 0
-    skipAction: -10
-    skipActionActual: {fileID: 0}
-    linkedCutscene: {fileID: 0}
-    linkedAsset: {fileID: 0}
-  endAction: 0
-  skipAction: -1
-  skipActionActual: {fileID: 0}
-  linkedCutscene: {fileID: 0}
-  linkedAsset: {fileID: 0}
-  isEnabled: 1
-  isAssetFile: 0
-  isMarked: 0
-  isBreakPoint: 0
-  nodeRect:
-    serializedVersion: 2
-    x: 14
-    y: 14
-    width: 300
-    height: 122
-  nodeHeight: 0
-  parameterID: -1
-  constantID: 0
-  obToAffect: {fileID: 935744816}
-  affectChildren: 0
-  visState: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1217303845}
+    m_Modifications:
+    - target: {fileID: 11400000, guid: 863cd5d53c44945c2b30dca66dfce16e, type: 2}
+      propertyPath: actions.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 863cd5d53c44945c2b30dca66dfce16e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 863cd5d53c44945c2b30dca66dfce16e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 863cd5d53c44945c2b30dca66dfce16e, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 863cd5d53c44945c2b30dca66dfce16e, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 863cd5d53c44945c2b30dca66dfce16e, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 863cd5d53c44945c2b30dca66dfce16e, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 863cd5d53c44945c2b30dca66dfce16e, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 863cd5d53c44945c2b30dca66dfce16e, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 863cd5d53c44945c2b30dca66dfce16e, type: 2}
+      propertyPath: m_Name
+      value: OnStart
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 863cd5d53c44945c2b30dca66dfce16e, type: 2}
+      propertyPath: actions.Array.data[0]
+      value: 
+      objectReference: {fileID: 1470391977}
+    - target: {fileID: 11400000, guid: 863cd5d53c44945c2b30dca66dfce16e, type: 2}
+      propertyPath: actions.Array.data[1]
+      value: 
+      objectReference: {fileID: 158481195}
+    - target: {fileID: 11400000, guid: 863cd5d53c44945c2b30dca66dfce16e, type: 2}
+      propertyPath: actions.Array.data[2]
+      value: 
+      objectReference: {fileID: 2109225955}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 863cd5d53c44945c2b30dca66dfce16e, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &1080508799
 Prefab:
   m_ObjectHideFlags: 0
@@ -1567,11 +2275,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 2454e47dbf358484bb5cfba10d699562, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.43
+      value: 0.13
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2454e47dbf358484bb5cfba10d699562, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2.191
+      value: -1.94
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2454e47dbf358484bb5cfba10d699562, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1717,7 +2425,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 160822847}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1757,6 +2466,145 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1258988165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed656dc9f403a441f8fe89408c7a7189, type: 3}
+  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 4
+  title: Play speech
+  description: "Makes a Character talk, or \u2013 if no Character is specified \u2013
+    displays a message. Subtitles only appear if they are enabled from the Options
+    menu. A 'thinking' effect can be produced by opting to not play any animation."
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 1
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 1
+  skipAction: -1
+  skipActionActual: {fileID: 0}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 366
+    y: 268
+    width: 300
+    height: 215
+  nodeHeight: 0
+  constantID: 0
+  parameterID: -1
+  messageParameterID: -1
+  isPlayer: 0
+  speaker: {fileID: 1948435445}
+  messageText: "zostaw mnie w spokoju mam inne wa\u017Cniejsze rzeczy na g\u0142owie
+    ni\u017C szukanie ci zi\xF3\u0142ek. Jak tak bardzo je chcesz to sobie sam poszukaj. "
+  lineID: -1
+  multiLineIDs: 
+  isBackground: 1
+  noAnimation: 0
+  headClip: {fileID: 0}
+  mouthClip: {fileID: 0}
+  play2DHeadAnim: 0
+  headClip2D: 
+  headLayer: 0
+  play2DMouthAnim: 0
+  mouthClip2D: 
+  mouthLayer: 0
+  waitTimeOffset: -1
+--- !u!1001 &1280186111
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1966786332}
+    m_Modifications:
+    - target: {fileID: 11400000, guid: a9d4e17cb5a8745ccad47e11f075de33, type: 2}
+      propertyPath: actions.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a9d4e17cb5a8745ccad47e11f075de33, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a9d4e17cb5a8745ccad47e11f075de33, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a9d4e17cb5a8745ccad47e11f075de33, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a9d4e17cb5a8745ccad47e11f075de33, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a9d4e17cb5a8745ccad47e11f075de33, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a9d4e17cb5a8745ccad47e11f075de33, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a9d4e17cb5a8745ccad47e11f075de33, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a9d4e17cb5a8745ccad47e11f075de33, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a9d4e17cb5a8745ccad47e11f075de33, type: 2}
+      propertyPath: m_Name
+      value: 'Zielarz: Talk to'
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: a9d4e17cb5a8745ccad47e11f075de33, type: 2}
+      propertyPath: actions.Array.data[0]
+      value: 
+      objectReference: {fileID: 248962643}
+    - target: {fileID: 11400000, guid: a9d4e17cb5a8745ccad47e11f075de33, type: 2}
+      propertyPath: actions.Array.data[1]
+      value: 
+      objectReference: {fileID: 36101491}
+    - target: {fileID: 11400000, guid: a9d4e17cb5a8745ccad47e11f075de33, type: 2}
+      propertyPath: actions.Array.data[2]
+      value: 
+      objectReference: {fileID: 1440505663}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: a9d4e17cb5a8745ccad47e11f075de33, type: 2}
+  m_IsPrefabParent: 0
+--- !u!114 &1280186112 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11400000, guid: a9d4e17cb5a8745ccad47e11f075de33,
+    type: 2}
+  m_PrefabInternal: {fileID: 1280186111}
+  m_Script: {fileID: 11500000, guid: 6a1e6413216104fd580c7ce85907039c, type: 3}
+--- !u!4 &1280186113 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400000, guid: a9d4e17cb5a8745ccad47e11f075de33, type: 2}
+  m_PrefabInternal: {fileID: 1280186111}
 --- !u!1 &1302980802
 GameObject:
   m_ObjectHideFlags: 0
@@ -1795,6 +2643,151 @@ MonoBehaviour:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: c71db86e1d5c94f12b17d37a41970b9f, type: 2}
   m_PrefabInternal: {fileID: 208702901}
+--- !u!114 &1379100837 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11400000, guid: 2717cd305cfee493483c535fff2bfe0a,
+    type: 2}
+  m_PrefabInternal: {fileID: 822772651}
+  m_Script: {fileID: 11500000, guid: b21667ad3f1ae4696857cd09075624f9, type: 3}
+--- !u!114 &1440505663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed656dc9f403a441f8fe89408c7a7189, type: 3}
+  m_Name: (Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 4
+  title: Play speech
+  description: "Makes a Character talk, or \u2013 if no Character is specified \u2013
+    displays a message. Subtitles only appear if they are enabled from the Options
+    menu. A 'thinking' effect can be produced by opting to not play any animation."
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 1
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 1
+  skipAction: -1
+  skipActionActual: {fileID: 0}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 366
+    y: 268
+    width: 300
+    height: 215
+  nodeHeight: 0
+  constantID: 0
+  parameterID: -1
+  messageParameterID: -1
+  isPlayer: 0
+  speaker: {fileID: 1948435445}
+  messageText: "zostaw mnie w spokoju mam inne wa\u017Cniejsze rzeczy na g\u0142owie
+    ni\u017C szukanie ci zi\xF3\u0142ek. Jak tak bardzo je chcesz to sobie sam poszukaj. "
+  lineID: -1
+  multiLineIDs: 
+  isBackground: 1
+  noAnimation: 0
+  headClip: {fileID: 0}
+  mouthClip: {fileID: 0}
+  play2DHeadAnim: 0
+  headClip2D: 
+  headLayer: 0
+  play2DMouthAnim: 0
+  mouthClip2D: 
+  mouthLayer: 0
+  waitTimeOffset: -1
+--- !u!114 &1470391977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdaacaae7eb224bd2b2b6d336bb7b1a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 17
+  title: Check
+  description: Queries the value of both Global and Local Variables declared in the
+    Variables Manager. Variables can be compared with a fixed value, or with the values
+    of other Variables.
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 2
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 0
+  skipAction: -1
+  skipActionActual: {fileID: 0}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 14
+    y: 14
+    width: 300
+    height: 158
+  nodeHeight: 0
+  resultActionTrue: 0
+  skipActionTrue: -1
+  skipActionTrueActual: {fileID: 0}
+  linkedCutsceneTrue: {fileID: 0}
+  linkedAssetTrue: {fileID: 0}
+  resultActionFail: 1
+  skipActionFail: -1
+  skipActionFailActual: {fileID: 0}
+  linkedCutsceneFail: {fileID: 0}
+  linkedAssetFail: {fileID: 0}
+  parameterID: -1
+  variableID: 1
+  variableNumber: 1
+  checkParameterID: -1
+  getVarMethod: 0
+  compareVariableID: 0
+  intValue: 0
+  floatValue: 0
+  intCondition: 0
+  isAdditive: 0
+  boolValue: 1
+  boolCondition: 0
+  stringValue: 
+  checkCase: 1
+  location: 0
 --- !u!1001 &1498276283
 Prefab:
   m_ObjectHideFlags: 0
@@ -1863,6 +2856,62 @@ MonoBehaviour:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 6ea1e18e6eb914b02a9ad3f5f366edc5, type: 2}
   m_PrefabInternal: {fileID: 1498276283}
+--- !u!1001 &1545439079
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 307236728}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 2454e47dbf358484bb5cfba10d699562, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2454e47dbf358484bb5cfba10d699562, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -2.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2454e47dbf358484bb5cfba10d699562, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2454e47dbf358484bb5cfba10d699562, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2454e47dbf358484bb5cfba10d699562, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2454e47dbf358484bb5cfba10d699562, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2454e47dbf358484bb5cfba10d699562, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2454e47dbf358484bb5cfba10d699562, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2454e47dbf358484bb5cfba10d699562, type: 2}
+      propertyPath: m_Name
+      value: 'Marker2D: Zielarz'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 2454e47dbf358484bb5cfba10d699562, type: 2}
+  m_IsPrefabParent: 0
+--- !u!114 &1545439080 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11400000, guid: 2454e47dbf358484bb5cfba10d699562,
+    type: 2}
+  m_PrefabInternal: {fileID: 1545439079}
+  m_Script: {fileID: 11500000, guid: bbbbb3c8d2a7340dab40d45d6033e69e, type: 3}
+--- !u!4 &1545439081 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400000, guid: 2454e47dbf358484bb5cfba10d699562, type: 2}
+  m_PrefabInternal: {fileID: 1545439079}
 --- !u!1 &1641718282
 GameObject:
   m_ObjectHideFlags: 0
@@ -2360,6 +3409,318 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1799336180}
   m_Script: {fileID: 11500000, guid: ea52220853ef74eb1b84cc002ce3d474, type: 3}
+--- !u!1 &1948435442
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1948435447}
+  - component: {fileID: 1948435446}
+  - component: {fileID: 1948435445}
+  - component: {fileID: 1948435444}
+  - component: {fileID: 1948435443}
+  - component: {fileID: 1948435449}
+  - component: {fileID: 1948435448}
+  m_Layer: 0
+  m_Name: Zielarz
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!58 &1948435443
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1948435442}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -1.2225099}
+  serializedVersion: 2
+  m_Radius: 0.5783658
+--- !u!114 &1948435444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1948435442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6c23c0cd1c274961a26f4e9cd5378d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lockSorting: 0
+  affectChildren: 1
+  followSortingMap: 1
+  customSortingMap: {fileID: 0}
+  offsetOriginal: 0
+  livePreview: 0
+--- !u!114 &1948435445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1948435442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05ac5d1aa43234b1a948b4f8f3072f17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charState: 0
+  animationEngine: 2
+  customAnimationClass: 
+  motionControl: 0
+  talkingAnimation: 0
+  speechLabel: 
+  lineID: -1
+  displayLineID: -1
+  speechColor: {r: 1, g: 1, b: 1, a: 1}
+  portraitIcon:
+    texture: {fileID: 0}
+    isAnimated: 0
+    numFrames: 1
+    numRows: 1
+    numCols: 1
+    size: 0.015
+    animSpeed: 4
+    endAnimOnLastFrame: 0
+    clickOffset: {x: 0, y: 0}
+  useExpressions: 0
+  expressions: []
+  speechMenuPlacement: {fileID: 0}
+  isLipSyncing: 0
+  phonemeParameter: 
+  lipSyncGroupID: 0
+  leftHandBone: {fileID: 0}
+  rightHandBone: {fileID: 0}
+  idleAnim: {fileID: 0}
+  walkAnim: {fileID: 0}
+  runAnim: {fileID: 0}
+  talkAnim: {fileID: 0}
+  turnLeftAnim: {fileID: 0}
+  turnRightAnim: {fileID: 0}
+  headLookLeftAnim: {fileID: 0}
+  headLookRightAnim: {fileID: 0}
+  headLookUpAnim: {fileID: 0}
+  headLookDownAnim: {fileID: 0}
+  upperBodyBone: {fileID: 0}
+  leftArmBone: {fileID: 0}
+  rightArmBone: {fileID: 0}
+  neckBone: {fileID: 0}
+  animCrossfadeSpeed: 0.2
+  moveSpeedParameter: Speed
+  verticalMovementParameter: 
+  turnParameter: 
+  talkParameter: IsTalking
+  directionParameter: Direction
+  angleParameter: Angle
+  headYawParameter: 
+  headPitchParameter: 
+  expressionParameter: 
+  rootTurningFactor: 0
+  headLayer: 1
+  mouthLayer: 2
+  customAnimator: {fileID: 0}
+  spriteChild: {fileID: 442379742}
+  rotateSprite3D: 0
+  idleAnimSprite: idle
+  walkAnimSprite: walk
+  runAnimSprite: run
+  talkAnimSprite: talk
+  lockScale: 0
+  spriteScale: 1
+  lockDirection: 0
+  spriteDirection: D
+  doDirections: 1
+  crossfadeAnims: 0
+  doDiagonals: 0
+  isTalking: 0
+  frameFlipping: 0
+  flipCustomAnims: 0
+  walkSpeedScale: 2
+  runSpeedScale: 6
+  turnSpeed: 7
+  acceleration: 6
+  deceleration: 0
+  turnBeforeWalking: 0
+  runDistanceThreshold: 1
+  antiGlideMode: 0
+  isJumping: 0
+  ignoreGravity: 0
+  freezeRigidbodyWhenIdle: 0
+  useRigidbody2DForMovement: 0
+  doWallReduction: 0
+  wallLayer: Default
+  wallDistance: 0.5
+  walkSound: {fileID: 0}
+  runSound: {fileID: 0}
+  textScrollClip: {fileID: 0}
+  soundChild: {fileID: 0}
+  speechAudioSource: {fileID: 0}
+  headTurnTarget: {fileID: 0}
+  headTurnTargetOffset: {x: 0, y: 0, z: 0}
+  headFacing: 0
+  ikHeadTurning: 0
+  headTurnSpeed: 4
+  moveOutOfPlayersWay: 0
+  minPlayerDistance: 1
+--- !u!114 &1948435446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1948435442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db50f5eff40d94cfdac2b1ad5c44d735, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes: []
+  nodeCommands: []
+  commandSource: 0
+  pathType: 2
+  pathSpeed: 0
+  teleportToStart: 0
+  affectY: 0
+  nodePause: 0
+--- !u!4 &1948435447
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1948435442}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.63, y: -0.8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 442379742}
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1948435448
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1948435442}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.7553997}
+  m_EdgeRadius: 0
+--- !u!114 &1948435449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1948435442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b7c3ce72f27144c1be5a4a8ce09121d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showInEditor: 1
+  interactionSource: 0
+  limitToCamera: {fileID: 0}
+  hotspotName: 
+  lineID: -1
+  highlight: {fileID: 0}
+  walkToMarker: {fileID: 1545439080}
+  centrePoint: {fileID: 0}
+  provideUseInteraction: 1
+  useButton:
+    interaction: {fileID: 0}
+    assetFile: {fileID: 0}
+    customScriptObject: {fileID: 0}
+    customScriptFunction: 
+    isDisabled: 0
+    invID: 0
+    iconID: -1
+    selectItemMode: 0
+    playerAction: 0
+    setProximity: 0
+    proximity: 1
+    faceAfter: 0
+    isBlocking: 0
+    parameterID: -1
+  useButtons:
+  - interaction: {fileID: 1280186112}
+    assetFile: {fileID: 0}
+    customScriptObject: {fileID: 0}
+    customScriptFunction: 
+    isDisabled: 0
+    invID: 0
+    iconID: 1
+    selectItemMode: 0
+    playerAction: 3
+    setProximity: 0
+    proximity: 1
+    faceAfter: 1
+    isBlocking: 0
+    parameterID: -1
+  oneClick: 0
+  provideLookInteraction: 0
+  lookButton:
+    interaction: {fileID: 0}
+    assetFile: {fileID: 0}
+    customScriptObject: {fileID: 0}
+    customScriptFunction: 
+    isDisabled: 0
+    invID: 0
+    iconID: -1
+    selectItemMode: 0
+    playerAction: 0
+    setProximity: 0
+    proximity: 1
+    faceAfter: 0
+    isBlocking: 0
+    parameterID: -1
+  provideInvInteraction: 0
+  invButtons: []
+  provideUnhandledInvInteraction: 0
+  unhandledInvButton:
+    interaction: {fileID: 0}
+    assetFile: {fileID: 0}
+    customScriptObject: {fileID: 0}
+    customScriptFunction: 
+    isDisabled: 0
+    invID: 0
+    iconID: -1
+    selectItemMode: 0
+    playerAction: 0
+    setProximity: 0
+    proximity: 1
+    faceAfter: 0
+    isBlocking: 0
+    parameterID: -1
+  drawGizmos: 1
+  lastInteractionIndex: 0
+  displayLineID: -1
+  iconSortingLayer: 
+  iconSortingOrder: 0
+  doubleClickingHotspot: 0
+  playerTurnsHead: 1
 --- !u!1 &1966786331
 GameObject:
   m_ObjectHideFlags: 0
@@ -2387,9 +3748,61 @@ Transform:
   m_Children:
   - {fileID: 1129053054}
   - {fileID: 549631308}
+  - {fileID: 1280186113}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2109225955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d33593da7d3524e1998da7151086b1b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 11
+  title: Visibility
+  description: Hides or shows a GameObject. Can optionally affect the GameObject's
+    children.
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 1
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 1
+  skipAction: -1
+  skipActionActual: {fileID: 0}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 161
+    y: 388
+    width: 300
+    height: 122
+  nodeHeight: 0
+  parameterID: -1
+  constantID: 0
+  obToAffect: {fileID: 935744816}
+  affectChildren: 0
+  visState: 1
 --- !u!1 &2137995250
 GameObject:
   m_ObjectHideFlags: 0
