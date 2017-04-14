@@ -48,7 +48,7 @@ MonoBehaviour:
     size: 0.06
     animSpeed: 4
     endAnimOnLastFrame: 0
-    clickOffset: {x: 0, y: 0}
+    clickOffset: {x: -0.34, y: -0.34}
   walkIcon:
     texture: {fileID: 0}
     isAnimated: 0
