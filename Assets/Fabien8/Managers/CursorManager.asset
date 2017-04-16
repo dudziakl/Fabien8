@@ -129,4 +129,4 @@ MonoBehaviour:
   passUnhandledHotspotAsParameter: 0
   lookUseCursorAction: 0
   lookCursor_ID: 0
-  forceCursorInEditor: 1
+  forceCursorInEditor: 0

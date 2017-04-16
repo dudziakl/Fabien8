@@ -22,7 +22,7 @@ MonoBehaviour:
     canCarryMultiple: 0
     count: 1
     useSeparateSlots: 0
-    tex: {fileID: 2800000, guid: c875f47d1708e20458ccf06b17c06c4a, type: 3}
+    tex: {fileID: 2800000, guid: 42b3c7f57ae4d9c4588c1a71d4292b54, type: 3}
     activeTex: {fileID: 0}
     selectedTex: {fileID: 0}
     linkedPrefab: {fileID: 0}
@@ -43,7 +43,7 @@ MonoBehaviour:
     lineID: -1
     useIconID: 0
     binID: -1
-    isEditing: 0
+    isEditing: 1
     recipeSlot: -1
     lastInteractionIndex: 0
     overrideUseSyntax: 0
@@ -139,7 +139,7 @@ MonoBehaviour:
     lineID: -1
     useIconID: 0
     binID: -1
-    isEditing: 1
+    isEditing: 0
     recipeSlot: -1
     lastInteractionIndex: 0
     overrideUseSyntax: 0
