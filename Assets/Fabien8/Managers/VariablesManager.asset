@@ -134,7 +134,49 @@ MonoBehaviour:
     link: 0
     pmVar: 
     updateLinkOnStart: 0
-    isEditing: 1
+    isEditing: 0
+    canTranslate: 1
+    textValLineID: -1
+    popUpsLineID: -1
+  - label: MonologTrigger
+    id: 7
+    type: 0
+    val: 0
+    floatVal: 0
+    textVal: 
+    popUps: []
+    link: 0
+    pmVar: 
+    updateLinkOnStart: 0
+    isEditing: 0
+    canTranslate: 1
+    textValLineID: -1
+    popUpsLineID: -1
+  - label: "Pami\u0119tnik sprawdzony"
+    id: 8
+    type: 0
+    val: 0
+    floatVal: 0
+    textVal: 
+    popUps: []
+    link: 0
+    pmVar: 
+    updateLinkOnStart: 0
+    isEditing: 0
+    canTranslate: 1
+    textValLineID: -1
+    popUpsLineID: -1
+  - label: SkrzyniaCzyPodniesiona
+    id: 9
+    type: 0
+    val: 0
+    floatVal: 0
+    textVal: 
+    popUps: []
+    link: 0
+    pmVar: 
+    updateLinkOnStart: 0
+    isEditing: 0
     canTranslate: 1
     textValLineID: -1
     popUpsLineID: -1
