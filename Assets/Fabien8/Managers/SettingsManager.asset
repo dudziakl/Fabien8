@@ -11,9 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b776810ebfa374d7ba8f0fb5ed6e3265, type: 3}
   m_Name: SettingsManager
   m_EditorClassIdentifier: 
-  saveFileName: Fabien8
-  saveTimeDisplay: 0
-  takeSaveScreenshots: 0
+  saveFileName: save
+  saveTimeDisplay: 1
+  takeSaveScreenshots: 1
   useProfiles: 0
   maxSaves: 5
   orderSavesByUpdateTime: 0
@@ -140,8 +140,8 @@ MonoBehaviour:
   speechAttentuationParameter: speechVolume
   defaultLanguage: 0
   defaultShowSubtitles: 0
-  defaultSfxVolume: 0.9
-  defaultMusicVolume: 0.6
+  defaultSfxVolume: 0.53530073
+  defaultMusicVolume: 0.5931711
   defaultSpeechVolume: 1
   showDebugLogs: 0
   printActionCommentsInConsole: 0
