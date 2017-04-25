@@ -15,7 +15,7 @@ MonoBehaviour:
   cursorDisplay: 0
   allowMainCursor: 1
   lockSystemCursor: 1
-  allowWalkCursor: 0
+  allowWalkCursor: 1
   addWalkPrefix: 0
   walkPrefix:
     label: Walk to
@@ -26,7 +26,7 @@ MonoBehaviour:
   cycleCursors: 0
   onlyAnimateOverHotspots: 0
   leftClickExamine: 0
-  onlyWalkWhenOverNavMesh: 0
+  onlyWalkWhenOverNavMesh: 1
   onlyShowInventoryLabelOverHotspots: 0
   inventoryCursorSize: 0.06
   waitIcon:
@@ -50,12 +50,12 @@ MonoBehaviour:
     endAnimOnLastFrame: 0
     clickOffset: {x: -0.34, y: -0.34}
   walkIcon:
-    texture: {fileID: 0}
+    texture: {fileID: 2800000, guid: 4b1c6caa019a51049b6c59068e22fd88, type: 3}
     isAnimated: 0
     numFrames: 1
     numRows: 1
     numCols: 1
-    size: 0.04
+    size: 0.08
     animSpeed: 4
     endAnimOnLastFrame: 0
     clickOffset: {x: 0, y: 0}
