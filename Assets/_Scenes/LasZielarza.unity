@@ -179,6 +179,72 @@ MonoBehaviour:
   relativeMarkerID: 0
   relativeMarkerParameterID: -1
   forceReload: 0
+--- !u!114 &47974073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed656dc9f403a441f8fe89408c7a7189, type: 3}
+  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 4
+  title: Play speech
+  description: "Makes a Character talk, or \u2013 if no Character is specified \u2013
+    displays a message. Subtitles only appear if they are enabled from the Options
+    menu. A 'thinking' effect can be produced by opting to not play any animation."
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 1
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 0
+  skipAction: -1
+  skipActionActual: {fileID: 0}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 14
+    y: 14
+    width: 300
+    height: 210
+  nodeHeight: 0
+  constantID: 0
+  parameterID: -1
+  messageParameterID: -1
+  isPlayer: 1
+  speaker: {fileID: 0}
+  messageText: "Na drzwiach jest jaka\u015B kartka:"
+  lineID: -1
+  multiLineIDs: 
+  isBackground: 0
+  noAnimation: 0
+  headClip: {fileID: 0}
+  mouthClip: {fileID: 0}
+  play2DHeadAnim: 0
+  headClip2D: 
+  headLayer: 0
+  play2DMouthAnim: 0
+  mouthClip2D: 
+  mouthLayer: 0
+  waitTimeOffset: 0
 --- !u!114 &51059738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -351,72 +417,6 @@ MonoBehaviour:
   hotspot: {fileID: 406438314}
   affectChildren: 0
   changeType: 1
---- !u!114 &85431913
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed656dc9f403a441f8fe89408c7a7189, type: 3}
-  m_Name: (Clone)
-  m_EditorClassIdentifier: 
-  id: 0
-  category: 4
-  title: Play speech
-  description: "Makes a Character talk, or \u2013 if no Character is specified \u2013
-    displays a message. Subtitles only appear if they are enabled from the Options
-    menu. A 'thinking' effect can be produced by opting to not play any animation."
-  isDisplayed: 1
-  showComment: 0
-  comment: 
-  showOutputSockets: 1
-  numSockets: 1
-  willWait: 0
-  defaultPauseTime: 0.1
-  isRunning: 0
-  lastResult:
-    resultAction: 0
-    skipAction: -10
-    skipActionActual: {fileID: 0}
-    linkedCutscene: {fileID: 0}
-    linkedAsset: {fileID: 0}
-  endAction: 1
-  skipAction: -1
-  skipActionActual: {fileID: 0}
-  linkedCutscene: {fileID: 0}
-  linkedAsset: {fileID: 0}
-  isEnabled: 1
-  isAssetFile: 0
-  isMarked: 0
-  isBreakPoint: 0
-  nodeRect:
-    serializedVersion: 2
-    x: 10
-    y: 480
-    width: 300
-    height: 202
-  nodeHeight: 0
-  constantID: 0
-  parameterID: -1
-  messageParameterID: -1
-  isPlayer: 1
-  speaker: {fileID: 0}
-  messageText: "To mo\u017Ce si\u0119 do czego\u015B przyda\u0107."
-  lineID: -1
-  multiLineIDs: 
-  isBackground: 1
-  noAnimation: 0
-  headClip: {fileID: 0}
-  mouthClip: {fileID: 0}
-  play2DHeadAnim: 0
-  headClip2D: 
-  headLayer: 0
-  play2DMouthAnim: 0
-  mouthClip2D: 
-  mouthLayer: 0
-  waitTimeOffset: 0
 --- !u!1001 &88947556
 Prefab:
   m_ObjectHideFlags: 0
@@ -485,144 +485,6 @@ MonoBehaviour:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: a9d4e17cb5a8745ccad47e11f075de33, type: 2}
   m_PrefabInternal: {fileID: 88947556}
---- !u!114 &91338745
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed656dc9f403a441f8fe89408c7a7189, type: 3}
-  m_Name: (Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  id: 0
-  category: 4
-  title: Play speech
-  description: "Makes a Character talk, or \u2013 if no Character is specified \u2013
-    displays a message. Subtitles only appear if they are enabled from the Options
-    menu. A 'thinking' effect can be produced by opting to not play any animation."
-  isDisplayed: 1
-  showComment: 0
-  comment: 
-  showOutputSockets: 1
-  numSockets: 1
-  willWait: 0
-  defaultPauseTime: 0.1
-  isRunning: 0
-  lastResult:
-    resultAction: 0
-    skipAction: -10
-    skipActionActual: {fileID: 0}
-    linkedCutscene: {fileID: 0}
-    linkedAsset: {fileID: 0}
-  endAction: 0
-  skipAction: -1
-  skipActionActual: {fileID: 0}
-  linkedCutscene: {fileID: 0}
-  linkedAsset: {fileID: 0}
-  isEnabled: 1
-  isAssetFile: 0
-  isMarked: 0
-  isBreakPoint: 0
-  nodeRect:
-    serializedVersion: 2
-    x: 14
-    y: 14
-    width: 300
-    height: 202
-  nodeHeight: 0
-  constantID: 0
-  parameterID: -1
-  messageParameterID: -1
-  isPlayer: 1
-  speaker: {fileID: 0}
-  messageText: "To nie wygl\u0105da jak koper."
-  lineID: -1
-  multiLineIDs: 
-  isBackground: 0
-  noAnimation: 0
-  headClip: {fileID: 0}
-  mouthClip: {fileID: 0}
-  play2DHeadAnim: 0
-  headClip2D: 
-  headLayer: 0
-  play2DMouthAnim: 0
-  mouthClip2D: 
-  mouthLayer: 0
-  waitTimeOffset: 0
---- !u!114 &93215760
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdaacaae7eb224bd2b2b6d336bb7b1a8, type: 3}
-  m_Name: (Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  id: 0
-  category: 17
-  title: Check
-  description: Queries the value of both Global and Local Variables declared in the
-    Variables Manager. Variables can be compared with a fixed value, or with the values
-    of other Variables.
-  isDisplayed: 1
-  showComment: 0
-  comment: 
-  showOutputSockets: 1
-  numSockets: 2
-  willWait: 0
-  defaultPauseTime: 0.1
-  isRunning: 0
-  lastResult:
-    resultAction: 0
-    skipAction: -10
-    skipActionActual: {fileID: 0}
-    linkedCutscene: {fileID: 0}
-    linkedAsset: {fileID: 0}
-  endAction: 1
-  skipAction: -1
-  skipActionActual: {fileID: 0}
-  linkedCutscene: {fileID: 0}
-  linkedAsset: {fileID: 0}
-  isEnabled: 1
-  isAssetFile: 0
-  isMarked: 0
-  isBreakPoint: 0
-  nodeRect:
-    serializedVersion: 2
-    x: 6
-    y: 446
-    width: 300
-    height: 158
-  nodeHeight: 0
-  resultActionTrue: 0
-  skipActionTrue: -1
-  skipActionTrueActual: {fileID: 0}
-  linkedCutsceneTrue: {fileID: 0}
-  linkedAssetTrue: {fileID: 0}
-  resultActionFail: 1
-  skipActionFail: -1
-  skipActionFailActual: {fileID: 0}
-  linkedCutsceneFail: {fileID: 0}
-  linkedAssetFail: {fileID: 0}
-  parameterID: -1
-  variableID: 0
-  variableNumber: 0
-  checkParameterID: -1
-  getVarMethod: 0
-  compareVariableID: 0
-  intValue: 0
-  floatValue: 0
-  intCondition: 0
-  isAdditive: 0
-  boolValue: 0
-  boolCondition: 0
-  stringValue: 
-  checkCase: 1
-  location: 0
 --- !u!1 &97000657
 GameObject:
   m_ObjectHideFlags: 0
@@ -731,7 +593,7 @@ MonoBehaviour:
   hotspot: {fileID: 523973894}
   affectChildren: 0
   changeType: 0
---- !u!114 &117237703
+--- !u!114 &122430382
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -739,15 +601,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed656dc9f403a441f8fe89408c7a7189, type: 3}
-  m_Name: (Clone)(Clone)(Clone)(Clone)
+  m_Script: {fileID: 11500000, guid: 0730368720d23479f8f782e46d149b0c, type: 3}
+  m_Name: (Clone)(Clone)(Clone)
   m_EditorClassIdentifier: 
   id: 0
-  category: 4
-  title: Play speech
-  description: "Makes a Character talk, or \u2013 if no Character is specified \u2013
-    displays a message. Subtitles only appear if they are enabled from the Options
-    menu. A 'thinking' effect can be produced by opting to not play any animation."
+  category: 6
+  title: Enable or disable
+  description: Turns a Hotspot on or off. To record the state of a Hotspot in save
+    games, be sure to add the RememberHotspot script to the Hotspot in question.
   isDisplayed: 1
   showComment: 0
   comment: 
@@ -762,9 +623,9 @@ MonoBehaviour:
     skipActionActual: {fileID: 0}
     linkedCutscene: {fileID: 0}
     linkedAsset: {fileID: 0}
-  endAction: 2
-  skipAction: 4
-  skipActionActual: {fileID: 1788389772}
+  endAction: 0
+  skipAction: -1
+  skipActionActual: {fileID: 0}
   linkedCutscene: {fileID: 0}
   linkedAsset: {fileID: 0}
   isEnabled: 1
@@ -773,30 +634,16 @@ MonoBehaviour:
   isBreakPoint: 0
   nodeRect:
     serializedVersion: 2
-    x: 20
-    y: 1184
+    x: 19
+    y: 433
     width: 300
-    height: 202
+    height: 122
   nodeHeight: 0
-  constantID: 0
   parameterID: -1
-  messageParameterID: -1
-  isPlayer: 1
-  speaker: {fileID: 0}
-  messageText: Klamka pasuje.
-  lineID: -1
-  multiLineIDs: 
-  isBackground: 0
-  noAnimation: 0
-  headClip: {fileID: 0}
-  mouthClip: {fileID: 0}
-  play2DHeadAnim: 0
-  headClip2D: 
-  headLayer: 0
-  play2DMouthAnim: 0
-  mouthClip2D: 
-  mouthLayer: 0
-  waitTimeOffset: 0
+  constantID: 0
+  hotspot: {fileID: 1914303854}
+  affectChildren: 0
+  changeType: 1
 --- !u!114 &126711600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -848,7 +695,145 @@ MonoBehaviour:
   hotspot: {fileID: 523973894}
   affectChildren: 0
   changeType: 0
---- !u!114 &145390142
+--- !u!114 &145001433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdaacaae7eb224bd2b2b6d336bb7b1a8, type: 3}
+  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 17
+  title: Check
+  description: Queries the value of both Global and Local Variables declared in the
+    Variables Manager. Variables can be compared with a fixed value, or with the values
+    of other Variables.
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 2
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 1
+  skipAction: -1
+  skipActionActual: {fileID: 0}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 20
+    y: 385
+    width: 300
+    height: 176
+  nodeHeight: 0
+  resultActionTrue: 0
+  skipActionTrue: -1
+  skipActionTrueActual: {fileID: 0}
+  linkedCutsceneTrue: {fileID: 0}
+  linkedAssetTrue: {fileID: 0}
+  resultActionFail: 2
+  skipActionFail: 8
+  skipActionFailActual: {fileID: 921618352}
+  linkedCutsceneFail: {fileID: 0}
+  linkedAssetFail: {fileID: 0}
+  parameterID: -1
+  variableID: 0
+  variableNumber: 0
+  checkParameterID: -1
+  getVarMethod: 0
+  compareVariableID: 0
+  intValue: 0
+  floatValue: 0
+  intCondition: 0
+  isAdditive: 0
+  boolValue: 1
+  boolCondition: 0
+  stringValue: 
+  checkCase: 1
+  location: 0
+--- !u!114 &146185871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed656dc9f403a441f8fe89408c7a7189, type: 3}
+  m_Name: (Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 4
+  title: Play speech
+  description: "Makes a Character talk, or \u2013 if no Character is specified \u2013
+    displays a message. Subtitles only appear if they are enabled from the Options
+    menu. A 'thinking' effect can be produced by opting to not play any animation."
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 1
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 0
+  skipAction: -1
+  skipActionActual: {fileID: 0}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 14
+    y: 14
+    width: 300
+    height: 202
+  nodeHeight: 0
+  constantID: 0
+  parameterID: -1
+  messageParameterID: -1
+  isPlayer: 1
+  speaker: {fileID: 0}
+  messageText: "To nie wygl\u0105da jak koper."
+  lineID: -1
+  multiLineIDs: 
+  isBackground: 0
+  noAnimation: 0
+  headClip: {fileID: 0}
+  mouthClip: {fileID: 0}
+  play2DHeadAnim: 0
+  headClip2D: 
+  headLayer: 0
+  play2DMouthAnim: 0
+  mouthClip2D: 
+  mouthLayer: 0
+  waitTimeOffset: 0
+--- !u!114 &147568960
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -998,7 +983,8 @@ Prefab:
       propertyPath: showInEditor
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6100000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
   m_IsPrefabParent: 0
 --- !u!114 &164018377 stripped
@@ -1011,6 +997,57 @@ MonoBehaviour:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: a9d4e17cb5a8745ccad47e11f075de33, type: 2}
   m_PrefabInternal: {fileID: 638477530}
+--- !u!114 &180207236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0730368720d23479f8f782e46d149b0c, type: 3}
+  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 6
+  title: Enable or disable
+  description: Turns a Hotspot on or off. To record the state of a Hotspot in save
+    games, be sure to add the RememberHotspot script to the Hotspot in question.
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 1
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 2
+  skipAction: 2
+  skipActionActual: {fileID: 1204632061}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 18
+    y: 175
+    width: 300
+    height: 140
+  nodeHeight: 0
+  parameterID: -1
+  constantID: 0
+  hotspot: {fileID: 987809906}
+  affectChildren: 0
+  changeType: 1
 --- !u!1 &197256052
 GameObject:
   m_ObjectHideFlags: 0
@@ -1076,6 +1113,128 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &229537509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aac25eb7cbe8345d6baaf5efb8fc62e8, type: 3}
+  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 8
+  title: Add or remove
+  description: Adds or removes an item from the Player's inventory. Items are defined
+    in the Inventory Manager. If the player can carry multiple amounts of the item,
+    more options will show.
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 1
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 0
+  skipAction: -1
+  skipActionActual: {fileID: 0}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 14
+    y: 349
+    width: 300
+    height: 104
+  nodeHeight: 0
+  invAction: 0
+  parameterID: -1
+  invID: 0
+  replaceParameterID: -1
+  invIDReplace: 0
+  setAmount: 0
+  amount: 1
+  setPlayer: 0
+  playerID: 0
+--- !u!114 &235036466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed656dc9f403a441f8fe89408c7a7189, type: 3}
+  m_Name: (Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 4
+  title: Play speech
+  description: "Makes a Character talk, or \u2013 if no Character is specified \u2013
+    displays a message. Subtitles only appear if they are enabled from the Options
+    menu. A 'thinking' effect can be produced by opting to not play any animation."
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 1
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 0
+  skipAction: -1
+  skipActionActual: {fileID: 0}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 14
+    y: 14
+    width: 300
+    height: 202
+  nodeHeight: 0
+  constantID: 0
+  parameterID: -1
+  messageParameterID: -1
+  isPlayer: 1
+  speaker: {fileID: 0}
+  messageText: Drzwi otwarte
+  lineID: -1
+  multiLineIDs: 
+  isBackground: 0
+  noAnimation: 0
+  headClip: {fileID: 0}
+  mouthClip: {fileID: 0}
+  play2DHeadAnim: 0
+  headClip2D: 
+  headLayer: 0
+  play2DMouthAnim: 0
+  mouthClip2D: 
+  mouthLayer: 0
+  waitTimeOffset: 0
 --- !u!1001 &241977484
 Prefab:
   m_ObjectHideFlags: 0
@@ -1089,11 +1248,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 5.25
+      value: 5.172
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2.97
+      value: -3.042
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1179,6 +1338,22 @@ Prefab:
       propertyPath: showInEditor
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
+      propertyPath: m_Offset.y
+      value: 0.006795004
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
+      propertyPath: m_Size.y
+      value: 0.4971777
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
+      propertyPath: m_Offset.x
+      value: 0.020384215
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
+      propertyPath: m_Size.x
+      value: 0.49717826
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
   m_IsPrefabParent: 0
@@ -1196,73 +1371,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 366466673}
   m_Script: {fileID: 11500000, guid: 3ffb48ecf9de44666b3779fe84044e36, type: 3}
---- !u!114 &261259499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed656dc9f403a441f8fe89408c7a7189, type: 3}
-  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  id: 0
-  category: 4
-  title: Play speech
-  description: "Makes a Character talk, or \u2013 if no Character is specified \u2013
-    displays a message. Subtitles only appear if they are enabled from the Options
-    menu. A 'thinking' effect can be produced by opting to not play any animation."
-  isDisplayed: 1
-  showComment: 0
-  comment: 
-  showOutputSockets: 1
-  numSockets: 1
-  willWait: 0
-  defaultPauseTime: 0.1
-  isRunning: 0
-  lastResult:
-    resultAction: 0
-    skipAction: -10
-    skipActionActual: {fileID: 0}
-    linkedCutscene: {fileID: 0}
-    linkedAsset: {fileID: 0}
-  endAction: 2
-  skipAction: 1
-  skipActionActual: {fileID: 2098226836}
-  linkedCutscene: {fileID: 0}
-  linkedAsset: {fileID: 0}
-  isEnabled: 1
-  isAssetFile: 0
-  isMarked: 0
-  isBreakPoint: 0
-  nodeRect:
-    serializedVersion: 2
-    x: 14
-    y: 14
-    width: 300
-    height: 220
-  nodeHeight: 0
-  constantID: 0
-  parameterID: -1
-  messageParameterID: -1
-  isPlayer: 1
-  speaker: {fileID: 0}
-  messageText: "O! to dom zielarza, jestem uratowany! Zielarz na pewno b\u0119dzie
-    mie\u0107 potrzebne mi sk\u0142adniki "
-  lineID: -1
-  multiLineIDs: 
-  isBackground: 0
-  noAnimation: 0
-  headClip: {fileID: 0}
-  mouthClip: {fileID: 0}
-  play2DHeadAnim: 0
-  headClip2D: 
-  headLayer: 0
-  play2DMouthAnim: 0
-  mouthClip2D: 
-  mouthLayer: 0
-  waitTimeOffset: -1
 --- !u!114 &278141840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1396,7 +1504,58 @@ MonoBehaviour:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: df6617b17b90944fea6abc4a44f0e13b, type: 2}
   m_PrefabInternal: {fileID: 1633365023}
---- !u!114 &297436102
+--- !u!114 &291606309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0730368720d23479f8f782e46d149b0c, type: 3}
+  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 6
+  title: Enable or disable
+  description: Turns a Hotspot on or off. To record the state of a Hotspot in save
+    games, be sure to add the RememberHotspot script to the Hotspot in question.
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 1
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 2
+  skipAction: 10
+  skipActionActual: {fileID: 1310524654}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 41
+    y: 1086
+    width: 300
+    height: 140
+  nodeHeight: 0
+  parameterID: -1
+  constantID: 0
+  hotspot: {fileID: 523973894}
+  affectChildren: 0
+  changeType: 0
+--- !u!114 &295156734
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1405,7 +1564,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed656dc9f403a441f8fe89408c7a7189, type: 3}
-  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
+  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
   m_EditorClassIdentifier: 
   id: 0
   category: 4
@@ -1427,9 +1586,9 @@ MonoBehaviour:
     skipActionActual: {fileID: 0}
     linkedCutscene: {fileID: 0}
     linkedAsset: {fileID: 0}
-  endAction: 0
-  skipAction: -1
-  skipActionActual: {fileID: 0}
+  endAction: 2
+  skipAction: 1
+  skipActionActual: {fileID: 1851428924}
   linkedCutscene: {fileID: 0}
   linkedAsset: {fileID: 0}
   isEnabled: 1
@@ -1441,14 +1600,15 @@ MonoBehaviour:
     x: 14
     y: 14
     width: 300
-    height: 210
+    height: 220
   nodeHeight: 0
   constantID: 0
   parameterID: -1
   messageParameterID: -1
   isPlayer: 1
   speaker: {fileID: 0}
-  messageText: "Na drzwiach jest jaka\u015B kartka:"
+  messageText: "O! to dom zielarza, jestem uratowany! Zielarz na pewno b\u0119dzie
+    mie\u0107 potrzebne mi sk\u0142adniki "
   lineID: -1
   multiLineIDs: 
   isBackground: 0
@@ -1461,7 +1621,78 @@ MonoBehaviour:
   play2DMouthAnim: 0
   mouthClip2D: 
   mouthLayer: 0
-  waitTimeOffset: 0
+  waitTimeOffset: -1
+--- !u!114 &298425371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0f86ace5fdd94f0a86553230ec9308f, type: 3}
+  m_Name: (Clone)(Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 17
+  title: Set
+  description: Sets the value of both Global and Local Variables, as declared in the
+    Variables Manager. Integers can be set to absolute, incremented or assigned a
+    random value. Strings can also be set to the value of a MenuInput element, while
+    Integers, Booleans and Floats can also be set to the value of a Mecanim parameter.
+    When setting Integers and Floats, you can also opt to type in a forumla (e.g.
+    2 + 3 *4), which can also include tokens of the form [var:ID] to denote the value
+    of a Variable, where ID is the unique number given to a Variable in the Variables
+    Manager.
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 1
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 1
+  skipAction: -1
+  skipActionActual: {fileID: 0}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 20
+    y: 757
+    width: 300
+    height: 140
+  nodeHeight: 0
+  setVarMethod: 0
+  setVarMethodString: 0
+  setVarMethodIntBool: 0
+  parameterID: -1
+  variableID: 1
+  variableNumber: 2
+  setParameterID: -1
+  slotNumber: 0
+  slotNumberParameterID: -1
+  intValue: 0
+  floatValue: 0
+  boolValue: 1
+  stringValue: 
+  formula: 
+  location: 0
+  menuName: 
+  elementName: 
+  animator: {fileID: 0}
+  parameterName: 
 --- !u!1 &307929962
 GameObject:
   m_ObjectHideFlags: 0
@@ -1499,6 +1730,67 @@ Transform:
   m_Father: {fileID: 337488822}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &313957897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1d11677f69f745f88dbe9922511d53f, type: 3}
+  m_Name: (Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 14
+  title: Switch
+  description: 'Moves the Player to a new scene. The scene must be listed in Unity''s
+    Build Settings. By default, the screen will cut to black during the transition,
+    but the last frame of the current scene can instead be overlayed. This allows
+    for cinematic effects: if the next scene fades in, it will cause a crossfade effect;
+    if the next scene doesn''t fade, it will cause a straight cut.'
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 0
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 1
+  skipAction: -1
+  skipActionActual: {fileID: 0}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 14
+    y: 14
+    width: 300
+    height: 168
+  nodeHeight: 0
+  chooseSceneBy: 1
+  sceneNumber: 0
+  sceneNumberParameterID: -1
+  sceneName: OgrodZielarza
+  sceneNameParameterID: -1
+  assignScreenOverlay: 0
+  onlyPreload: 0
+  relativePosition: 0
+  relativeMarker: {fileID: 0}
+  relativeMarkerID: 0
+  relativeMarkerParameterID: -1
+  forceReload: 0
 --- !u!1001 &314795291
 Prefab:
   m_ObjectHideFlags: 0
@@ -1549,61 +1841,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2454e47dbf358484bb5cfba10d699562, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &324476025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b3339a0ba7074d969436b88c517d06f, type: 3}
-  m_Name: (Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  id: 0
-  category: 11
-  title: Add or remove
-  description: Instantiates or deletes GameObjects within the current scene. To ensure
-    this works with save games correctly, place any prefabs to be added in a Resources
-    asset folder.
-  isDisplayed: 1
-  showComment: 0
-  comment: 
-  showOutputSockets: 1
-  numSockets: 1
-  willWait: 0
-  defaultPauseTime: 0.1
-  isRunning: 0
-  lastResult:
-    resultAction: 0
-    skipAction: -10
-    skipActionActual: {fileID: 0}
-    linkedCutscene: {fileID: 0}
-    linkedAsset: {fileID: 0}
-  endAction: 1
-  skipAction: -1
-  skipActionActual: {fileID: 0}
-  linkedCutscene: {fileID: 0}
-  linkedAsset: {fileID: 0}
-  isEnabled: 1
-  isAssetFile: 0
-  isMarked: 0
-  isBreakPoint: 0
-  nodeRect:
-    serializedVersion: 2
-    x: 60
-    y: 643
-    width: 300
-    height: 122
-  nodeHeight: 0
-  gameObject: {fileID: 726715799}
-  parameterID: -1
-  constantID: 0
-  replaceGameObject: {fileID: 0}
-  replaceParameterID: -1
-  replaceConstantID: 0
-  invAction: 1
-  positionRelativeTo: 0
 --- !u!1001 &326742706
 Prefab:
   m_ObjectHideFlags: 0
@@ -1743,7 +1980,8 @@ Prefab:
       propertyPath: showInEditor
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6100000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &326742707 stripped
@@ -1786,6 +2024,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &341109835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0643024da91f402a9281e781736a4c6, type: 3}
+  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 2
+  title: Move to point
+  description: Moves a character to a given Marker object. By default, the character
+    will attempt to pathfind their way to the marker, but can optionally just move
+    in a straight line.
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 1
+  willWait: 1
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 2
+  skipAction: 7
+  skipActionActual: {fileID: 998002878}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 651
+    y: 495
+    width: 300
+    height: 176
+  nodeHeight: 0
+  charToMoveParameterID: -1
+  markerParameterID: -1
+  charToMoveID: 0
+  markerID: 0
+  marker: {fileID: 254495758}
+  isPlayer: 1
+  charToMove: {fileID: 0}
+  speed: 0
+  pathFind: 1
+  doFloat: 0
 --- !u!114 &344158578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1837,6 +2132,108 @@ MonoBehaviour:
   hotspot: {fileID: 1914303854}
   affectChildren: 0
   changeType: 1
+--- !u!114 &362882799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0730368720d23479f8f782e46d149b0c, type: 3}
+  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 6
+  title: Enable or disable
+  description: Turns a Hotspot on or off. To record the state of a Hotspot in save
+    games, be sure to add the RememberHotspot script to the Hotspot in question.
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 1
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 0
+  skipAction: 3
+  skipActionActual: {fileID: 362882799}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 30
+    y: 600
+    width: 300
+    height: 122
+  nodeHeight: 0
+  parameterID: -1
+  constantID: 0
+  hotspot: {fileID: 1331739788}
+  affectChildren: 0
+  changeType: 1
+--- !u!114 &364001178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0730368720d23479f8f782e46d149b0c, type: 3}
+  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 6
+  title: Enable or disable
+  description: Turns a Hotspot on or off. To record the state of a Hotspot in save
+    games, be sure to add the RememberHotspot script to the Hotspot in question.
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 1
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 2
+  skipAction: 5
+  skipActionActual: {fileID: 1932421044}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 9
+    y: 606
+    width: 300
+    height: 140
+  nodeHeight: 0
+  parameterID: -1
+  constantID: 0
+  hotspot: {fileID: 523973894}
+  affectChildren: 0
+  changeType: 0
 --- !u!1001 &366466673
 Prefab:
   m_ObjectHideFlags: 0
@@ -1942,6 +2339,14 @@ Prefab:
       propertyPath: m_Name
       value: Dom Zielarza
       objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
+      propertyPath: m_Offset.y
+      value: -0.0122971535
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
+      propertyPath: m_Size.y
+      value: 0.38513947
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
   m_IsPrefabParent: 0
@@ -2019,6 +2424,40 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 792839916}
   m_Script: {fileID: 11500000, guid: bbbbb3c8d2a7340dab40d45d6033e69e, type: 3}
+--- !u!1 &372094581 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
+  m_PrefabInternal: {fileID: 326742706}
+--- !u!60 &372094582
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 372094581}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.025229264, y: 0.5584871}
+      - {x: -0.2509433, y: 0.48562226}
+      - {x: -0.68239516, y: -0.48734334}
+      - {x: 0.33549237, y: -0.53780186}
+      - {x: 0.4083884, y: 0.28531206}
+      - {x: 0.29509455, y: 0.48562238}
 --- !u!1 &373776473
 GameObject:
   m_ObjectHideFlags: 0
@@ -2048,62 +2487,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &398034590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aac25eb7cbe8345d6baaf5efb8fc62e8, type: 3}
-  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  id: 0
-  category: 8
-  title: Add or remove
-  description: Adds or removes an item from the Player's inventory. Items are defined
-    in the Inventory Manager. If the player can carry multiple amounts of the item,
-    more options will show.
-  isDisplayed: 1
-  showComment: 0
-  comment: 
-  showOutputSockets: 1
-  numSockets: 1
-  willWait: 0
-  defaultPauseTime: 0.1
-  isRunning: 0
-  lastResult:
-    resultAction: 0
-    skipAction: -10
-    skipActionActual: {fileID: 0}
-    linkedCutscene: {fileID: 0}
-    linkedAsset: {fileID: 0}
-  endAction: 0
-  skipAction: -1
-  skipActionActual: {fileID: 0}
-  linkedCutscene: {fileID: 0}
-  linkedAsset: {fileID: 0}
-  isEnabled: 1
-  isAssetFile: 0
-  isMarked: 0
-  isBreakPoint: 0
-  nodeRect:
-    serializedVersion: 2
-    x: 13
-    y: 263
-    width: 300
-    height: 104
-  nodeHeight: 0
-  invAction: 1
-  parameterID: -1
-  invID: 0
-  replaceParameterID: -1
-  invIDReplace: 0
-  setAmount: 0
-  amount: 1
-  setPlayer: 0
-  playerID: 0
 --- !u!1001 &404101385
 Prefab:
   m_ObjectHideFlags: 0
@@ -2178,6 +2561,57 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 241977484}
   m_Script: {fileID: 11500000, guid: 1b7c3ce72f27144c1be5a4a8ce09121d, type: 3}
+--- !u!114 &426551434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0730368720d23479f8f782e46d149b0c, type: 3}
+  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 6
+  title: Enable or disable
+  description: Turns a Hotspot on or off. To record the state of a Hotspot in save
+    games, be sure to add the RememberHotspot script to the Hotspot in question.
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 1
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 0
+  skipAction: 1
+  skipActionActual: {fileID: 51059738}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 14
+    y: 14
+    width: 300
+    height: 122
+  nodeHeight: 0
+  parameterID: -1
+  constantID: 0
+  hotspot: {fileID: 523973894}
+  affectChildren: 0
+  changeType: 1
 --- !u!114 &426661138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2328,6 +2762,57 @@ Transform:
   m_Father: {fileID: 337488822}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &492659814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0730368720d23479f8f782e46d149b0c, type: 3}
+  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 6
+  title: Enable or disable
+  description: Turns a Hotspot on or off. To record the state of a Hotspot in save
+    games, be sure to add the RememberHotspot script to the Hotspot in question.
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 1
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 0
+  skipAction: 12
+  skipActionActual: {fileID: 844618557}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 274
+    y: 1470
+    width: 300
+    height: 122
+  nodeHeight: 0
+  parameterID: -1
+  constantID: 0
+  hotspot: {fileID: 987809906}
+  affectChildren: 0
+  changeType: 0
 --- !u!114 &492833099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2412,61 +2897,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &500800521
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b3339a0ba7074d969436b88c517d06f, type: 3}
-  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  id: 0
-  category: 11
-  title: Add or remove
-  description: Instantiates or deletes GameObjects within the current scene. To ensure
-    this works with save games correctly, place any prefabs to be added in a Resources
-    asset folder.
-  isDisplayed: 1
-  showComment: 0
-  comment: 
-  showOutputSockets: 1
-  numSockets: 1
-  willWait: 0
-  defaultPauseTime: 0.1
-  isRunning: 0
-  lastResult:
-    resultAction: 0
-    skipAction: -10
-    skipActionActual: {fileID: 0}
-    linkedCutscene: {fileID: 0}
-    linkedAsset: {fileID: 0}
-  endAction: 1
-  skipAction: 14
-  skipActionActual: {fileID: 500800521}
-  linkedCutscene: {fileID: 0}
-  linkedAsset: {fileID: 0}
-  isEnabled: 1
-  isAssetFile: 0
-  isMarked: 0
-  isBreakPoint: 0
-  nodeRect:
-    serializedVersion: 2
-    x: 678
-    y: 1671
-    width: 300
-    height: 122
-  nodeHeight: 0
-  gameObject: {fileID: 726715799}
-  parameterID: -1
-  constantID: 0
-  replaceGameObject: {fileID: 0}
-  replaceParameterID: -1
-  replaceConstantID: 0
-  invAction: 1
-  positionRelativeTo: 0
 --- !u!1001 &504390416
 Prefab:
   m_ObjectHideFlags: 0
@@ -2954,114 +3384,63 @@ MonoBehaviour:
   obToAffect: {fileID: 1294013885}
   affectChildren: 0
   visState: 0
+--- !u!114 &564380731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0730368720d23479f8f782e46d149b0c, type: 3}
+  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 6
+  title: Enable or disable
+  description: Turns a Hotspot on or off. To record the state of a Hotspot in save
+    games, be sure to add the RememberHotspot script to the Hotspot in question.
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 1
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 2
+  skipAction: 13
+  skipActionActual: {fileID: 512237142}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 261
+    y: 1626
+    width: 300
+    height: 140
+  nodeHeight: 0
+  parameterID: -1
+  constantID: 0
+  hotspot: {fileID: 1914303854}
+  affectChildren: 0
+  changeType: 1
 --- !u!4 &580087972 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4707092542730772, guid: 68335a8cdb8f6854e82edff67fb6b208,
     type: 2}
   m_PrefabInternal: {fileID: 1902571693}
---- !u!114 &580607763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0730368720d23479f8f782e46d149b0c, type: 3}
-  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  id: 0
-  category: 6
-  title: Enable or disable
-  description: Turns a Hotspot on or off. To record the state of a Hotspot in save
-    games, be sure to add the RememberHotspot script to the Hotspot in question.
-  isDisplayed: 1
-  showComment: 0
-  comment: 
-  showOutputSockets: 1
-  numSockets: 1
-  willWait: 0
-  defaultPauseTime: 0.1
-  isRunning: 0
-  lastResult:
-    resultAction: 0
-    skipAction: -10
-    skipActionActual: {fileID: 0}
-    linkedCutscene: {fileID: 0}
-    linkedAsset: {fileID: 0}
-  endAction: 0
-  skipAction: 3
-  skipActionActual: {fileID: 580607763}
-  linkedCutscene: {fileID: 0}
-  linkedAsset: {fileID: 0}
-  isEnabled: 1
-  isAssetFile: 0
-  isMarked: 0
-  isBreakPoint: 0
-  nodeRect:
-    serializedVersion: 2
-    x: 30
-    y: 600
-    width: 300
-    height: 122
-  nodeHeight: 0
-  parameterID: -1
-  constantID: 0
-  hotspot: {fileID: 1331739788}
-  affectChildren: 0
-  changeType: 1
---- !u!114 &607660661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0730368720d23479f8f782e46d149b0c, type: 3}
-  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  id: 0
-  category: 6
-  title: Enable or disable
-  description: Turns a Hotspot on or off. To record the state of a Hotspot in save
-    games, be sure to add the RememberHotspot script to the Hotspot in question.
-  isDisplayed: 1
-  showComment: 0
-  comment: 
-  showOutputSockets: 1
-  numSockets: 1
-  willWait: 0
-  defaultPauseTime: 0.1
-  isRunning: 0
-  lastResult:
-    resultAction: 0
-    skipAction: -10
-    skipActionActual: {fileID: 0}
-    linkedCutscene: {fileID: 0}
-    linkedAsset: {fileID: 0}
-  endAction: 0
-  skipAction: -1
-  skipActionActual: {fileID: 0}
-  linkedCutscene: {fileID: 0}
-  linkedAsset: {fileID: 0}
-  isEnabled: 1
-  isAssetFile: 0
-  isMarked: 0
-  isBreakPoint: 0
-  nodeRect:
-    serializedVersion: 2
-    x: 12
-    y: 422
-    width: 300
-    height: 122
-  nodeHeight: 0
-  parameterID: -1
-  constantID: 0
-  hotspot: {fileID: 1331739788}
-  affectChildren: 0
-  changeType: 1
---- !u!114 &610129284
+--- !u!114 &585371638
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -3070,7 +3449,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b0d4ab0f7ce3d4193a55deb9d20a7d66, type: 3}
-  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
+  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
   m_EditorClassIdentifier: 
   id: 0
   category: 11
@@ -3095,8 +3474,8 @@ MonoBehaviour:
     linkedCutscene: {fileID: 0}
     linkedAsset: {fileID: 0}
   endAction: 0
-  skipAction: 4
-  skipActionActual: {fileID: 426661138}
+  skipAction: 6
+  skipActionActual: {fileID: 0}
   linkedCutscene: {fileID: 0}
   linkedAsset: {fileID: 0}
   isEnabled: 1
@@ -3105,10 +3484,10 @@ MonoBehaviour:
   isBreakPoint: 0
   nodeRect:
     serializedVersion: 2
-    x: 16
-    y: 791
+    x: 31
+    y: 920
     width: 300
-    height: 176
+    height: 158
   nodeHeight: 0
   obToMoveParameterID: -1
   obToMoveID: 0
@@ -3274,7 +3653,67 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a9d4e17cb5a8745ccad47e11f075de33, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &692515180
+--- !u!1 &663314644
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 663314646}
+  - component: {fileID: 663314645}
+  m_Layer: 2
+  m_Name: DziuraGrzyba
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!60 &663314645
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 663314644}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.2755835, y: 0.18141365}
+      - {x: -0.4361713, y: 0.17057872}
+      - {x: -1.2709627, y: 0.20527554}
+      - {x: -1.2581849, y: -0.25060558}
+      - {x: 0.005697489, y: -0.27230644}
+      - {x: 1.1483555, y: -0.2612481}
+      - {x: 1.133437, y: 0.20447755}
+--- !u!4 &663314646
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 663314644}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.556, y: -2.734, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 972359727}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &670473670
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -3282,14 +3721,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0730368720d23479f8f782e46d149b0c, type: 3}
-  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
+  m_Script: {fileID: 11500000, guid: d33593da7d3524e1998da7151086b1b3, type: 3}
+  m_Name: (Clone)(Clone)
   m_EditorClassIdentifier: 
   id: 0
-  category: 6
-  title: Enable or disable
-  description: Turns a Hotspot on or off. To record the state of a Hotspot in save
-    games, be sure to add the RememberHotspot script to the Hotspot in question.
+  category: 11
+  title: Visibility
+  description: Hides or shows a GameObject. Can optionally affect the GameObject's
+    children.
   isDisplayed: 1
   showComment: 0
   comment: 
@@ -3305,8 +3744,8 @@ MonoBehaviour:
     linkedCutscene: {fileID: 0}
     linkedAsset: {fileID: 0}
   endAction: 0
-  skipAction: 1
-  skipActionActual: {fileID: 51059738}
+  skipAction: -1
+  skipActionActual: {fileID: 0}
   linkedCutscene: {fileID: 0}
   linkedAsset: {fileID: 0}
   isEnabled: 1
@@ -3322,10 +3761,14 @@ MonoBehaviour:
   nodeHeight: 0
   parameterID: -1
   constantID: 0
-  hotspot: {fileID: 523973894}
+  obToAffect: {fileID: 1294013885}
   affectChildren: 0
-  changeType: 1
---- !u!114 &725947992
+  visState: 1
+--- !u!1 &726715799 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: df6617b17b90944fea6abc4a44f0e13b, type: 2}
+  m_PrefabInternal: {fileID: 1633365023}
+--- !u!114 &732444014
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -3366,20 +3809,76 @@ MonoBehaviour:
   isBreakPoint: 0
   nodeRect:
     serializedVersion: 2
-    x: 19
-    y: 433
+    x: 18
+    y: 598
     width: 300
     height: 122
   nodeHeight: 0
   parameterID: -1
   constantID: 0
-  hotspot: {fileID: 1914303854}
+  hotspot: {fileID: 987809906}
   affectChildren: 0
-  changeType: 1
---- !u!1 &726715799 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100000, guid: df6617b17b90944fea6abc4a44f0e13b, type: 2}
-  m_PrefabInternal: {fileID: 1633365023}
+  changeType: 0
+--- !u!114 &736719078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0d4ab0f7ce3d4193a55deb9d20a7d66, type: 3}
+  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 11
+  title: Teleport
+  description: Moves a GameObject to a Marker instantly. Can also copy the Marker's
+    rotation. The final position can optionally be made relative to the active camera,
+    or the player. For example, if the Marker's position is (0, 0, 1) and Positon
+    relative to is set to Relative To Active Camera, then the object will be teleported
+    in front of the camera.
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 1
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 2
+  skipAction: 9
+  skipActionActual: {fileID: 280611285}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 630
+    y: 269
+    width: 300
+    height: 194
+  nodeHeight: 0
+  obToMoveParameterID: -1
+  obToMoveID: 0
+  markerParameterID: -1
+  markerID: 0
+  positionRelativeTo: 0
+  recalculateActivePathFind: 0
+  isPlayer: 1
+  snapCamera: 0
+  obToMove: {fileID: 0}
+  teleporter: {fileID: 370614685}
+  copyRotation: 0
 --- !u!1 &758923089
 GameObject:
   m_ObjectHideFlags: 0
@@ -3441,7 +3940,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &774405186
+--- !u!114 &782969930
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -3449,15 +3948,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aac25eb7cbe8345d6baaf5efb8fc62e8, type: 3}
-  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)
+  m_Script: {fileID: 11500000, guid: b0d4ab0f7ce3d4193a55deb9d20a7d66, type: 3}
+  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
   m_EditorClassIdentifier: 
   id: 0
-  category: 8
-  title: Add or remove
-  description: Adds or removes an item from the Player's inventory. Items are defined
-    in the Inventory Manager. If the player can carry multiple amounts of the item,
-    more options will show.
+  category: 11
+  title: Teleport
+  description: Moves a GameObject to a Marker instantly. Can also copy the Marker's
+    rotation. The final position can optionally be made relative to the active camera,
+    or the player. For example, if the Marker's position is (0, 0, 1) and Positon
+    relative to is set to Relative To Active Camera, then the object will be teleported
+    in front of the camera.
   isDisplayed: 1
   showComment: 0
   comment: 
@@ -3473,8 +3974,8 @@ MonoBehaviour:
     linkedCutscene: {fileID: 0}
     linkedAsset: {fileID: 0}
   endAction: 0
-  skipAction: -1
-  skipActionActual: {fileID: 0}
+  skipAction: 4
+  skipActionActual: {fileID: 426661138}
   linkedCutscene: {fileID: 0}
   linkedAsset: {fileID: 0}
   isEnabled: 1
@@ -3483,20 +3984,22 @@ MonoBehaviour:
   isBreakPoint: 0
   nodeRect:
     serializedVersion: 2
-    x: 14
-    y: 349
+    x: 16
+    y: 791
     width: 300
-    height: 104
+    height: 176
   nodeHeight: 0
-  invAction: 0
-  parameterID: -1
-  invID: 0
-  replaceParameterID: -1
-  invIDReplace: 0
-  setAmount: 0
-  amount: 1
-  setPlayer: 0
-  playerID: 0
+  obToMoveParameterID: -1
+  obToMoveID: 0
+  markerParameterID: -1
+  markerID: 0
+  positionRelativeTo: 0
+  recalculateActivePathFind: 0
+  isPlayer: 0
+  snapCamera: 0
+  obToMove: {fileID: 1294013885}
+  teleporter: {fileID: 1959673067}
+  copyRotation: 0
 --- !u!1001 &792839916
 Prefab:
   m_ObjectHideFlags: 0
@@ -3543,7 +4046,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2454e47dbf358484bb5cfba10d699562, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &810241378
+--- !u!114 &815699041
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -3552,7 +4055,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0730368720d23479f8f782e46d149b0c, type: 3}
-  m_Name: (Clone)(Clone)(Clone)
+  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)
   m_EditorClassIdentifier: 
   id: 0
   category: 6
@@ -3584,16 +4087,82 @@ MonoBehaviour:
   isBreakPoint: 0
   nodeRect:
     serializedVersion: 2
-    x: 18
-    y: 598
+    x: 12
+    y: 184
     width: 300
     height: 122
   nodeHeight: 0
   parameterID: -1
   constantID: 0
-  hotspot: {fileID: 987809906}
+  hotspot: {fileID: 406438314}
   affectChildren: 0
-  changeType: 0
+  changeType: 1
+--- !u!114 &820370913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed656dc9f403a441f8fe89408c7a7189, type: 3}
+  m_Name: (Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 4
+  title: Play speech
+  description: "Makes a Character talk, or \u2013 if no Character is specified \u2013
+    displays a message. Subtitles only appear if they are enabled from the Options
+    menu. A 'thinking' effect can be produced by opting to not play any animation."
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 1
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 1
+  skipAction: -1
+  skipActionActual: {fileID: 0}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 10
+    y: 270
+    width: 300
+    height: 202
+  nodeHeight: 0
+  constantID: 0
+  parameterID: -1
+  messageParameterID: -1
+  isPlayer: 1
+  speaker: {fileID: 0}
+  messageText: "Ta furtka wygl\u0105da na uszkodzon\u0105."
+  lineID: -1
+  multiLineIDs: 
+  isBackground: 1
+  noAnimation: 0
+  headClip: {fileID: 0}
+  mouthClip: {fileID: 0}
+  play2DHeadAnim: 0
+  headClip2D: 
+  headLayer: 0
+  play2DMouthAnim: 0
+  mouthClip2D: 
+  mouthLayer: 0
+  waitTimeOffset: 0
 --- !u!1001 &828500715
 Prefab:
   m_ObjectHideFlags: 0
@@ -3603,19 +4172,19 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11400000, guid: 6ea1e18e6eb914b02a9ad3f5f366edc5, type: 2}
       propertyPath: sortingAreas.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6ea1e18e6eb914b02a9ad3f5f366edc5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.03
+      value: -2.942
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6ea1e18e6eb914b02a9ad3f5f366edc5, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.7
+      value: -1.536
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6ea1e18e6eb914b02a9ad3f5f366edc5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6ea1e18e6eb914b02a9ad3f5f366edc5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3651,11 +4220,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 6ea1e18e6eb914b02a9ad3f5f366edc5, type: 2}
       propertyPath: sortingAreas.Array.data[0].z
-      value: 1.2203773
+      value: 0.46431154
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 6ea1e18e6eb914b02a9ad3f5f366edc5, type: 2}
       propertyPath: sortingAreas.Array.data[0].order
-      value: -1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 6ea1e18e6eb914b02a9ad3f5f366edc5, type: 2}
       propertyPath: sortingAreas.Array.data[0].color.r
@@ -3663,11 +4232,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 6ea1e18e6eb914b02a9ad3f5f366edc5, type: 2}
       propertyPath: sortingAreas.Array.data[0].color.g
-      value: 0.21078193
+      value: 0.21078192
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 6ea1e18e6eb914b02a9ad3f5f366edc5, type: 2}
       propertyPath: sortingAreas.Array.data[0].color.b
-      value: 0.4357844
+      value: 0.44823632
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 6ea1e18e6eb914b02a9ad3f5f366edc5, type: 2}
       propertyPath: sortingAreas.Array.data[0].color.a
@@ -3675,15 +4244,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 6ea1e18e6eb914b02a9ad3f5f366edc5, type: 2}
       propertyPath: sortingAreas.Array.data[0].scale
-      value: 100
+      value: 78
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 6ea1e18e6eb914b02a9ad3f5f366edc5, type: 2}
       propertyPath: sortingAreas.Array.data[1].z
-      value: 1.503894
+      value: 1.4088107
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 6ea1e18e6eb914b02a9ad3f5f366edc5, type: 2}
       propertyPath: sortingAreas.Array.data[1].order
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 6ea1e18e6eb914b02a9ad3f5f366edc5, type: 2}
       propertyPath: sortingAreas.Array.data[1].color.r
@@ -3703,7 +4272,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 6ea1e18e6eb914b02a9ad3f5f366edc5, type: 2}
       propertyPath: sortingAreas.Array.data[1].scale
-      value: 120
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 6ea1e18e6eb914b02a9ad3f5f366edc5, type: 2}
       propertyPath: affectScale
@@ -3712,6 +4281,34 @@ Prefab:
     - target: {fileID: 11400000, guid: 6ea1e18e6eb914b02a9ad3f5f366edc5, type: 2}
       propertyPath: originScale
       value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6ea1e18e6eb914b02a9ad3f5f366edc5, type: 2}
+      propertyPath: sortingAreas.Array.data[2].z
+      value: 1.7051468
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6ea1e18e6eb914b02a9ad3f5f366edc5, type: 2}
+      propertyPath: sortingAreas.Array.data[2].order
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6ea1e18e6eb914b02a9ad3f5f366edc5, type: 2}
+      propertyPath: sortingAreas.Array.data[2].color.r
+      value: 0.15442836
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6ea1e18e6eb914b02a9ad3f5f366edc5, type: 2}
+      propertyPath: sortingAreas.Array.data[2].color.g
+      value: 0.6272557
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6ea1e18e6eb914b02a9ad3f5f366edc5, type: 2}
+      propertyPath: sortingAreas.Array.data[2].color.b
+      value: 0.7181196
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6ea1e18e6eb914b02a9ad3f5f366edc5, type: 2}
+      propertyPath: sortingAreas.Array.data[2].color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6ea1e18e6eb914b02a9ad3f5f366edc5, type: 2}
+      propertyPath: sortingAreas.Array.data[2].scale
+      value: 95
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ea1e18e6eb914b02a9ad3f5f366edc5, type: 2}
@@ -3771,6 +4368,129 @@ MonoBehaviour:
   replaceConstantID: 0
   invAction: 1
   positionRelativeTo: 0
+--- !u!114 &841508629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdaacaae7eb224bd2b2b6d336bb7b1a8, type: 3}
+  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 17
+  title: Check
+  description: Queries the value of both Global and Local Variables declared in the
+    Variables Manager. Variables can be compared with a fixed value, or with the values
+    of other Variables.
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 2
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 1
+  skipAction: -1
+  skipActionActual: {fileID: 0}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 679
+    y: 1472
+    width: 300
+    height: 158
+  nodeHeight: 0
+  resultActionTrue: 0
+  skipActionTrue: -1
+  skipActionTrueActual: {fileID: 0}
+  linkedCutsceneTrue: {fileID: 0}
+  linkedAssetTrue: {fileID: 0}
+  resultActionFail: 1
+  skipActionFail: -1
+  skipActionFailActual: {fileID: 0}
+  linkedCutsceneFail: {fileID: 0}
+  linkedAssetFail: {fileID: 0}
+  parameterID: -1
+  variableID: 2
+  variableNumber: 3
+  checkParameterID: -1
+  getVarMethod: 0
+  compareVariableID: 0
+  intValue: 0
+  floatValue: 0
+  intCondition: 0
+  isAdditive: 0
+  boolValue: 0
+  boolCondition: 0
+  stringValue: 
+  checkCase: 1
+  location: 0
+--- !u!114 &843849470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d33593da7d3524e1998da7151086b1b3, type: 3}
+  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 11
+  title: Visibility
+  description: Hides or shows a GameObject. Can optionally affect the GameObject's
+    children.
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 1
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 0
+  skipAction: 4
+  skipActionActual: {fileID: 511135525}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 19
+    y: 1016
+    width: 300
+    height: 140
+  nodeHeight: 0
+  parameterID: -1
+  constantID: 0
+  obToAffect: {fileID: 1294013885}
+  affectChildren: 0
+  visState: 0
 --- !u!114 &844618557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3886,57 +4606,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 854391194}
   m_Script: {fileID: 11500000, guid: bbbbb3c8d2a7340dab40d45d6033e69e, type: 3}
---- !u!114 &861568720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0730368720d23479f8f782e46d149b0c, type: 3}
-  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  id: 0
-  category: 6
-  title: Enable or disable
-  description: Turns a Hotspot on or off. To record the state of a Hotspot in save
-    games, be sure to add the RememberHotspot script to the Hotspot in question.
-  isDisplayed: 1
-  showComment: 0
-  comment: 
-  showOutputSockets: 1
-  numSockets: 1
-  willWait: 0
-  defaultPauseTime: 0.1
-  isRunning: 0
-  lastResult:
-    resultAction: 0
-    skipAction: -10
-    skipActionActual: {fileID: 0}
-    linkedCutscene: {fileID: 0}
-    linkedAsset: {fileID: 0}
-  endAction: 2
-  skipAction: 13
-  skipActionActual: {fileID: 512237142}
-  linkedCutscene: {fileID: 0}
-  linkedAsset: {fileID: 0}
-  isEnabled: 1
-  isAssetFile: 0
-  isMarked: 0
-  isBreakPoint: 0
-  nodeRect:
-    serializedVersion: 2
-    x: 261
-    y: 1626
-    width: 300
-    height: 140
-  nodeHeight: 0
-  parameterID: -1
-  constantID: 0
-  hotspot: {fileID: 1914303854}
-  affectChildren: 0
-  changeType: 1
 --- !u!114 &899925751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4170,138 +4839,6 @@ MonoBehaviour:
   obToMove: {fileID: 0}
   teleporter: {fileID: 370614685}
   copyRotation: 0
---- !u!114 &948123963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdaacaae7eb224bd2b2b6d336bb7b1a8, type: 3}
-  m_Name: (Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  id: 0
-  category: 17
-  title: Check
-  description: Queries the value of both Global and Local Variables declared in the
-    Variables Manager. Variables can be compared with a fixed value, or with the values
-    of other Variables.
-  isDisplayed: 1
-  showComment: 0
-  comment: 
-  showOutputSockets: 1
-  numSockets: 2
-  willWait: 0
-  defaultPauseTime: 0.1
-  isRunning: 0
-  lastResult:
-    resultAction: 0
-    skipAction: -10
-    skipActionActual: {fileID: 0}
-    linkedCutscene: {fileID: 0}
-    linkedAsset: {fileID: 0}
-  endAction: 1
-  skipAction: -1
-  skipActionActual: {fileID: 0}
-  linkedCutscene: {fileID: 0}
-  linkedAsset: {fileID: 0}
-  isEnabled: 1
-  isAssetFile: 0
-  isMarked: 0
-  isBreakPoint: 0
-  nodeRect:
-    serializedVersion: 2
-    x: 6
-    y: 446
-    width: 300
-    height: 158
-  nodeHeight: 0
-  resultActionTrue: 0
-  skipActionTrue: -1
-  skipActionTrueActual: {fileID: 0}
-  linkedCutsceneTrue: {fileID: 0}
-  linkedAssetTrue: {fileID: 0}
-  resultActionFail: 1
-  skipActionFail: -1
-  skipActionFailActual: {fileID: 0}
-  linkedCutsceneFail: {fileID: 0}
-  linkedAssetFail: {fileID: 0}
-  parameterID: -1
-  variableID: 0
-  variableNumber: 0
-  checkParameterID: -1
-  getVarMethod: 0
-  compareVariableID: 0
-  intValue: 0
-  floatValue: 0
-  intCondition: 0
-  isAdditive: 0
-  boolValue: 0
-  boolCondition: 0
-  stringValue: 
-  checkCase: 1
-  location: 0
---- !u!114 &949209179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0d4ab0f7ce3d4193a55deb9d20a7d66, type: 3}
-  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  id: 0
-  category: 11
-  title: Teleport
-  description: Moves a GameObject to a Marker instantly. Can also copy the Marker's
-    rotation. The final position can optionally be made relative to the active camera,
-    or the player. For example, if the Marker's position is (0, 0, 1) and Positon
-    relative to is set to Relative To Active Camera, then the object will be teleported
-    in front of the camera.
-  isDisplayed: 1
-  showComment: 0
-  comment: 
-  showOutputSockets: 1
-  numSockets: 1
-  willWait: 0
-  defaultPauseTime: 0.1
-  isRunning: 0
-  lastResult:
-    resultAction: 0
-    skipAction: -10
-    skipActionActual: {fileID: 0}
-    linkedCutscene: {fileID: 0}
-    linkedAsset: {fileID: 0}
-  endAction: 0
-  skipAction: 6
-  skipActionActual: {fileID: 0}
-  linkedCutscene: {fileID: 0}
-  linkedAsset: {fileID: 0}
-  isEnabled: 1
-  isAssetFile: 0
-  isMarked: 0
-  isBreakPoint: 0
-  nodeRect:
-    serializedVersion: 2
-    x: 31
-    y: 920
-    width: 300
-    height: 158
-  nodeHeight: 0
-  obToMoveParameterID: -1
-  obToMoveID: 0
-  markerParameterID: -1
-  markerID: 0
-  positionRelativeTo: 0
-  recalculateActivePathFind: 0
-  isPlayer: 0
-  snapCamera: 0
-  obToMove: {fileID: 1294013885}
-  teleporter: {fileID: 1959673067}
-  copyRotation: 0
 --- !u!1 &972359726
 GameObject:
   m_ObjectHideFlags: 0
@@ -4328,69 +4865,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1822310165}
+  - {fileID: 663314646}
   m_Father: {fileID: 337488822}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &982073766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0d4ab0f7ce3d4193a55deb9d20a7d66, type: 3}
-  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  id: 0
-  category: 11
-  title: Teleport
-  description: Moves a GameObject to a Marker instantly. Can also copy the Marker's
-    rotation. The final position can optionally be made relative to the active camera,
-    or the player. For example, if the Marker's position is (0, 0, 1) and Positon
-    relative to is set to Relative To Active Camera, then the object will be teleported
-    in front of the camera.
-  isDisplayed: 1
-  showComment: 0
-  comment: 
-  showOutputSockets: 1
-  numSockets: 1
-  willWait: 0
-  defaultPauseTime: 0.1
-  isRunning: 0
-  lastResult:
-    resultAction: 0
-    skipAction: -10
-    skipActionActual: {fileID: 0}
-    linkedCutscene: {fileID: 0}
-    linkedAsset: {fileID: 0}
-  endAction: 2
-  skipAction: 9
-  skipActionActual: {fileID: 280611285}
-  linkedCutscene: {fileID: 0}
-  linkedAsset: {fileID: 0}
-  isEnabled: 1
-  isAssetFile: 0
-  isMarked: 0
-  isBreakPoint: 0
-  nodeRect:
-    serializedVersion: 2
-    x: 630
-    y: 269
-    width: 300
-    height: 194
-  nodeHeight: 0
-  obToMoveParameterID: -1
-  obToMoveID: 0
-  markerParameterID: -1
-  markerID: 0
-  positionRelativeTo: 0
-  recalculateActivePathFind: 0
-  isPlayer: 1
-  snapCamera: 0
-  obToMove: {fileID: 0}
-  teleporter: {fileID: 370614685}
-  copyRotation: 0
 --- !u!114 &987809906 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11400000, guid: 91d6ab39027244ea689b8f0ec9b5b548,
@@ -4401,57 +4879,6 @@ MonoBehaviour:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
   m_PrefabInternal: {fileID: 148682986}
---- !u!114 &991746365
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0730368720d23479f8f782e46d149b0c, type: 3}
-  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  id: 0
-  category: 6
-  title: Enable or disable
-  description: Turns a Hotspot on or off. To record the state of a Hotspot in save
-    games, be sure to add the RememberHotspot script to the Hotspot in question.
-  isDisplayed: 1
-  showComment: 0
-  comment: 
-  showOutputSockets: 1
-  numSockets: 1
-  willWait: 0
-  defaultPauseTime: 0.1
-  isRunning: 0
-  lastResult:
-    resultAction: 0
-    skipAction: -10
-    skipActionActual: {fileID: 0}
-    linkedCutscene: {fileID: 0}
-    linkedAsset: {fileID: 0}
-  endAction: 0
-  skipAction: 12
-  skipActionActual: {fileID: 844618557}
-  linkedCutscene: {fileID: 0}
-  linkedAsset: {fileID: 0}
-  isEnabled: 1
-  isAssetFile: 0
-  isMarked: 0
-  isBreakPoint: 0
-  nodeRect:
-    serializedVersion: 2
-    x: 274
-    y: 1470
-    width: 300
-    height: 122
-  nodeHeight: 0
-  parameterID: -1
-  constantID: 0
-  hotspot: {fileID: 987809906}
-  affectChildren: 0
-  changeType: 0
 --- !u!114 &998002878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4519,73 +4946,41 @@ MonoBehaviour:
   mouthClip2D: 
   mouthLayer: 0
   waitTimeOffset: 0
---- !u!114 &999740129
-MonoBehaviour:
+--- !u!1 &1004009953 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
+  m_PrefabInternal: {fileID: 148682986}
+--- !u!60 &1004009954
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1004009953}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed656dc9f403a441f8fe89408c7a7189, type: 3}
-  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  id: 0
-  category: 4
-  title: Play speech
-  description: "Makes a Character talk, or \u2013 if no Character is specified \u2013
-    displays a message. Subtitles only appear if they are enabled from the Options
-    menu. A 'thinking' effect can be produced by opting to not play any animation."
-  isDisplayed: 1
-  showComment: 0
-  comment: 
-  showOutputSockets: 1
-  numSockets: 1
-  willWait: 0
-  defaultPauseTime: 0.1
-  isRunning: 0
-  lastResult:
-    resultAction: 0
-    skipAction: -10
-    skipActionActual: {fileID: 0}
-    linkedCutscene: {fileID: 0}
-    linkedAsset: {fileID: 0}
-  endAction: 2
-  skipAction: 1
-  skipActionActual: {fileID: 2098226836}
-  linkedCutscene: {fileID: 0}
-  linkedAsset: {fileID: 0}
-  isEnabled: 1
-  isAssetFile: 0
-  isMarked: 0
-  isBreakPoint: 0
-  nodeRect:
-    serializedVersion: 2
-    x: 14
-    y: 14
-    width: 300
-    height: 220
-  nodeHeight: 0
-  constantID: 0
-  parameterID: -1
-  messageParameterID: -1
-  isPlayer: 1
-  speaker: {fileID: 0}
-  messageText: "O! to dom zielarza, jestem uratowany! Zielarz na pewno b\u0119dzie
-    mie\u0107 potrzebne mi sk\u0142adniki "
-  lineID: -1
-  multiLineIDs: 
-  isBackground: 0
-  noAnimation: 0
-  headClip: {fileID: 0}
-  mouthClip: {fileID: 0}
-  play2DHeadAnim: 0
-  headClip2D: 
-  headLayer: 0
-  play2DMouthAnim: 0
-  mouthClip2D: 
-  mouthLayer: 0
-  waitTimeOffset: -1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.43907964, y: 0.9098903}
+      - {x: 0, y: 1}
+      - {x: -0.38157606, y: 0.9073586}
+      - {x: -0.65478265, y: 0.45715392}
+      - {x: -1.1909142, y: -0.7561108}
+      - {x: 0.55604184, y: -0.80901694}
+      - {x: 0.6653632, y: 0.5841285}
 --- !u!114 &1008468012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4647,128 +5042,6 @@ MonoBehaviour:
   relativeMarkerID: 0
   relativeMarkerParameterID: -1
   forceReload: 0
---- !u!114 &1013766851
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d33593da7d3524e1998da7151086b1b3, type: 3}
-  m_Name: (Clone)(Clone)
-  m_EditorClassIdentifier: 
-  id: 0
-  category: 11
-  title: Visibility
-  description: Hides or shows a GameObject. Can optionally affect the GameObject's
-    children.
-  isDisplayed: 1
-  showComment: 0
-  comment: 
-  showOutputSockets: 1
-  numSockets: 1
-  willWait: 0
-  defaultPauseTime: 0.1
-  isRunning: 0
-  lastResult:
-    resultAction: 0
-    skipAction: -10
-    skipActionActual: {fileID: 0}
-    linkedCutscene: {fileID: 0}
-    linkedAsset: {fileID: 0}
-  endAction: 0
-  skipAction: -1
-  skipActionActual: {fileID: 0}
-  linkedCutscene: {fileID: 0}
-  linkedAsset: {fileID: 0}
-  isEnabled: 1
-  isAssetFile: 0
-  isMarked: 0
-  isBreakPoint: 0
-  nodeRect:
-    serializedVersion: 2
-    x: 14
-    y: 14
-    width: 300
-    height: 122
-  nodeHeight: 0
-  parameterID: -1
-  constantID: 0
-  obToAffect: {fileID: 1294013885}
-  affectChildren: 0
-  visState: 1
---- !u!114 &1024174340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0f86ace5fdd94f0a86553230ec9308f, type: 3}
-  m_Name: (Clone)(Clone)
-  m_EditorClassIdentifier: 
-  id: 0
-  category: 17
-  title: Set
-  description: Sets the value of both Global and Local Variables, as declared in the
-    Variables Manager. Integers can be set to absolute, incremented or assigned a
-    random value. Strings can also be set to the value of a MenuInput element, while
-    Integers, Booleans and Floats can also be set to the value of a Mecanim parameter.
-    When setting Integers and Floats, you can also opt to type in a forumla (e.g.
-    2 + 3 *4), which can also include tokens of the form [var:ID] to denote the value
-    of a Variable, where ID is the unique number given to a Variable in the Variables
-    Manager.
-  isDisplayed: 1
-  showComment: 0
-  comment: 
-  showOutputSockets: 1
-  numSockets: 1
-  willWait: 0
-  defaultPauseTime: 0.1
-  isRunning: 0
-  lastResult:
-    resultAction: 0
-    skipAction: -10
-    skipActionActual: {fileID: 0}
-    linkedCutscene: {fileID: 0}
-    linkedAsset: {fileID: 0}
-  endAction: 1
-  skipAction: -1
-  skipActionActual: {fileID: 0}
-  linkedCutscene: {fileID: 0}
-  linkedAsset: {fileID: 0}
-  isEnabled: 1
-  isAssetFile: 0
-  isMarked: 0
-  isBreakPoint: 0
-  nodeRect:
-    serializedVersion: 2
-    x: 20
-    y: 757
-    width: 300
-    height: 140
-  nodeHeight: 0
-  setVarMethod: 0
-  setVarMethodString: 0
-  setVarMethodIntBool: 0
-  parameterID: -1
-  variableID: 1
-  variableNumber: 2
-  setParameterID: -1
-  slotNumber: 0
-  slotNumberParameterID: -1
-  intValue: 0
-  floatValue: 0
-  boolValue: 1
-  stringValue: 
-  formula: 
-  location: 0
-  menuName: 
-  elementName: 
-  animator: {fileID: 0}
-  parameterName: 
 --- !u!1001 &1042154535
 Prefab:
   m_ObjectHideFlags: 0
@@ -4954,11 +5227,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 5.02
+      value: 5.13
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.03
+      value: -1.15
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
       propertyPath: m_LocalPosition.z
@@ -5059,6 +5332,22 @@ Prefab:
     - target: {fileID: 11400000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
       propertyPath: showInEditor
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
+      propertyPath: m_Offset.x
+      value: -0.040612012
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
+      propertyPath: m_Size.x
+      value: 0.8510893
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
+      propertyPath: m_Offset.y
+      value: 0.013537526
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
+      propertyPath: m_Size.y
+      value: 1.121836
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
@@ -5164,6 +5453,57 @@ Transform:
   m_Father: {fileID: 337488822}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1122645260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0730368720d23479f8f782e46d149b0c, type: 3}
+  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 6
+  title: Enable or disable
+  description: Turns a Hotspot on or off. To record the state of a Hotspot in save
+    games, be sure to add the RememberHotspot script to the Hotspot in question.
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 1
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 0
+  skipAction: 5
+  skipActionActual: {fileID: 1443051901}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 30
+    y: 756
+    width: 300
+    height: 122
+  nodeHeight: 0
+  parameterID: -1
+  constantID: 0
+  hotspot: {fileID: 406438314}
+  affectChildren: 0
+  changeType: 1
 --- !u!114 &1125415377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5290,67 +5630,6 @@ MonoBehaviour:
   obToMove: {fileID: 1294013885}
   teleporter: {fileID: 1959673067}
   copyRotation: 0
---- !u!114 &1134426305
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1d11677f69f745f88dbe9922511d53f, type: 3}
-  m_Name: (Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  id: 0
-  category: 14
-  title: Switch
-  description: 'Moves the Player to a new scene. The scene must be listed in Unity''s
-    Build Settings. By default, the screen will cut to black during the transition,
-    but the last frame of the current scene can instead be overlayed. This allows
-    for cinematic effects: if the next scene fades in, it will cause a crossfade effect;
-    if the next scene doesn''t fade, it will cause a straight cut.'
-  isDisplayed: 1
-  showComment: 0
-  comment: 
-  showOutputSockets: 1
-  numSockets: 0
-  willWait: 0
-  defaultPauseTime: 0.1
-  isRunning: 0
-  lastResult:
-    resultAction: 0
-    skipAction: -10
-    skipActionActual: {fileID: 0}
-    linkedCutscene: {fileID: 0}
-    linkedAsset: {fileID: 0}
-  endAction: 1
-  skipAction: -1
-  skipActionActual: {fileID: 0}
-  linkedCutscene: {fileID: 0}
-  linkedAsset: {fileID: 0}
-  isEnabled: 1
-  isAssetFile: 0
-  isMarked: 0
-  isBreakPoint: 0
-  nodeRect:
-    serializedVersion: 2
-    x: 14
-    y: 14
-    width: 300
-    height: 168
-  nodeHeight: 0
-  chooseSceneBy: 1
-  sceneNumber: 0
-  sceneNumberParameterID: -1
-  sceneName: OgrodZielarza
-  sceneNameParameterID: -1
-  assignScreenOverlay: 0
-  onlyPreload: 0
-  relativePosition: 0
-  relativeMarker: {fileID: 0}
-  relativeMarkerID: 0
-  relativeMarkerParameterID: -1
-  forceReload: 0
 --- !u!1001 &1140982991
 Prefab:
   m_ObjectHideFlags: 0
@@ -5454,7 +5733,8 @@ Prefab:
       propertyPath: showInEditor
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6100000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1140982992 stripped
@@ -5521,7 +5801,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: dbb35dbfe432e5e469b941696f1b3f89, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5587,6 +5867,57 @@ MonoBehaviour:
   speed: 0
   pathFind: 1
   doFloat: 0
+--- !u!114 &1197170748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0730368720d23479f8f782e46d149b0c, type: 3}
+  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 6
+  title: Enable or disable
+  description: Turns a Hotspot on or off. To record the state of a Hotspot in save
+    games, be sure to add the RememberHotspot script to the Hotspot in question.
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 1
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 0
+  skipAction: -1
+  skipActionActual: {fileID: 0}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 12
+    y: 422
+    width: 300
+    height: 122
+  nodeHeight: 0
+  parameterID: -1
+  constantID: 0
+  hotspot: {fileID: 1331739788}
+  affectChildren: 0
+  changeType: 1
 --- !u!114 &1204632061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5734,60 +6065,25 @@ Prefab:
       propertyPath: showInEditor
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
+      propertyPath: m_Offset.y
+      value: 0.01672095
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
+      propertyPath: m_Size.y
+      value: 1.8137594
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
+      propertyPath: m_Offset.x
+      value: -0.14491606
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
+      propertyPath: m_Size.x
+      value: 1.3790112
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1223113374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0730368720d23479f8f782e46d149b0c, type: 3}
-  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  id: 0
-  category: 6
-  title: Enable or disable
-  description: Turns a Hotspot on or off. To record the state of a Hotspot in save
-    games, be sure to add the RememberHotspot script to the Hotspot in question.
-  isDisplayed: 1
-  showComment: 0
-  comment: 
-  showOutputSockets: 1
-  numSockets: 1
-  willWait: 0
-  defaultPauseTime: 0.1
-  isRunning: 0
-  lastResult:
-    resultAction: 0
-    skipAction: -10
-    skipActionActual: {fileID: 0}
-    linkedCutscene: {fileID: 0}
-    linkedAsset: {fileID: 0}
-  endAction: 0
-  skipAction: 5
-  skipActionActual: {fileID: 1443051901}
-  linkedCutscene: {fileID: 0}
-  linkedAsset: {fileID: 0}
-  isEnabled: 1
-  isAssetFile: 0
-  isMarked: 0
-  isBreakPoint: 0
-  nodeRect:
-    serializedVersion: 2
-    x: 30
-    y: 756
-    width: 300
-    height: 122
-  nodeHeight: 0
-  parameterID: -1
-  constantID: 0
-  hotspot: {fileID: 406438314}
-  affectChildren: 0
-  changeType: 1
 --- !u!114 &1223237187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5928,118 +6224,6 @@ MonoBehaviour:
   obToMove: {fileID: 0}
   teleporter: {fileID: 370614685}
   copyRotation: 0
---- !u!114 &1247992543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0730368720d23479f8f782e46d149b0c, type: 3}
-  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  id: 0
-  category: 6
-  title: Enable or disable
-  description: Turns a Hotspot on or off. To record the state of a Hotspot in save
-    games, be sure to add the RememberHotspot script to the Hotspot in question.
-  isDisplayed: 1
-  showComment: 0
-  comment: 
-  showOutputSockets: 1
-  numSockets: 1
-  willWait: 0
-  defaultPauseTime: 0.1
-  isRunning: 0
-  lastResult:
-    resultAction: 0
-    skipAction: -10
-    skipActionActual: {fileID: 0}
-    linkedCutscene: {fileID: 0}
-    linkedAsset: {fileID: 0}
-  endAction: 2
-  skipAction: 10
-  skipActionActual: {fileID: 1310524654}
-  linkedCutscene: {fileID: 0}
-  linkedAsset: {fileID: 0}
-  isEnabled: 1
-  isAssetFile: 0
-  isMarked: 0
-  isBreakPoint: 0
-  nodeRect:
-    serializedVersion: 2
-    x: 41
-    y: 1086
-    width: 300
-    height: 140
-  nodeHeight: 0
-  parameterID: -1
-  constantID: 0
-  hotspot: {fileID: 523973894}
-  affectChildren: 0
-  changeType: 0
---- !u!114 &1251082906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1d11677f69f745f88dbe9922511d53f, type: 3}
-  m_Name: (Clone)
-  m_EditorClassIdentifier: 
-  id: 0
-  category: 14
-  title: Switch
-  description: 'Moves the Player to a new scene. The scene must be listed in Unity''s
-    Build Settings. By default, the screen will cut to black during the transition,
-    but the last frame of the current scene can instead be overlayed. This allows
-    for cinematic effects: if the next scene fades in, it will cause a crossfade effect;
-    if the next scene doesn''t fade, it will cause a straight cut.'
-  isDisplayed: 1
-  showComment: 0
-  comment: 
-  showOutputSockets: 1
-  numSockets: 0
-  willWait: 0
-  defaultPauseTime: 0.1
-  isRunning: 0
-  lastResult:
-    resultAction: 0
-    skipAction: -10
-    skipActionActual: {fileID: 0}
-    linkedCutscene: {fileID: 0}
-    linkedAsset: {fileID: 0}
-  endAction: 1
-  skipAction: -1
-  skipActionActual: {fileID: 0}
-  linkedCutscene: {fileID: 0}
-  linkedAsset: {fileID: 0}
-  isEnabled: 1
-  isAssetFile: 0
-  isMarked: 0
-  isBreakPoint: 0
-  nodeRect:
-    serializedVersion: 2
-    x: 14
-    y: 14
-    width: 300
-    height: 150
-  nodeHeight: 0
-  chooseSceneBy: 1
-  sceneNumber: 0
-  sceneNumberParameterID: -1
-  sceneName: DomZielarza
-  sceneNameParameterID: -1
-  assignScreenOverlay: 0
-  onlyPreload: 0
-  relativePosition: 0
-  relativeMarker: {fileID: 0}
-  relativeMarkerID: 0
-  relativeMarkerParameterID: -1
-  forceReload: 0
 --- !u!1 &1268355920
 GameObject:
   m_ObjectHideFlags: 0
@@ -6068,6 +6252,61 @@ Transform:
   m_Father: {fileID: 769713525}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1280736413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b3339a0ba7074d969436b88c517d06f, type: 3}
+  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 11
+  title: Add or remove
+  description: Instantiates or deletes GameObjects within the current scene. To ensure
+    this works with save games correctly, place any prefabs to be added in a Resources
+    asset folder.
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 1
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 1
+  skipAction: 14
+  skipActionActual: {fileID: 1280736413}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 678
+    y: 1671
+    width: 300
+    height: 122
+  nodeHeight: 0
+  gameObject: {fileID: 726715799}
+  parameterID: -1
+  constantID: 0
+  replaceGameObject: {fileID: 0}
+  replaceParameterID: -1
+  replaceConstantID: 0
+  invAction: 1
+  positionRelativeTo: 0
 --- !u!114 &1284250663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6560,6 +6799,61 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2454e47dbf358484bb5cfba10d699562, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1358331919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b3339a0ba7074d969436b88c517d06f, type: 3}
+  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 11
+  title: Add or remove
+  description: Instantiates or deletes GameObjects within the current scene. To ensure
+    this works with save games correctly, place any prefabs to be added in a Resources
+    asset folder.
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 1
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 1
+  skipAction: -1
+  skipActionActual: {fileID: 0}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 60
+    y: 643
+    width: 300
+    height: 122
+  nodeHeight: 0
+  gameObject: {fileID: 726715799}
+  parameterID: -1
+  constantID: 0
+  replaceGameObject: {fileID: 0}
+  replaceParameterID: -1
+  replaceConstantID: 0
+  invAction: 1
+  positionRelativeTo: 0
 --- !u!114 &1388129502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6946,57 +7240,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 08565f0c245ea4cb493de486dfcfe4e9, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1485050664
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0730368720d23479f8f782e46d149b0c, type: 3}
-  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  id: 0
-  category: 6
-  title: Enable or disable
-  description: Turns a Hotspot on or off. To record the state of a Hotspot in save
-    games, be sure to add the RememberHotspot script to the Hotspot in question.
-  isDisplayed: 1
-  showComment: 0
-  comment: 
-  showOutputSockets: 1
-  numSockets: 1
-  willWait: 0
-  defaultPauseTime: 0.1
-  isRunning: 0
-  lastResult:
-    resultAction: 0
-    skipAction: -10
-    skipActionActual: {fileID: 0}
-    linkedCutscene: {fileID: 0}
-    linkedAsset: {fileID: 0}
-  endAction: 2
-  skipAction: 2
-  skipActionActual: {fileID: 1204632061}
-  linkedCutscene: {fileID: 0}
-  linkedAsset: {fileID: 0}
-  isEnabled: 1
-  isAssetFile: 0
-  isMarked: 0
-  isBreakPoint: 0
-  nodeRect:
-    serializedVersion: 2
-    x: 18
-    y: 175
-    width: 300
-    height: 140
-  nodeHeight: 0
-  parameterID: -1
-  constantID: 0
-  hotspot: {fileID: 987809906}
-  affectChildren: 0
-  changeType: 1
 --- !u!1001 &1488927144
 Prefab:
   m_ObjectHideFlags: 0
@@ -7103,63 +7346,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1514473664
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0643024da91f402a9281e781736a4c6, type: 3}
-  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  id: 0
-  category: 2
-  title: Move to point
-  description: Moves a character to a given Marker object. By default, the character
-    will attempt to pathfind their way to the marker, but can optionally just move
-    in a straight line.
-  isDisplayed: 1
-  showComment: 0
-  comment: 
-  showOutputSockets: 1
-  numSockets: 1
-  willWait: 1
-  defaultPauseTime: 0.1
-  isRunning: 0
-  lastResult:
-    resultAction: 0
-    skipAction: -10
-    skipActionActual: {fileID: 0}
-    linkedCutscene: {fileID: 0}
-    linkedAsset: {fileID: 0}
-  endAction: 2
-  skipAction: 7
-  skipActionActual: {fileID: 998002878}
-  linkedCutscene: {fileID: 0}
-  linkedAsset: {fileID: 0}
-  isEnabled: 1
-  isAssetFile: 0
-  isMarked: 0
-  isBreakPoint: 0
-  nodeRect:
-    serializedVersion: 2
-    x: 651
-    y: 495
-    width: 300
-    height: 176
-  nodeHeight: 0
-  charToMoveParameterID: -1
-  markerParameterID: -1
-  charToMoveID: 0
-  markerID: 0
-  marker: {fileID: 254495758}
-  isPlayer: 1
-  charToMove: {fileID: 0}
-  speed: 0
-  pathFind: 1
-  doFloat: 0
 --- !u!114 &1517963688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7220,11 +7406,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4074747562938100, guid: c2276e14cf32182448655fe722339fde, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -3.63
+      value: -6.91
       objectReference: {fileID: 0}
     - target: {fileID: 4074747562938100, guid: c2276e14cf32182448655fe722339fde, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2.23
+      value: -2.14
       objectReference: {fileID: 0}
     - target: {fileID: 4074747562938100, guid: c2276e14cf32182448655fe722339fde, type: 2}
       propertyPath: m_LocalPosition.z
@@ -7266,9 +7452,66 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 0.049107
       objectReference: {fileID: 0}
+    - target: {fileID: 58098171048093160, guid: c2276e14cf32182448655fe722339fde,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: -0.00075125694
+      objectReference: {fileID: 0}
+    - target: {fileID: 58098171048093160, guid: c2276e14cf32182448655fe722339fde,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.30375266
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c2276e14cf32182448655fe722339fde, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1540139843 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
+  m_PrefabInternal: {fileID: 1140982991}
+--- !u!60 &1540139844
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1540139843}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.3412855, y: 1.5863948}
+      - {x: 0.4190229, y: 1.0157158}
+      - {x: 0.31145963, y: 1.247798}
+      - {x: 0.70038897, y: 2.4831762}
+      - {x: -0.11976329, y: 1.9972726}
+      - {x: -0.48194456, y: 1.3905857}
+      - {x: -0.5567038, y: 1.2594229}
+      - {x: -0.8419405, y: 1.4860759}
+      - {x: -1.4284012, y: 1.494547}
+      - {x: -1.4179823, y: -0.40510502}
+      - {x: -0.5877854, y: -0.57555443}
+      - {x: 0.42298812, y: -0.5480878}
+      - {x: 1.7210416, y: -0.3784774}
+      - {x: 2.040246, y: 0.2628185}
+      - {x: 1.6967423, y: -0.05832683}
+      - {x: 0.8530837, y: 0.025957808}
+      - {x: 1.2363358, y: 0.45957}
+      - {x: 1.7895428, y: 0.7587353}
+      - {x: 1.0197221, y: 0.55621344}
 --- !u!114 &1546329127 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11400000, guid: a9d4e17cb5a8745ccad47e11f075de33,
@@ -7279,7 +7522,7 @@ MonoBehaviour:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: a9d4e17cb5a8745ccad47e11f075de33, type: 2}
   m_PrefabInternal: {fileID: 1069907826}
---- !u!114 &1588817605
+--- !u!114 &1575051177
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -7287,15 +7530,92 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b3339a0ba7074d969436b88c517d06f, type: 3}
+  m_Script: {fileID: 11500000, guid: ed656dc9f403a441f8fe89408c7a7189, type: 3}
+  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 4
+  title: Play speech
+  description: "Makes a Character talk, or \u2013 if no Character is specified \u2013
+    displays a message. Subtitles only appear if they are enabled from the Options
+    menu. A 'thinking' effect can be produced by opting to not play any animation."
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 1
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 1
+  skipAction: 8
+  skipActionActual: {fileID: 1242586225}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 643
+    y: 702
+    width: 300
+    height: 228
+  nodeHeight: 0
+  constantID: 0
+  parameterID: -1
+  messageParameterID: -1
+  isPlayer: 1
+  speaker: {fileID: 0}
+  messageText: "Musz\u0119 znale\u017A\u0107 pozosta\u0142e sk\u0142adniki, mo\u017Ce
+    w tym lesie co\u015B znajd\u0119."
+  lineID: -1
+  multiLineIDs: 
+  isBackground: 0
+  noAnimation: 0
+  headClip: {fileID: 0}
+  mouthClip: {fileID: 0}
+  play2DHeadAnim: 0
+  headClip2D: 
+  headLayer: 0
+  play2DMouthAnim: 0
+  mouthClip2D: 
+  mouthLayer: 0
+  waitTimeOffset: 0
+--- !u!4 &1592817851 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400000, guid: 2454e47dbf358484bb5cfba10d699562, type: 2}
+  m_PrefabInternal: {fileID: 314795291}
+--- !u!114 &1592817852 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11400000, guid: 2454e47dbf358484bb5cfba10d699562,
+    type: 2}
+  m_PrefabInternal: {fileID: 314795291}
+  m_Script: {fileID: 11500000, guid: bbbbb3c8d2a7340dab40d45d6033e69e, type: 3}
+--- !u!114 &1604874259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed656dc9f403a441f8fe89408c7a7189, type: 3}
   m_Name: (Clone)(Clone)(Clone)(Clone)
   m_EditorClassIdentifier: 
   id: 0
-  category: 11
-  title: Add or remove
-  description: Instantiates or deletes GameObjects within the current scene. To ensure
-    this works with save games correctly, place any prefabs to be added in a Resources
-    asset folder.
+  category: 4
+  title: Play speech
+  description: "Makes a Character talk, or \u2013 if no Character is specified \u2013
+    displays a message. Subtitles only appear if they are enabled from the Options
+    menu. A 'thinking' effect can be produced by opting to not play any animation."
   isDisplayed: 1
   showComment: 0
   comment: 
@@ -7321,30 +7641,37 @@ MonoBehaviour:
   isBreakPoint: 0
   nodeRect:
     serializedVersion: 2
-    x: 60
-    y: 643
+    x: 15
+    y: 263
     width: 300
-    height: 122
+    height: 202
   nodeHeight: 0
-  gameObject: {fileID: 726715799}
-  parameterID: -1
   constantID: 0
-  replaceGameObject: {fileID: 0}
-  replaceParameterID: -1
-  replaceConstantID: 0
-  invAction: 1
-  positionRelativeTo: 0
---- !u!4 &1592817851 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 400000, guid: 2454e47dbf358484bb5cfba10d699562, type: 2}
-  m_PrefabInternal: {fileID: 314795291}
---- !u!114 &1592817852 stripped
+  parameterID: -1
+  messageParameterID: -1
+  isPlayer: 1
+  speaker: {fileID: 0}
+  messageText: "Poszed\u0142em zebra\u0107 troch\u0119 zi\xF3\u0142 - Zielarz"
+  lineID: -1
+  multiLineIDs: 
+  isBackground: 1
+  noAnimation: 0
+  headClip: {fileID: 0}
+  mouthClip: {fileID: 0}
+  play2DHeadAnim: 0
+  headClip2D: 
+  headLayer: 0
+  play2DMouthAnim: 0
+  mouthClip2D: 
+  mouthLayer: 0
+  waitTimeOffset: 0
+--- !u!114 &1627381124 stripped
 MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11400000, guid: 2454e47dbf358484bb5cfba10d699562,
+  m_PrefabParentObject: {fileID: 11400002, guid: ead02cb43d742407ba1be2b3ab274614,
     type: 2}
-  m_PrefabInternal: {fileID: 314795291}
-  m_Script: {fileID: 11500000, guid: bbbbb3c8d2a7340dab40d45d6033e69e, type: 3}
---- !u!114 &1593468649
+  m_PrefabInternal: {fileID: 1822310164}
+  m_Script: {fileID: 11500000, guid: ea52220853ef74eb1b84cc002ce3d474, type: 3}
+--- !u!114 &1631291087
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -7352,20 +7679,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0f86ace5fdd94f0a86553230ec9308f, type: 3}
-  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)
+  m_Script: {fileID: 11500000, guid: aac25eb7cbe8345d6baaf5efb8fc62e8, type: 3}
+  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
   m_EditorClassIdentifier: 
   id: 0
-  category: 17
-  title: Set
-  description: Sets the value of both Global and Local Variables, as declared in the
-    Variables Manager. Integers can be set to absolute, incremented or assigned a
-    random value. Strings can also be set to the value of a MenuInput element, while
-    Integers, Booleans and Floats can also be set to the value of a Mecanim parameter.
-    When setting Integers and Floats, you can also opt to type in a forumla (e.g.
-    2 + 3 *4), which can also include tokens of the form [var:ID] to denote the value
-    of a Variable, where ID is the unique number given to a Variable in the Variables
-    Manager.
+  category: 8
+  title: Add or remove
+  description: Adds or removes an item from the Player's inventory. Items are defined
+    in the Inventory Manager. If the player can carry multiple amounts of the item,
+    more options will show.
   isDisplayed: 1
   showComment: 0
   comment: 
@@ -7381,8 +7703,8 @@ MonoBehaviour:
     linkedCutscene: {fileID: 0}
     linkedAsset: {fileID: 0}
   endAction: 0
-  skipAction: 1
-  skipActionActual: {fileID: 1593468649}
+  skipAction: -1
+  skipActionActual: {fileID: 0}
   linkedCutscene: {fileID: 0}
   linkedAsset: {fileID: 0}
   isEnabled: 1
@@ -7391,36 +7713,20 @@ MonoBehaviour:
   isBreakPoint: 0
   nodeRect:
     serializedVersion: 2
-    x: 15
-    y: 269
+    x: 13
+    y: 263
     width: 300
-    height: 140
+    height: 104
   nodeHeight: 0
-  setVarMethod: 0
-  setVarMethodString: 0
-  setVarMethodIntBool: 0
+  invAction: 1
   parameterID: -1
-  variableID: 2
-  variableNumber: 3
-  setParameterID: -1
-  slotNumber: 0
-  slotNumberParameterID: -1
-  intValue: 0
-  floatValue: 0
-  boolValue: 0
-  stringValue: 
-  formula: 
-  location: 0
-  menuName: 
-  elementName: 
-  animator: {fileID: 0}
-  parameterName: 
---- !u!114 &1627381124 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11400002, guid: ead02cb43d742407ba1be2b3ab274614,
-    type: 2}
-  m_PrefabInternal: {fileID: 1822310164}
-  m_Script: {fileID: 11500000, guid: ea52220853ef74eb1b84cc002ce3d474, type: 3}
+  invID: 0
+  replaceParameterID: -1
+  invIDReplace: 0
+  setAmount: 0
+  amount: 1
+  setPlayer: 0
+  playerID: 0
 --- !u!1001 &1633365023
 Prefab:
   m_ObjectHideFlags: 0
@@ -7428,14 +7734,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1415164799}
     m_Modifications:
-    - target: {fileID: 11400000, guid: df6617b17b90944fea6abc4a44f0e13b, type: 2}
-      propertyPath: actions.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: df6617b17b90944fea6abc4a44f0e13b, type: 2}
-      propertyPath: parameters.Array.size
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: df6617b17b90944fea6abc4a44f0e13b, type: 2}
       propertyPath: m_LocalPosition.x
       value: -1.19
@@ -7468,74 +7766,26 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: df6617b17b90944fea6abc4a44f0e13b, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1.3448064
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: df6617b17b90944fea6abc4a44f0e13b, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1.3448051
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: df6617b17b90944fea6abc4a44f0e13b, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1.3448051
-      objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: df6617b17b90944fea6abc4a44f0e13b, type: 2}
       propertyPath: actions.Array.data[0]
       value: 
-      objectReference: {fileID: 999740129}
-    - target: {fileID: 11400000, guid: df6617b17b90944fea6abc4a44f0e13b, type: 2}
-      propertyPath: triggerReacts
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: df6617b17b90944fea6abc4a44f0e13b, type: 2}
-      propertyPath: useParameters
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: df6617b17b90944fea6abc4a44f0e13b, type: 2}
-      propertyPath: parameters.Array.data[0].label
-      value: Collision object
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: df6617b17b90944fea6abc4a44f0e13b, type: 2}
-      propertyPath: parameters.Array.data[0].intValue
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: df6617b17b90944fea6abc4a44f0e13b, type: 2}
-      propertyPath: detects
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: df6617b17b90944fea6abc4a44f0e13b, type: 2}
-      propertyPath: isSkippable
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: df6617b17b90944fea6abc4a44f0e13b, type: 2}
-      propertyPath: actionListType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: df6617b17b90944fea6abc4a44f0e13b, type: 2}
-      propertyPath: triggerType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: df6617b17b90944fea6abc4a44f0e13b, type: 2}
-      propertyPath: cancelInteractions
-      value: 1
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 295156734}
     - target: {fileID: 11400000, guid: df6617b17b90944fea6abc4a44f0e13b, type: 2}
       propertyPath: actions.Array.data[1]
       value: 
-      objectReference: {fileID: 2098226836}
+      objectReference: {fileID: 1851428924}
+    - target: {fileID: 11400000, guid: df6617b17b90944fea6abc4a44f0e13b, type: 2}
+      propertyPath: actions.Array.data[2]
+      value: 
+      objectReference: {fileID: 1661007117}
+    - target: {fileID: 11400000, guid: df6617b17b90944fea6abc4a44f0e13b, type: 2}
+      propertyPath: actions.Array.data[3]
+      value: 
+      objectReference: {fileID: 1358331919}
     - target: {fileID: 100000, guid: df6617b17b90944fea6abc4a44f0e13b, type: 2}
       propertyPath: m_Name
       value: ZaskoTrigger
       objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: df6617b17b90944fea6abc4a44f0e13b, type: 2}
-      propertyPath: actions.Array.data[2]
-      value: 
-      objectReference: {fileID: 948123963}
-    - target: {fileID: 11400000, guid: df6617b17b90944fea6abc4a44f0e13b, type: 2}
-      propertyPath: actions.Array.data[3]
-      value: 
-      objectReference: {fileID: 324476025}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: df6617b17b90944fea6abc4a44f0e13b, type: 2}
   m_IsPrefabParent: 0
@@ -7633,7 +7883,211 @@ MonoBehaviour:
   mouthClip2D: 
   mouthLayer: 0
   waitTimeOffset: 0
---- !u!114 &1671027454
+--- !u!114 &1661007117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdaacaae7eb224bd2b2b6d336bb7b1a8, type: 3}
+  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 17
+  title: Check
+  description: Queries the value of both Global and Local Variables declared in the
+    Variables Manager. Variables can be compared with a fixed value, or with the values
+    of other Variables.
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 2
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 1
+  skipAction: -1
+  skipActionActual: {fileID: 0}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 6
+    y: 446
+    width: 300
+    height: 158
+  nodeHeight: 0
+  resultActionTrue: 0
+  skipActionTrue: -1
+  skipActionTrueActual: {fileID: 0}
+  linkedCutsceneTrue: {fileID: 0}
+  linkedAssetTrue: {fileID: 0}
+  resultActionFail: 1
+  skipActionFail: -1
+  skipActionFailActual: {fileID: 0}
+  linkedCutsceneFail: {fileID: 0}
+  linkedAssetFail: {fileID: 0}
+  parameterID: -1
+  variableID: 0
+  variableNumber: 0
+  checkParameterID: -1
+  getVarMethod: 0
+  compareVariableID: 0
+  intValue: 0
+  floatValue: 0
+  intCondition: 0
+  isAdditive: 0
+  boolValue: 0
+  boolCondition: 0
+  stringValue: 
+  checkCase: 1
+  location: 0
+--- !u!114 &1676251359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed656dc9f403a441f8fe89408c7a7189, type: 3}
+  m_Name: (Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 4
+  title: Play speech
+  description: "Makes a Character talk, or \u2013 if no Character is specified \u2013
+    displays a message. Subtitles only appear if they are enabled from the Options
+    menu. A 'thinking' effect can be produced by opting to not play any animation."
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 1
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 1
+  skipAction: -1
+  skipActionActual: {fileID: 0}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 10
+    y: 480
+    width: 300
+    height: 202
+  nodeHeight: 0
+  constantID: 0
+  parameterID: -1
+  messageParameterID: -1
+  isPlayer: 1
+  speaker: {fileID: 0}
+  messageText: "To mo\u017Ce si\u0119 do czego\u015B przyda\u0107."
+  lineID: -1
+  multiLineIDs: 
+  isBackground: 1
+  noAnimation: 0
+  headClip: {fileID: 0}
+  mouthClip: {fileID: 0}
+  play2DHeadAnim: 0
+  headClip2D: 
+  headLayer: 0
+  play2DMouthAnim: 0
+  mouthClip2D: 
+  mouthLayer: 0
+  waitTimeOffset: 0
+--- !u!114 &1706124036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed656dc9f403a441f8fe89408c7a7189, type: 3}
+  m_Name: (Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 4
+  title: Play speech
+  description: "Makes a Character talk, or \u2013 if no Character is specified \u2013
+    displays a message. Subtitles only appear if they are enabled from the Options
+    menu. A 'thinking' effect can be produced by opting to not play any animation."
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 1
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 0
+  skipAction: -1
+  skipActionActual: {fileID: 0}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 14
+    y: 14
+    width: 300
+    height: 202
+  nodeHeight: 0
+  constantID: 0
+  parameterID: -1
+  messageParameterID: -1
+  isPlayer: 1
+  speaker: {fileID: 0}
+  messageText: "Nie da si\u0119 otworzy\u0107."
+  lineID: -1
+  multiLineIDs: 
+  isBackground: 0
+  noAnimation: 0
+  headClip: {fileID: 0}
+  mouthClip: {fileID: 0}
+  play2DHeadAnim: 0
+  headClip2D: 
+  headLayer: 0
+  play2DMouthAnim: 0
+  mouthClip2D: 
+  mouthLayer: 0
+  waitTimeOffset: 0
+--- !u!114 &1706372903
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -7858,7 +8312,7 @@ MonoBehaviour:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 08565f0c245ea4cb493de486dfcfe4e9, type: 2}
   m_PrefabInternal: {fileID: 1481746210}
---- !u!114 &1736553211
+--- !u!114 &1748324553
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -7866,82 +8320,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed656dc9f403a441f8fe89408c7a7189, type: 3}
-  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
+  m_Script: {fileID: 11500000, guid: aac25eb7cbe8345d6baaf5efb8fc62e8, type: 3}
+  m_Name: (Clone)(Clone)(Clone)
   m_EditorClassIdentifier: 
   id: 0
-  category: 4
-  title: Play speech
-  description: "Makes a Character talk, or \u2013 if no Character is specified \u2013
-    displays a message. Subtitles only appear if they are enabled from the Options
-    menu. A 'thinking' effect can be produced by opting to not play any animation."
-  isDisplayed: 1
-  showComment: 0
-  comment: 
-  showOutputSockets: 1
-  numSockets: 1
-  willWait: 0
-  defaultPauseTime: 0.1
-  isRunning: 0
-  lastResult:
-    resultAction: 0
-    skipAction: -10
-    skipActionActual: {fileID: 0}
-    linkedCutscene: {fileID: 0}
-    linkedAsset: {fileID: 0}
-  endAction: 1
-  skipAction: 8
-  skipActionActual: {fileID: 1242586225}
-  linkedCutscene: {fileID: 0}
-  linkedAsset: {fileID: 0}
-  isEnabled: 1
-  isAssetFile: 0
-  isMarked: 0
-  isBreakPoint: 0
-  nodeRect:
-    serializedVersion: 2
-    x: 643
-    y: 702
-    width: 300
-    height: 228
-  nodeHeight: 0
-  constantID: 0
-  parameterID: -1
-  messageParameterID: -1
-  isPlayer: 1
-  speaker: {fileID: 0}
-  messageText: "Musz\u0119 znale\u017A\u0107 pozosta\u0142e sk\u0142adniki, mo\u017Ce
-    w tym lesie co\u015B znajd\u0119."
-  lineID: -1
-  multiLineIDs: 
-  isBackground: 0
-  noAnimation: 0
-  headClip: {fileID: 0}
-  mouthClip: {fileID: 0}
-  play2DHeadAnim: 0
-  headClip2D: 
-  headLayer: 0
-  play2DMouthAnim: 0
-  mouthClip2D: 
-  mouthLayer: 0
-  waitTimeOffset: 0
---- !u!114 &1750471033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed656dc9f403a441f8fe89408c7a7189, type: 3}
-  m_Name: (Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  id: 0
-  category: 4
-  title: Play speech
-  description: "Makes a Character talk, or \u2013 if no Character is specified \u2013
-    displays a message. Subtitles only appear if they are enabled from the Options
-    menu. A 'thinking' effect can be produced by opting to not play any animation."
+  category: 8
+  title: Add or remove
+  description: Adds or removes an item from the Player's inventory. Items are defined
+    in the Inventory Manager. If the player can carry multiple amounts of the item,
+    more options will show.
   isDisplayed: 1
   showComment: 0
   comment: 
@@ -7967,30 +8354,20 @@ MonoBehaviour:
   isBreakPoint: 0
   nodeRect:
     serializedVersion: 2
-    x: 14
-    y: 14
+    x: 18
+    y: 257
     width: 300
-    height: 202
+    height: 104
   nodeHeight: 0
-  constantID: 0
+  invAction: 1
   parameterID: -1
-  messageParameterID: -1
-  isPlayer: 1
-  speaker: {fileID: 0}
-  messageText: "To na pewno nie jest \u017Caden ze sk\u0142adnik\xF3w."
-  lineID: -1
-  multiLineIDs: 
-  isBackground: 0
-  noAnimation: 0
-  headClip: {fileID: 0}
-  mouthClip: {fileID: 0}
-  play2DHeadAnim: 0
-  headClip2D: 
-  headLayer: 0
-  play2DMouthAnim: 0
-  mouthClip2D: 
-  mouthLayer: 0
-  waitTimeOffset: 0
+  invID: 1
+  replaceParameterID: -1
+  invIDReplace: 0
+  setAmount: 0
+  amount: 1
+  setPlayer: 0
+  playerID: 0
 --- !u!1 &1753956896
 GameObject:
   m_ObjectHideFlags: 0
@@ -8095,129 +8472,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1761523480}
   m_Script: {fileID: 11500000, guid: 6a1e6413216104fd580c7ce85907039c, type: 3}
---- !u!114 &1762227763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0730368720d23479f8f782e46d149b0c, type: 3}
-  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  id: 0
-  category: 6
-  title: Enable or disable
-  description: Turns a Hotspot on or off. To record the state of a Hotspot in save
-    games, be sure to add the RememberHotspot script to the Hotspot in question.
-  isDisplayed: 1
-  showComment: 0
-  comment: 
-  showOutputSockets: 1
-  numSockets: 1
-  willWait: 0
-  defaultPauseTime: 0.1
-  isRunning: 0
-  lastResult:
-    resultAction: 0
-    skipAction: -10
-    skipActionActual: {fileID: 0}
-    linkedCutscene: {fileID: 0}
-    linkedAsset: {fileID: 0}
-  endAction: 2
-  skipAction: 5
-  skipActionActual: {fileID: 610129284}
-  linkedCutscene: {fileID: 0}
-  linkedAsset: {fileID: 0}
-  isEnabled: 1
-  isAssetFile: 0
-  isMarked: 0
-  isBreakPoint: 0
-  nodeRect:
-    serializedVersion: 2
-    x: 9
-    y: 606
-    width: 300
-    height: 140
-  nodeHeight: 0
-  parameterID: -1
-  constantID: 0
-  hotspot: {fileID: 523973894}
-  affectChildren: 0
-  changeType: 0
---- !u!114 &1765411830
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdaacaae7eb224bd2b2b6d336bb7b1a8, type: 3}
-  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  id: 0
-  category: 17
-  title: Check
-  description: Queries the value of both Global and Local Variables declared in the
-    Variables Manager. Variables can be compared with a fixed value, or with the values
-    of other Variables.
-  isDisplayed: 1
-  showComment: 0
-  comment: 
-  showOutputSockets: 1
-  numSockets: 2
-  willWait: 0
-  defaultPauseTime: 0.1
-  isRunning: 0
-  lastResult:
-    resultAction: 0
-    skipAction: -10
-    skipActionActual: {fileID: 0}
-    linkedCutscene: {fileID: 0}
-    linkedAsset: {fileID: 0}
-  endAction: 1
-  skipAction: -1
-  skipActionActual: {fileID: 0}
-  linkedCutscene: {fileID: 0}
-  linkedAsset: {fileID: 0}
-  isEnabled: 1
-  isAssetFile: 0
-  isMarked: 0
-  isBreakPoint: 0
-  nodeRect:
-    serializedVersion: 2
-    x: 679
-    y: 1472
-    width: 300
-    height: 158
-  nodeHeight: 0
-  resultActionTrue: 0
-  skipActionTrue: -1
-  skipActionTrueActual: {fileID: 0}
-  linkedCutsceneTrue: {fileID: 0}
-  linkedAssetTrue: {fileID: 0}
-  resultActionFail: 1
-  skipActionFail: -1
-  skipActionFailActual: {fileID: 0}
-  linkedCutsceneFail: {fileID: 0}
-  linkedAssetFail: {fileID: 0}
-  parameterID: -1
-  variableID: 2
-  variableNumber: 3
-  checkParameterID: -1
-  getVarMethod: 0
-  compareVariableID: 0
-  intValue: 0
-  floatValue: 0
-  intCondition: 0
-  isAdditive: 0
-  boolValue: 0
-  boolCondition: 0
-  stringValue: 
-  checkCase: 1
-  location: 0
 --- !u!114 &1788389772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8296,6 +8550,22 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 972359727}
     m_Modifications:
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: polygonColliderHoles.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.size
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[1].Array.size
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -8334,47 +8604,315 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].x
-      value: -5.695949
+      value: 0.68266636
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].y
-      value: -2.8899832
+      value: -1.8164219
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[4].y
-      value: -2.096034
+      value: -1.9022194
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[4].x
-      value: -5.6654134
+      value: 2.207295
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].x
-      value: 5.6788917
+      value: -0.30014908
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].y
-      value: -2.6511838
+      value: -1.7398795
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].x
-      value: 5.704011
+      value: -1.1517115
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].y
-      value: -1.8401778
+      value: -1.663537
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
-      value: 0.81874096
+      value: -1.8936523
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].y
-      value: -1.660908
+      value: -1.8170401
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
       propertyPath: showInEditor
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[5].x
+      value: 2.149987
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[5].y
+      value: -2.317103
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[6].x
+      value: 3.1962461
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[6].y
+      value: -2.3995385
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[7].x
+      value: 3.785772
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[7].y
+      value: -2.270241
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[8].x
+      value: 3.9810116
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[8].y
+      value: -2.0075078
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[9].x
+      value: 5.567936
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[9].y
+      value: -2.0345702
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[10].x
+      value: 5.5622563
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[10].y
+      value: -3.2343607
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[11].x
+      value: 5.077119
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[11].y
+      value: -3.221756
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[12].x
+      value: 4.948321
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[12].y
+      value: -2.793114
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[13].x
+      value: 3.3201792
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[13].y
+      value: -2.6926076
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[14].x
+      value: 3.053924
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[14].y
+      value: -3.208721
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[15].x
+      value: 2.2843769
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[15].y
+      value: -3.2099426
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[16].x
+      value: 2.0518792
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[16].y
+      value: -2.7541528
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[17].x
+      value: 0.61406577
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[17].y
+      value: -2.6315174
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[18].x
+      value: -0.8805643
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[18].y
+      value: -2.7703152
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[19].x
+      value: -0.63002163
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[19].y
+      value: -3.158765
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[20].x
+      value: -5.4238005
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[20].y
+      value: -3.142694
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[21].x
+      value: -5.374091
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[21].y
+      value: -1.8369946
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[22].x
+      value: -5.2377505
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[22].y
+      value: -1.8238853
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: polygonColliderHoles.Array.data[0]
+      value: 
+      objectReference: {fileID: 663314645}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[1].Array.data[0].x
+      value: -2.4828243
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[1].Array.data[0].y
+      value: -2.2673755
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[1].Array.data[1].x
+      value: -3.010572
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[1].Array.data[1].y
+      value: -2.2966108
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[1].Array.data[2].x
+      value: -3.8269627
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[1].Array.data[2].y
+      value: -2.5287244
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[1].Array.data[3].x
+      value: -3.814185
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[1].Array.data[3].y
+      value: -2.9846056
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[1].Array.data[4].x
+      value: -2.5503025
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[1].Array.data[4].y
+      value: -3.0063064
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[1].Array.data[5].x
+      value: -1.5456498
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[1].Array.data[5].y
+      value: -2.986048
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[23].x
+      value: -5.2377505
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[23].y
+      value: -1.8238853
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[24].x
+      value: -5.2377505
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[24].y
+      value: -1.8238853
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[25].x
+      value: -5.2377505
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[25].y
+      value: -1.8238853
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[26].x
+      value: -5.2377505
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[26].y
+      value: -1.8238853
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[27].x
+      value: -5.2377505
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[27].y
+      value: -1.8238853
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[28].x
+      value: -5.2377505
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[28].y
+      value: -1.8238853
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[29].x
+      value: -5.2377505
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[29].y
+      value: -1.8238853
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[30].x
+      value: -5.2377505
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[30].y
+      value: -1.8238853
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[1].Array.data[6].x
+      value: -1.5513681
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[1].Array.data[6].y
+      value: -2.593925
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ead02cb43d742407ba1be2b3ab274614, type: 2}
@@ -8566,6 +9104,77 @@ MonoBehaviour:
   hotspot: {fileID: 1914303854}
   affectChildren: 0
   changeType: 1
+--- !u!114 &1851428924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0f86ace5fdd94f0a86553230ec9308f, type: 3}
+  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 17
+  title: Set
+  description: Sets the value of both Global and Local Variables, as declared in the
+    Variables Manager. Integers can be set to absolute, incremented or assigned a
+    random value. Strings can also be set to the value of a MenuInput element, while
+    Integers, Booleans and Floats can also be set to the value of a Mecanim parameter.
+    When setting Integers and Floats, you can also opt to type in a forumla (e.g.
+    2 + 3 *4), which can also include tokens of the form [var:ID] to denote the value
+    of a Variable, where ID is the unique number given to a Variable in the Variables
+    Manager.
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 1
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 0
+  skipAction: 1
+  skipActionActual: {fileID: 1851428924}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 15
+    y: 269
+    width: 300
+    height: 140
+  nodeHeight: 0
+  setVarMethod: 0
+  setVarMethodString: 0
+  setVarMethodIntBool: 0
+  parameterID: -1
+  variableID: 2
+  variableNumber: 3
+  setParameterID: -1
+  slotNumber: 0
+  slotNumberParameterID: -1
+  intValue: 0
+  floatValue: 0
+  boolValue: 0
+  stringValue: 
+  formula: 
+  location: 0
+  menuName: 
+  elementName: 
+  animator: {fileID: 0}
+  parameterName: 
 --- !u!1001 &1856597544
 Prefab:
   m_ObjectHideFlags: 0
@@ -8668,6 +9277,22 @@ Prefab:
     - target: {fileID: 11400000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
       propertyPath: showInEditor
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
+      propertyPath: m_Offset.y
+      value: 0.1647304
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
+      propertyPath: m_Size.y
+      value: 0.5083438
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
+      propertyPath: m_Offset.x
+      value: -0.15459299
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
+      propertyPath: m_Size.x
+      value: 0.690814
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 91d6ab39027244ea689b8f0ec9b5b548, type: 2}
@@ -8818,6 +9443,72 @@ MonoBehaviour:
   mouthClip2D: 
   mouthLayer: 0
   waitTimeOffset: 0
+--- !u!114 &1883089704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed656dc9f403a441f8fe89408c7a7189, type: 3}
+  m_Name: (Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 4
+  title: Play speech
+  description: "Makes a Character talk, or \u2013 if no Character is specified \u2013
+    displays a message. Subtitles only appear if they are enabled from the Options
+    menu. A 'thinking' effect can be produced by opting to not play any animation."
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 1
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 2
+  skipAction: 4
+  skipActionActual: {fileID: 1788389772}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 20
+    y: 1184
+    width: 300
+    height: 202
+  nodeHeight: 0
+  constantID: 0
+  parameterID: -1
+  messageParameterID: -1
+  isPlayer: 1
+  speaker: {fileID: 0}
+  messageText: Klamka pasuje.
+  lineID: -1
+  multiLineIDs: 
+  isBackground: 0
+  noAnimation: 0
+  headClip: {fileID: 0}
+  mouthClip: {fileID: 0}
+  play2DHeadAnim: 0
+  headClip2D: 
+  headLayer: 0
+  play2DMouthAnim: 0
+  mouthClip2D: 
+  mouthLayer: 0
+  waitTimeOffset: 0
 --- !u!1001 &1902571693
 Prefab:
   m_ObjectHideFlags: 0
@@ -8860,144 +9551,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 68335a8cdb8f6854e82edff67fb6b208, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1905870712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed656dc9f403a441f8fe89408c7a7189, type: 3}
-  m_Name: (Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  id: 0
-  category: 4
-  title: Play speech
-  description: "Makes a Character talk, or \u2013 if no Character is specified \u2013
-    displays a message. Subtitles only appear if they are enabled from the Options
-    menu. A 'thinking' effect can be produced by opting to not play any animation."
-  isDisplayed: 1
-  showComment: 0
-  comment: 
-  showOutputSockets: 1
-  numSockets: 1
-  willWait: 0
-  defaultPauseTime: 0.1
-  isRunning: 0
-  lastResult:
-    resultAction: 0
-    skipAction: -10
-    skipActionActual: {fileID: 0}
-    linkedCutscene: {fileID: 0}
-    linkedAsset: {fileID: 0}
-  endAction: 1
-  skipAction: -1
-  skipActionActual: {fileID: 0}
-  linkedCutscene: {fileID: 0}
-  linkedAsset: {fileID: 0}
-  isEnabled: 1
-  isAssetFile: 0
-  isMarked: 0
-  isBreakPoint: 0
-  nodeRect:
-    serializedVersion: 2
-    x: 15
-    y: 263
-    width: 300
-    height: 202
-  nodeHeight: 0
-  constantID: 0
-  parameterID: -1
-  messageParameterID: -1
-  isPlayer: 1
-  speaker: {fileID: 0}
-  messageText: "Poszed\u0142em zebra\u0107 troch\u0119 zi\xF3\u0142 - Zielarz"
-  lineID: -1
-  multiLineIDs: 
-  isBackground: 1
-  noAnimation: 0
-  headClip: {fileID: 0}
-  mouthClip: {fileID: 0}
-  play2DHeadAnim: 0
-  headClip2D: 
-  headLayer: 0
-  play2DMouthAnim: 0
-  mouthClip2D: 
-  mouthLayer: 0
-  waitTimeOffset: 0
 --- !u!114 &1914303854 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11400000, guid: 91d6ab39027244ea689b8f0ec9b5b548,
     type: 2}
   m_PrefabInternal: {fileID: 326742706}
   m_Script: {fileID: 11500000, guid: 1b7c3ce72f27144c1be5a4a8ce09121d, type: 3}
---- !u!114 &1924623774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed656dc9f403a441f8fe89408c7a7189, type: 3}
-  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  id: 0
-  category: 4
-  title: Play speech
-  description: "Makes a Character talk, or \u2013 if no Character is specified \u2013
-    displays a message. Subtitles only appear if they are enabled from the Options
-    menu. A 'thinking' effect can be produced by opting to not play any animation."
-  isDisplayed: 1
-  showComment: 0
-  comment: 
-  showOutputSockets: 1
-  numSockets: 1
-  willWait: 0
-  defaultPauseTime: 0.1
-  isRunning: 0
-  lastResult:
-    resultAction: 0
-    skipAction: -10
-    skipActionActual: {fileID: 0}
-    linkedCutscene: {fileID: 0}
-    linkedAsset: {fileID: 0}
-  endAction: 0
-  skipAction: -1
-  skipActionActual: {fileID: 0}
-  linkedCutscene: {fileID: 0}
-  linkedAsset: {fileID: 0}
-  isEnabled: 1
-  isAssetFile: 0
-  isMarked: 0
-  isBreakPoint: 0
-  nodeRect:
-    serializedVersion: 2
-    x: 14
-    y: 14
-    width: 300
-    height: 202
-  nodeHeight: 0
-  constantID: 0
-  parameterID: -1
-  messageParameterID: -1
-  isPlayer: 1
-  speaker: {fileID: 0}
-  messageText: Zobaczmy czy pasuje.
-  lineID: -1
-  multiLineIDs: 
-  isBackground: 0
-  noAnimation: 0
-  headClip: {fileID: 0}
-  mouthClip: {fileID: 0}
-  play2DHeadAnim: 0
-  headClip2D: 
-  headLayer: 0
-  play2DMouthAnim: 0
-  mouthClip2D: 
-  mouthLayer: 0
-  waitTimeOffset: 0
 --- !u!114 &1932421044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9300,7 +9859,7 @@ Transform:
   m_Father: {fileID: 1299007727}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1971229295
+--- !u!114 &1971697467
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -9308,14 +9867,76 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0730368720d23479f8f782e46d149b0c, type: 3}
-  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)
+  m_Script: {fileID: 11500000, guid: f1d11677f69f745f88dbe9922511d53f, type: 3}
+  m_Name: (Clone)
   m_EditorClassIdentifier: 
   id: 0
-  category: 6
-  title: Enable or disable
-  description: Turns a Hotspot on or off. To record the state of a Hotspot in save
-    games, be sure to add the RememberHotspot script to the Hotspot in question.
+  category: 14
+  title: Switch
+  description: 'Moves the Player to a new scene. The scene must be listed in Unity''s
+    Build Settings. By default, the screen will cut to black during the transition,
+    but the last frame of the current scene can instead be overlayed. This allows
+    for cinematic effects: if the next scene fades in, it will cause a crossfade effect;
+    if the next scene doesn''t fade, it will cause a straight cut.'
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  showOutputSockets: 1
+  numSockets: 0
+  willWait: 0
+  defaultPauseTime: 0.1
+  isRunning: 0
+  lastResult:
+    resultAction: 0
+    skipAction: -10
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  endAction: 1
+  skipAction: -1
+  skipActionActual: {fileID: 0}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isMarked: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 14
+    y: 14
+    width: 300
+    height: 150
+  nodeHeight: 0
+  chooseSceneBy: 1
+  sceneNumber: 0
+  sceneNumberParameterID: -1
+  sceneName: DomZielarza
+  sceneNameParameterID: -1
+  assignScreenOverlay: 0
+  onlyPreload: 0
+  relativePosition: 0
+  relativeMarker: {fileID: 0}
+  relativeMarkerID: 0
+  relativeMarkerParameterID: -1
+  forceReload: 0
+--- !u!114 &1985075234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed656dc9f403a441f8fe89408c7a7189, type: 3}
+  m_Name: (Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 4
+  title: Play speech
+  description: "Makes a Character talk, or \u2013 if no Character is specified \u2013
+    displays a message. Subtitles only appear if they are enabled from the Options
+    menu. A 'thinking' effect can be produced by opting to not play any animation."
   isDisplayed: 1
   showComment: 0
   comment: 
@@ -9341,16 +9962,30 @@ MonoBehaviour:
   isBreakPoint: 0
   nodeRect:
     serializedVersion: 2
-    x: 12
-    y: 184
+    x: 14
+    y: 14
     width: 300
-    height: 122
+    height: 202
   nodeHeight: 0
-  parameterID: -1
   constantID: 0
-  hotspot: {fileID: 406438314}
-  affectChildren: 0
-  changeType: 1
+  parameterID: -1
+  messageParameterID: -1
+  isPlayer: 1
+  speaker: {fileID: 0}
+  messageText: "To na pewno nie jest \u017Caden ze sk\u0142adnik\xF3w."
+  lineID: -1
+  multiLineIDs: 
+  isBackground: 0
+  noAnimation: 0
+  headClip: {fileID: 0}
+  mouthClip: {fileID: 0}
+  play2DHeadAnim: 0
+  headClip2D: 
+  headLayer: 0
+  play2DMouthAnim: 0
+  mouthClip2D: 
+  mouthLayer: 0
+  waitTimeOffset: 0
 --- !u!114 &1995056235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9423,72 +10058,6 @@ MonoBehaviour:
   stringValue: 
   checkCase: 1
   location: 0
---- !u!114 &2021966382
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed656dc9f403a441f8fe89408c7a7189, type: 3}
-  m_Name: (Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  id: 0
-  category: 4
-  title: Play speech
-  description: "Makes a Character talk, or \u2013 if no Character is specified \u2013
-    displays a message. Subtitles only appear if they are enabled from the Options
-    menu. A 'thinking' effect can be produced by opting to not play any animation."
-  isDisplayed: 1
-  showComment: 0
-  comment: 
-  showOutputSockets: 1
-  numSockets: 1
-  willWait: 0
-  defaultPauseTime: 0.1
-  isRunning: 0
-  lastResult:
-    resultAction: 0
-    skipAction: -10
-    skipActionActual: {fileID: 0}
-    linkedCutscene: {fileID: 0}
-    linkedAsset: {fileID: 0}
-  endAction: 0
-  skipAction: -1
-  skipActionActual: {fileID: 0}
-  linkedCutscene: {fileID: 0}
-  linkedAsset: {fileID: 0}
-  isEnabled: 1
-  isAssetFile: 0
-  isMarked: 0
-  isBreakPoint: 0
-  nodeRect:
-    serializedVersion: 2
-    x: 14
-    y: 14
-    width: 300
-    height: 202
-  nodeHeight: 0
-  constantID: 0
-  parameterID: -1
-  messageParameterID: -1
-  isPlayer: 1
-  speaker: {fileID: 0}
-  messageText: Drzwi otwarte
-  lineID: -1
-  multiLineIDs: 
-  isBackground: 0
-  noAnimation: 0
-  headClip: {fileID: 0}
-  mouthClip: {fileID: 0}
-  play2DHeadAnim: 0
-  headClip2D: 
-  headLayer: 0
-  play2DMouthAnim: 0
-  mouthClip2D: 
-  mouthLayer: 0
-  waitTimeOffset: 0
 --- !u!1 &2023983376
 GameObject:
   m_ObjectHideFlags: 0
@@ -9617,113 +10186,6 @@ MonoBehaviour:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 6ea1e18e6eb914b02a9ad3f5f366edc5, type: 2}
   m_PrefabInternal: {fileID: 828500715}
---- !u!114 &2048322906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d33593da7d3524e1998da7151086b1b3, type: 3}
-  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  id: 0
-  category: 11
-  title: Visibility
-  description: Hides or shows a GameObject. Can optionally affect the GameObject's
-    children.
-  isDisplayed: 1
-  showComment: 0
-  comment: 
-  showOutputSockets: 1
-  numSockets: 1
-  willWait: 0
-  defaultPauseTime: 0.1
-  isRunning: 0
-  lastResult:
-    resultAction: 0
-    skipAction: -10
-    skipActionActual: {fileID: 0}
-    linkedCutscene: {fileID: 0}
-    linkedAsset: {fileID: 0}
-  endAction: 0
-  skipAction: 4
-  skipActionActual: {fileID: 511135525}
-  linkedCutscene: {fileID: 0}
-  linkedAsset: {fileID: 0}
-  isEnabled: 1
-  isAssetFile: 0
-  isMarked: 0
-  isBreakPoint: 0
-  nodeRect:
-    serializedVersion: 2
-    x: 19
-    y: 1016
-    width: 300
-    height: 140
-  nodeHeight: 0
-  parameterID: -1
-  constantID: 0
-  obToAffect: {fileID: 1294013885}
-  affectChildren: 0
-  visState: 0
---- !u!114 &2071002318
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aac25eb7cbe8345d6baaf5efb8fc62e8, type: 3}
-  m_Name: (Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  id: 0
-  category: 8
-  title: Add or remove
-  description: Adds or removes an item from the Player's inventory. Items are defined
-    in the Inventory Manager. If the player can carry multiple amounts of the item,
-    more options will show.
-  isDisplayed: 1
-  showComment: 0
-  comment: 
-  showOutputSockets: 1
-  numSockets: 1
-  willWait: 0
-  defaultPauseTime: 0.1
-  isRunning: 0
-  lastResult:
-    resultAction: 0
-    skipAction: -10
-    skipActionActual: {fileID: 0}
-    linkedCutscene: {fileID: 0}
-    linkedAsset: {fileID: 0}
-  endAction: 0
-  skipAction: -1
-  skipActionActual: {fileID: 0}
-  linkedCutscene: {fileID: 0}
-  linkedAsset: {fileID: 0}
-  isEnabled: 1
-  isAssetFile: 0
-  isMarked: 0
-  isBreakPoint: 0
-  nodeRect:
-    serializedVersion: 2
-    x: 18
-    y: 257
-    width: 300
-    height: 104
-  nodeHeight: 0
-  invAction: 1
-  parameterID: -1
-  invID: 1
-  replaceParameterID: -1
-  invIDReplace: 0
-  setAmount: 0
-  amount: 1
-  setPlayer: 0
-  playerID: 0
 --- !u!1 &2091286409
 GameObject:
   m_ObjectHideFlags: 0
@@ -9849,77 +10311,6 @@ MonoBehaviour:
   amount: 1
   setPlayer: 0
   playerID: 0
---- !u!114 &2098226836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0f86ace5fdd94f0a86553230ec9308f, type: 3}
-  m_Name: (Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  id: 0
-  category: 17
-  title: Set
-  description: Sets the value of both Global and Local Variables, as declared in the
-    Variables Manager. Integers can be set to absolute, incremented or assigned a
-    random value. Strings can also be set to the value of a MenuInput element, while
-    Integers, Booleans and Floats can also be set to the value of a Mecanim parameter.
-    When setting Integers and Floats, you can also opt to type in a forumla (e.g.
-    2 + 3 *4), which can also include tokens of the form [var:ID] to denote the value
-    of a Variable, where ID is the unique number given to a Variable in the Variables
-    Manager.
-  isDisplayed: 1
-  showComment: 0
-  comment: 
-  showOutputSockets: 1
-  numSockets: 1
-  willWait: 0
-  defaultPauseTime: 0.1
-  isRunning: 0
-  lastResult:
-    resultAction: 0
-    skipAction: -10
-    skipActionActual: {fileID: 0}
-    linkedCutscene: {fileID: 0}
-    linkedAsset: {fileID: 0}
-  endAction: 0
-  skipAction: 1
-  skipActionActual: {fileID: 2098226836}
-  linkedCutscene: {fileID: 0}
-  linkedAsset: {fileID: 0}
-  isEnabled: 1
-  isAssetFile: 0
-  isMarked: 0
-  isBreakPoint: 0
-  nodeRect:
-    serializedVersion: 2
-    x: 15
-    y: 269
-    width: 300
-    height: 140
-  nodeHeight: 0
-  setVarMethod: 0
-  setVarMethodString: 0
-  setVarMethodIntBool: 0
-  parameterID: -1
-  variableID: 2
-  variableNumber: 3
-  setParameterID: -1
-  slotNumber: 0
-  slotNumberParameterID: -1
-  intValue: 0
-  floatValue: 0
-  boolValue: 0
-  stringValue: 
-  formula: 
-  location: 0
-  menuName: 
-  elementName: 
-  animator: {fileID: 0}
-  parameterName: 
 --- !u!1 &2099649582
 GameObject:
   m_ObjectHideFlags: 0
@@ -10050,7 +10441,7 @@ MonoBehaviour:
   hotspot: {fileID: 987809906}
   affectChildren: 0
   changeType: 0
---- !u!114 &2129911229
+--- !u!114 &2113749076
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -10058,20 +10449,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdaacaae7eb224bd2b2b6d336bb7b1a8, type: 3}
-  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
+  m_Script: {fileID: 11500000, guid: ed656dc9f403a441f8fe89408c7a7189, type: 3}
+  m_Name: (Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
   m_EditorClassIdentifier: 
   id: 0
-  category: 17
-  title: Check
-  description: Queries the value of both Global and Local Variables declared in the
-    Variables Manager. Variables can be compared with a fixed value, or with the values
-    of other Variables.
+  category: 4
+  title: Play speech
+  description: "Makes a Character talk, or \u2013 if no Character is specified \u2013
+    displays a message. Subtitles only appear if they are enabled from the Options
+    menu. A 'thinking' effect can be produced by opting to not play any animation."
   isDisplayed: 1
   showComment: 0
   comment: 
   showOutputSockets: 1
-  numSockets: 2
+  numSockets: 1
   willWait: 0
   defaultPauseTime: 0.1
   isRunning: 0
@@ -10081,7 +10472,7 @@ MonoBehaviour:
     skipActionActual: {fileID: 0}
     linkedCutscene: {fileID: 0}
     linkedAsset: {fileID: 0}
-  endAction: 1
+  endAction: 0
   skipAction: -1
   skipActionActual: {fileID: 0}
   linkedCutscene: {fileID: 0}
@@ -10092,33 +10483,27 @@ MonoBehaviour:
   isBreakPoint: 0
   nodeRect:
     serializedVersion: 2
-    x: 20
-    y: 385
+    x: 14
+    y: 14
     width: 300
-    height: 176
+    height: 202
   nodeHeight: 0
-  resultActionTrue: 0
-  skipActionTrue: -1
-  skipActionTrueActual: {fileID: 0}
-  linkedCutsceneTrue: {fileID: 0}
-  linkedAssetTrue: {fileID: 0}
-  resultActionFail: 2
-  skipActionFail: 8
-  skipActionFailActual: {fileID: 921618352}
-  linkedCutsceneFail: {fileID: 0}
-  linkedAssetFail: {fileID: 0}
+  constantID: 0
   parameterID: -1
-  variableID: 0
-  variableNumber: 0
-  checkParameterID: -1
-  getVarMethod: 0
-  compareVariableID: 0
-  intValue: 0
-  floatValue: 0
-  intCondition: 0
-  isAdditive: 0
-  boolValue: 1
-  boolCondition: 0
-  stringValue: 
-  checkCase: 1
-  location: 0
+  messageParameterID: -1
+  isPlayer: 1
+  speaker: {fileID: 0}
+  messageText: Zobaczmy czy pasuje.
+  lineID: -1
+  multiLineIDs: 
+  isBackground: 0
+  noAnimation: 0
+  headClip: {fileID: 0}
+  mouthClip: {fileID: 0}
+  play2DHeadAnim: 0
+  headClip2D: 
+  headLayer: 0
+  play2DMouthAnim: 0
+  mouthClip2D: 
+  mouthLayer: 0
+  waitTimeOffset: 0
