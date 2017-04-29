@@ -22,7 +22,7 @@ MonoBehaviour:
     lineID: -1
   addHotspotPrefix: 0
   allowInteractionCursor: 1
-  allowInteractionCursorForInventory: 1
+  allowInteractionCursorForInventory: 0
   cycleCursors: 0
   onlyAnimateOverHotspots: 0
   leftClickExamine: 0
@@ -40,7 +40,7 @@ MonoBehaviour:
     endAnimOnLastFrame: 0
     clickOffset: {x: 0, y: 0}
   pointerIcon:
-    texture: {fileID: 2800000, guid: cf1157046e847dc4cb96a74f72fd364a, type: 3}
+    texture: {fileID: 2800000, guid: c7af6957d68da5a4993a487fa318fb10, type: 3}
     isAnimated: 0
     numFrames: 1
     numRows: 1
@@ -50,12 +50,12 @@ MonoBehaviour:
     endAnimOnLastFrame: 0
     clickOffset: {x: 0, y: 0}
   walkIcon:
-    texture: {fileID: 2800000, guid: 4b1c6caa019a51049b6c59068e22fd88, type: 3}
+    texture: {fileID: 2800000, guid: a436820a0f639664abd8ab3b1fad3ef9, type: 3}
     isAnimated: 0
     numFrames: 1
     numRows: 1
     numCols: 1
-    size: 0.08
+    size: 0.06
     animSpeed: 4
     endAnimOnLastFrame: 0
     clickOffset: {x: 0, y: 0}
@@ -83,12 +83,12 @@ MonoBehaviour:
     label: to
     lineID: -1
   cursorIcons:
-  - texture: {fileID: 2800000, guid: fd2ea85f1c2132d4baa7756235279ec9, type: 3}
+  - texture: {fileID: 2800000, guid: e62d4ec09e415a145a08f1ab423ccb5c, type: 3}
     isAnimated: 0
     numFrames: 1
     numRows: 1
     numCols: 1
-    size: 0.07
+    size: 0.04
     animSpeed: 4
     endAnimOnLastFrame: 0
     clickOffset: {x: 0, y: 0}
@@ -96,12 +96,12 @@ MonoBehaviour:
     label: Use
     lineID: 63
     id: 0
-  - texture: {fileID: 2800000, guid: d128604cd34ecbb4380ba883cbcdccb1, type: 3}
+  - texture: {fileID: 2800000, guid: 50422f57ed20e834b9f385592af765d7, type: 3}
     isAnimated: 0
     numFrames: 1
     numRows: 1
     numCols: 1
-    size: 0.06
+    size: 0.04
     animSpeed: 4
     endAnimOnLastFrame: 0
     clickOffset: {x: 0, y: 0}
@@ -109,7 +109,7 @@ MonoBehaviour:
     label: Talk to
     lineID: 64
     id: 1
-  - texture: {fileID: 2800000, guid: c4d69d4eb73ea4548b1982f7b084a839, type: 3}
+  - texture: {fileID: 2800000, guid: b70232b0fc5da574c965605df189dae8, type: 3}
     isAnimated: 0
     numFrames: 1
     numRows: 1
