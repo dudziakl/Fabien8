@@ -156,7 +156,7 @@ MonoBehaviour:
     combineID: 
     unhandledActionList: {fileID: 0}
     unhandledCombineActionList: {fileID: 0}
-  - label: "No\u017Cyce"
+  - label: "No\u017Cyczki"
     id: 3
     altLabel: 
     carryOnStart: 0
@@ -166,7 +166,7 @@ MonoBehaviour:
     canCarryMultiple: 0
     count: 1
     useSeparateSlots: 0
-    tex: {fileID: 2800000, guid: b4d05473d4807834a9e2890a2609ecaa, type: 3}
+    tex: {fileID: 2800000, guid: ea26bf1f9abc4a84b9eae32dd6d9cdc8, type: 3}
     activeTex: {fileID: 0}
     selectedTex: {fileID: 0}
     linkedPrefab: {fileID: 0}
@@ -187,7 +187,7 @@ MonoBehaviour:
     lineID: -1
     useIconID: 0
     binID: -1
-    isEditing: 0
+    isEditing: 1
     recipeSlot: -1
     lastInteractionIndex: 0
     overrideUseSyntax: 0
@@ -214,7 +214,7 @@ MonoBehaviour:
     canCarryMultiple: 0
     count: 1
     useSeparateSlots: 0
-    tex: {fileID: 2800000, guid: f8bf4f44dbb39ca4d8f75711b7adf02f, type: 3}
+    tex: {fileID: 2800000, guid: a9fdcae4a27f55544849acd3ba09d69d, type: 3}
     activeTex: {fileID: 0}
     selectedTex: {fileID: 0}
     linkedPrefab: {fileID: 0}
@@ -262,7 +262,7 @@ MonoBehaviour:
     canCarryMultiple: 0
     count: 1
     useSeparateSlots: 0
-    tex: {fileID: 2800000, guid: 8fe4cbd961aa6ef428085d1ac0c0c378, type: 3}
+    tex: {fileID: 2800000, guid: 478a2a80073a7394a83cb5836a9fcdc6, type: 3}
     activeTex: {fileID: 0}
     selectedTex: {fileID: 0}
     linkedPrefab: {fileID: 0}
@@ -358,7 +358,7 @@ MonoBehaviour:
     canCarryMultiple: 0
     count: 1
     useSeparateSlots: 0
-    tex: {fileID: 0}
+    tex: {fileID: 2800000, guid: 33c3e9dfeece38e4ba4e2da85f940795, type: 3}
     activeTex: {fileID: 0}
     selectedTex: {fileID: 0}
     linkedPrefab: {fileID: 0}
@@ -427,7 +427,7 @@ MonoBehaviour:
     lineID: -1
     useIconID: 0
     binID: -1
-    isEditing: 1
+    isEditing: 0
     recipeSlot: -1
     lastInteractionIndex: 0
     overrideUseSyntax: 0
