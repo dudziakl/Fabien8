@@ -19,11 +19,11 @@ MonoBehaviour:
   playScrollAudioEveryCharacter: 1
   displayForever: 0
   canSkipWithMouseClicks: 1
-  minimumDisplayTime: 1
+  minimumDisplayTime: 0.5
   screenTimeFactor: 0.1
   allowSpeechSkipping: 1
-  allowGameplaySpeechSkipping: 0
-  skipThresholdTime: 0
+  allowGameplaySpeechSkipping: 1
+  skipThresholdTime: 0.1
   endScrollBeforeSkip: 0
   searchAudioFiles: 1
   autoNameSpeechFiles: 1
