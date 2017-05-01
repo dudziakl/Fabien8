@@ -25,7 +25,7 @@ MonoBehaviour:
   allowInteractionCursorForInventory: 0
   cycleCursors: 0
   onlyAnimateOverHotspots: 0
-  leftClickExamine: 0
+  leftClickExamine: 1
   onlyWalkWhenOverNavMesh: 1
   onlyShowInventoryLabelOverHotspots: 0
   inventoryCursorSize: 0.06
