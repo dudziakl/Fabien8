@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 114973961564989710}
   - component: {fileID: 50766687025545364}
   - component: {fileID: 58098171048093160}
+  - component: {fileID: 114487829458422240}
   m_Layer: 0
   m_Name: FabienPlayer
   m_TagString: Player
@@ -54,7 +55,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1019451205552828}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.44, y: -2.38, z: 0}
+  m_LocalPosition: {x: -6.42, y: -2.66, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4897677232648120}
@@ -68,8 +69,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1966434138645518}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.51927, z: 0}
-  m_LocalScale: {x: 0.03936713, y: 0.039367154, z: 0.039367154}
+  m_LocalPosition: {x: 0.02, y: -0.02, z: 0}
+  m_LocalScale: {x: 0.049107, y: 0.049107, z: 0.039367154}
   m_Children: []
   m_Father: {fileID: 4074747562938100}
   m_RootOrder: 0
@@ -106,9 +107,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0044201612, y: 0}
+  m_Offset: {x: -0.00075125694, y: 0}
   serializedVersion: 2
-  m_Radius: 0.30109465
+  m_Radius: 0.30375266
 --- !u!114 &114339576362052074
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -145,6 +146,23 @@ MonoBehaviour:
   teleportToStart: 0
   affectY: 0
   nodePause: 0
+--- !u!114 &114487829458422240
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1019451205552828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6c23c0cd1c274961a26f4e9cd5378d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lockSorting: 0
+  affectChildren: 1
+  followSortingMap: 1
+  customSortingMap: {fileID: 0}
+  offsetOriginal: 0
+  livePreview: 0
 --- !u!114 &114973961564989710
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -228,7 +246,7 @@ MonoBehaviour:
   frameFlipping: 0
   flipCustomAnims: 0
   walkSpeedScale: 2
-  runSpeedScale: 6
+  runSpeedScale: 2
   turnSpeed: 7
   acceleration: 6
   deceleration: 0

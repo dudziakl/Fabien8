@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 5c40d2c11639fe348a71c53c1eeec445
-timeCreated: 1493718505
+guid: 77adc5d4546354b4a94becaf5f79de66
+timeCreated: 1493717232
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
@@ -37,9 +37,9 @@ TextureImporter:
   spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 9
-  spritePivot: {x: 0.4735076, y: 0.118808605}
-  spriteBorder: {x: 0, y: 178, z: 0, w: 196}
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -51,14 +51,6 @@ TextureImporter:
   textureFormatSet: 0
   platformSettings:
   - buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-  - buildTarget: Standalone
     maxTextureSize: 2048
     textureFormat: -1
     textureCompression: 1
