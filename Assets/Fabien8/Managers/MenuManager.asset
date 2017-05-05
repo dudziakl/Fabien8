@@ -788,7 +788,7 @@ MonoBehaviour:
   slotSpacing: 0
   lineID: 69
   alternativeInputButton: 
-  font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  font: {fileID: 12800000, guid: c6e3b07edbe7e4f62837dde56356b819, type: 3}
   fontScaleFactor: 2
   fontColor: {r: 1, g: 1, b: 1, a: 1}
   fontHighlightColor: {r: 1, g: 1, b: 1, a: 1}
@@ -4085,7 +4085,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 0
-  isEditing: 1
+  isEditing: 0
   title: HotspotLabel
   slotSize: {x: 34, y: 12}
   sizeType: 1
@@ -4093,7 +4093,7 @@ MonoBehaviour:
   slotSpacing: 0
   lineID: -1
   alternativeInputButton: 
-  font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  font: {fileID: 12800000, guid: c6e3b07edbe7e4f62837dde56356b819, type: 3}
   fontScaleFactor: 2
   fontColor: {r: 1, g: 1, b: 1, a: 1}
   fontHighlightColor: {r: 1, g: 1, b: 1, a: 1}
@@ -4274,7 +4274,7 @@ MonoBehaviour:
   rectTransformID: 14243318
   uiTransitionType: 1
   uiPositionType: 1
-  isEditing: 1
+  isEditing: 0
   isLocked: 0
   id: 11
   title: Hotspot
@@ -4547,7 +4547,7 @@ MonoBehaviour:
   rectTransformID: 1765320
   uiTransitionType: 1
   uiPositionType: 0
-  isEditing: 0
+  isEditing: 1
   isLocked: 0
   id: 3
   title: Inventory
