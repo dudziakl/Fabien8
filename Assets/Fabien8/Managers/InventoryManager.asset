@@ -43,7 +43,7 @@ MonoBehaviour:
     lineID: -1
     useIconID: 0
     binID: -1
-    isEditing: 0
+    isEditing: 1
     recipeSlot: -1
     lastInteractionIndex: 0
     overrideUseSyntax: 0
@@ -70,7 +70,7 @@ MonoBehaviour:
     canCarryMultiple: 0
     count: 1
     useSeparateSlots: 0
-    tex: {fileID: 2800000, guid: 89a0e1eb4584be2458e9ccd2f40919c6, type: 3}
+    tex: {fileID: 2800000, guid: e2ee46179a778ba459126ff947052045, type: 3}
     activeTex: {fileID: 0}
     selectedTex: {fileID: 0}
     linkedPrefab: {fileID: 0}
@@ -235,7 +235,7 @@ MonoBehaviour:
     lineID: -1
     useIconID: 0
     binID: -1
-    isEditing: 1
+    isEditing: 0
     recipeSlot: -1
     lastInteractionIndex: 0
     overrideUseSyntax: 0
@@ -406,7 +406,7 @@ MonoBehaviour:
     canCarryMultiple: 0
     count: 1
     useSeparateSlots: 0
-    tex: {fileID: 2800000, guid: cc3fa24605c3c4b0081ccfc43043abf8, type: 3}
+    tex: {fileID: 2800000, guid: be44e21e310224040b03dd6c7a197f2a, type: 3}
     activeTex: {fileID: 0}
     selectedTex: {fileID: 0}
     linkedPrefab: {fileID: 0}
@@ -454,7 +454,7 @@ MonoBehaviour:
     canCarryMultiple: 0
     count: 1
     useSeparateSlots: 0
-    tex: {fileID: 2800000, guid: 403c7131fd05444f0af1c292d633a330, type: 3}
+    tex: {fileID: 2800000, guid: f9d2a3788df5cbe479fc337e9003c480, type: 3}
     activeTex: {fileID: 0}
     selectedTex: {fileID: 0}
     linkedPrefab: {fileID: 0}
