@@ -130,7 +130,10 @@ MonoBehaviour:
   useAsyncLoading: 0
   loadingDelay: 0
   playMusicWhilePaused: 0
-  musicStorages: []
+  musicStorages:
+  - ID: 0
+    audioClip: {fileID: 8300000, guid: 22e6cfac389ee1b449f7c618dc21abec, type: 3}
+    relativeVolume: 1
   volumeControl: 0
   musicMixerGroup: {fileID: 0}
   sfxMixerGroup: {fileID: 0}
