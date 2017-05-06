@@ -1743,7 +1743,7 @@ MonoBehaviour:
   rectTransformID: 14532472
   uiTransitionType: 1
   uiPositionType: 0
-  isEditing: 0
+  isEditing: 1
   isLocked: 0
   id: 9
   title: Subtitles
@@ -4754,7 +4754,7 @@ MonoBehaviour:
   rectTransformID: 14243318
   uiTransitionType: 1
   uiPositionType: 1
-  isEditing: 1
+  isEditing: 0
   isLocked: 0
   id: 11
   title: Hotspot
@@ -5870,7 +5870,7 @@ MonoBehaviour:
   label: "Go\u0142\u0105b"
   anchor: 4
   textEffects: 1
-  outlineSize: 3.01
+  outlineSize: 4
   labelType: 2
   variableID: 0
   useCharacterColour: 1
