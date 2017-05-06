@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 114973961564989710}
   - component: {fileID: 50766687025545364}
   - component: {fileID: 58098171048093160}
-  - component: {fileID: 114487829458422240}
   m_Layer: 0
   m_Name: FabienPlayer
   m_TagString: Player
@@ -146,23 +145,6 @@ MonoBehaviour:
   teleportToStart: 0
   affectY: 0
   nodePause: 0
---- !u!114 &114487829458422240
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1019451205552828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6c23c0cd1c274961a26f4e9cd5378d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lockSorting: 0
-  affectChildren: 1
-  followSortingMap: 1
-  customSortingMap: {fileID: 0}
-  offsetOriginal: 0
-  livePreview: 0
 --- !u!114 &114973961564989710
 MonoBehaviour:
   m_ObjectHideFlags: 1
