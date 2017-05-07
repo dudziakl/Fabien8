@@ -264,5 +264,19 @@ MonoBehaviour:
     canTranslate: 1
     textValLineID: -1
     popUpsLineID: -1
+  - label: SzufladaRozjebana
+    id: 17
+    type: 0
+    val: 0
+    floatVal: 0
+    textVal: 
+    popUps: []
+    link: 0
+    pmVar: 
+    updateLinkOnStart: 0
+    isEditing: 1
+    canTranslate: 1
+    textValLineID: -1
+    popUpsLineID: -1
   varPresets: []
   updateRuntime: 1
