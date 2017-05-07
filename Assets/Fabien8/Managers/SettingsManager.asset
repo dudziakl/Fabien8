@@ -64,7 +64,7 @@ MonoBehaviour:
   giveInvWithIconID: 0
   autoDisableUnhandledHotspots: 0
   clickPrefab: {fileID: 0}
-  walkableClickRange: 0.5
+  walkableClickRange: 0
   navMeshSearchDirection: 1
   doubleClickMovement: 0
   magnitudeAffectsDirect: 0
