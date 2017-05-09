@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114973961564989710}
   - component: {fileID: 50766687025545364}
   - component: {fileID: 58098171048093160}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: FabienPlayer
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -40,7 +40,8 @@ GameObject:
   - component: {fileID: 4897677232648120}
   - component: {fileID: 212411171520157604}
   - component: {fileID: 114339576362052074}
-  m_Layer: 0
+  - component: {fileID: 95591638602003446}
+  m_Layer: 2
   m_Name: Fabien
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,8 +69,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1966434138645518}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.02, y: -0.02, z: 0}
-  m_LocalScale: {x: 0.049107, y: 0.049107, z: 0.039367154}
+  m_LocalPosition: {x: 0.03, y: -0.05, z: 0}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 4074747562938100}
   m_RootOrder: 0
@@ -109,6 +110,23 @@ CircleCollider2D:
   m_Offset: {x: -0.00075125694, y: 0}
   serializedVersion: 2
   m_Radius: 0.30375266
+--- !u!95 &95591638602003446
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1966434138645518}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 43dec86cc2155cf4a8d42afb09efe3d5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114339576362052074
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -215,8 +233,8 @@ MonoBehaviour:
   rotateSprite3D: 0
   idleAnimSprite: idle
   walkAnimSprite: walk
-  runAnimSprite: run
-  talkAnimSprite: talk
+  runAnimSprite: 
+  talkAnimSprite: 
   lockScale: 0
   spriteScale: 1
   lockDirection: 0
@@ -229,10 +247,10 @@ MonoBehaviour:
   flipCustomAnims: 0
   walkSpeedScale: 2
   runSpeedScale: 2
-  turnSpeed: 7
+  turnSpeed: 20
   acceleration: 6
   deceleration: 0
-  turnBeforeWalking: 0
+  turnBeforeWalking: 1
   runDistanceThreshold: 1
   antiGlideMode: 0
   isJumping: 0
@@ -242,8 +260,8 @@ MonoBehaviour:
   doWallReduction: 0
   wallLayer: Default
   wallDistance: 0.5
-  walkSound: {fileID: 0}
-  runSound: {fileID: 0}
+  walkSound: {fileID: 8300000, guid: babad3fd0774e014a80402a4ca0a8e5b, type: 3}
+  runSound: {fileID: 8300000, guid: babad3fd0774e014a80402a4ca0a8e5b, type: 3}
   textScrollClip: {fileID: 0}
   soundChild: {fileID: 0}
   speechAudioSource: {fileID: 0}

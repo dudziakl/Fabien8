@@ -24,8 +24,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.72, y: -3.44, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -42,14 +42,46 @@ PolygonCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
+  m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0, y: 1}
-      - {x: 0.95105654, y: 0.30901697}
-      - {x: 0.5877852, y: -0.809017}
-      - {x: -0.58778536, y: -0.80901694}
-      - {x: -0.9510565, y: 0.30901712}
+    - - {x: -2.865242, y: -1.2052531}
+      - {x: -1.9142566, y: -0.59894323}
+      - {x: -0.51050186, y: -0.5270016}
+      - {x: 0.16589451, y: -0.8179517}
+      - {x: 0.95518446, y: -0.7213559}
+      - {x: 1.8938911, y: -0.46278405}
+      - {x: 2.9812179, y: -0.34267092}
+      - {x: 3.4815607, y: -0.4598558}
+      - {x: 4.0392504, y: -0.51060224}
+      - {x: 4.4646792, y: -0.15384555}
+      - {x: 4.770014, y: 0.25626493}
+      - {x: 6.8169975, y: 0.4104693}
+      - {x: 8.219658, y: 0.33556986}
+      - {x: 9.385126, y: 0.059197903}
+      - {x: 10.1676855, y: 0.039337397}
+      - {x: 10.576399, y: 0.34417915}
+      - {x: 11.168118, y: 0.5539601}
+      - {x: 14.49074, y: 0.27184558}
+      - {x: 14.4463005, y: -0.2262125}
+      - {x: 12.377361, y: -0.22070527}
+      - {x: 10.910689, y: -0.5622759}
+      - {x: 9.792248, y: -1.1595969}
+      - {x: 9.734556, y: -2.0459952}
+      - {x: 8.004452, y: -2.0168705}
+      - {x: -0.0029821396, y: -2.0245757}
+      - {x: -4.9931216, y: -2.0434866}
+      - {x: -3.2477212, y: -1.538579}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -61,7 +93,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f72e60470f1fa4fd1825cd67ce482cf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  constantID: 0
+  constantID: 6854
   retainInPrefab: 0
   autoManual: 0
 --- !u!114 &11400002
