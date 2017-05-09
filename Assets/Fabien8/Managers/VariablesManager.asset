@@ -274,7 +274,7 @@ MonoBehaviour:
     link: 0
     pmVar: 
     updateLinkOnStart: 0
-    isEditing: 1
+    isEditing: 0
     canTranslate: 1
     textValLineID: -1
     popUpsLineID: -1
