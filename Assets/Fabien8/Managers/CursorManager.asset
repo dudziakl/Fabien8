@@ -122,7 +122,21 @@ MonoBehaviour:
     label: Look at
     lineID: 65
     id: 2
+  - texture: {fileID: 2800000, guid: b49c35ec09ac30847a62dc81cbe99e8a, type: 3}
+    isAnimated: 0
+    numFrames: 1
+    numRows: 1
+    numCols: 1
+    size: 0.04
+    animSpeed: 4
+    endAnimOnLastFrame: 0
+    clickOffset: {x: 0, y: 0}
+    dontCycle: 0
+    label: Door
+    lineID: -1
+    id: 3
   unhandledCursorInteractions:
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
