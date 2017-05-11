@@ -134,6 +134,12 @@ MonoBehaviour:
   - ID: 0
     audioClip: {fileID: 8300000, guid: 22e6cfac389ee1b449f7c618dc21abec, type: 3}
     relativeVolume: 1
+  - ID: 1
+    audioClip: {fileID: 8300000, guid: c731eb909bf65864eb5ee160a0cbc64f, type: 3}
+    relativeVolume: 1
+  - ID: 2
+    audioClip: {fileID: 8300000, guid: 6dbcf9af477490645a06231288403b0a, type: 3}
+    relativeVolume: 1
   volumeControl: 0
   musicMixerGroup: {fileID: 0}
   sfxMixerGroup: {fileID: 0}
