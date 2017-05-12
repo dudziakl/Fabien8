@@ -149,8 +149,8 @@ MonoBehaviour:
   speechAttentuationParameter: speechVolume
   defaultLanguage: 0
   defaultShowSubtitles: 0
-  defaultSfxVolume: 0.53530073
-  defaultMusicVolume: 0.5931711
+  defaultSfxVolume: 0.96653676
+  defaultMusicVolume: 0.5401235
   defaultSpeechVolume: 1
   showDebugLogs: 0
   printActionCommentsInConsole: 0
