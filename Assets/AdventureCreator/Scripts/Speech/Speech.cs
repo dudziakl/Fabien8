@@ -446,10 +446,25 @@ namespace AC
 
 			if (endTime < 0f)
 			{
-				if ((KickStarter.speechManager.displayForever && isBackground)
+				/*if ((KickStarter.speechManager.displayForever && isBackground)
 				 || !KickStarter.speechManager.displayForever)
 				{
 					EndMessage ();
+				}*/
+
+				if (KickStarter.speechManager.displayForever && isBackground)
+				{
+					EndMessage ();
+				}
+
+				if (!KickStarter.speechManager.displayForever)
+				{
+					if (speaker == null && KickStarter.speechManager.displayNarrationForever)
+					{}
+					else
+					{
+						EndMessage ();
+					}
 				}
 			}
 		}
@@ -470,6 +485,54 @@ namespace AC
 			{
 				KickStarter.eventManager.Call_OnStartSpeechScroll (speaker, log.fullText, log.lineID);
 			}
+		}
+
+
+		/**
+		 * <summary>Checks if the speech line matches certain conditions.</summary>
+		 * <param name = "speechMenuLimit">What kind of speech has to play for this Menu to enable (All, BlockingOnly, BackgroundOnly)</param>
+		 * <param name = "speechMenuType">What kind of speaker has to be speaking for this Menu to enable (All, CharactersOnly, NarrationOnly, SpecificCharactersOnly)</param>
+		 * <param name = "limitToCharacters>A list of character names that this Menu will show for, if speechMenuType = SpeechMenuType.SpecificCharactersOnly</param>
+		 * <returns>True if the speech line matches the conditions</returns>
+		 */
+		public bool HasConditions (SpeechMenuLimit speechMenuLimit, SpeechMenuType speechMenuType, string limitToCharacters)
+		{
+			if (speechMenuLimit == SpeechMenuLimit.All ||
+			    (speechMenuLimit == SpeechMenuLimit.BlockingOnly && !isBackground) ||
+			    (speechMenuLimit == SpeechMenuLimit.BackgroundOnly && isBackground))
+			{
+				if (speechMenuType == SpeechMenuType.All ||
+				    (speechMenuType == SpeechMenuType.CharactersOnly && speaker != null) ||
+				    (speechMenuType == SpeechMenuType.NarrationOnly && speaker == null))
+			    {
+			    	return true;
+			    }
+				else if (speechMenuType == SpeechMenuType.SpecificCharactersOnly && speaker != null)
+				{
+					if (limitToCharacters.Contains (GetSpeaker ()))
+					{
+						return true;
+					}
+					else if (limitToCharacters.Contains ("Player") && speaker != null && speaker is Player)
+					{
+						return true;
+					}
+				}
+				else if (speechMenuType == SpeechMenuType.AllExceptSpecificCharacters && GetSpeakingCharacter () != null)
+				{
+					if (limitToCharacters.Contains (GetSpeaker ()))
+					{
+						return false;
+					}
+					else if (limitToCharacters.Contains ("Player") && speaker != null && speaker is Player)
+					{
+						return false;
+					}
+					return true;
+				}
+			}
+			    
+			return false;
 		}
 
 
@@ -549,10 +612,17 @@ namespace AC
 					}
 				}
 				
-				else if (KickStarter.speechManager.displayForever && !IsBackgroundSpeech ())
+				else if ((KickStarter.speechManager.displayForever && !IsBackgroundSpeech ()) ||
+						 (KickStarter.speechManager.displayNarrationForever && !IsBackgroundSpeech () && speaker == null))
 				{
 					if (SkipSpeechInput ())
 					{
+						if (holdForever && log.fullText == displayText)
+						{
+							// Ignore clicks
+							return;
+						}
+
 						KickStarter.playerInput.ResetMouseClick ();
 						
 						if (KickStarter.stateHandler.gameState == GameState.Cutscene)
@@ -574,6 +644,14 @@ namespace AC
 										}
 									}
 								}
+
+								//
+								if (continueIndex >= 0)
+								{
+									continueIndex = -1;
+									continueFromSpeech = true;
+								}
+								//
 							}
 							else
 							{
@@ -588,7 +666,8 @@ namespace AC
 				{
 					if ((KickStarter.speechManager.allowSpeechSkipping && !IsBackgroundSpeech ()) ||
 						(KickStarter.speechManager.allowSpeechSkipping && KickStarter.speechManager.allowGameplaySpeechSkipping && IsBackgroundSpeech ()) ||
-						(KickStarter.speechManager.displayForever && KickStarter.speechManager.allowGameplaySpeechSkipping && IsBackgroundSpeech ()))
+						(KickStarter.speechManager.displayForever && KickStarter.speechManager.allowGameplaySpeechSkipping && IsBackgroundSpeech ()) ||
+						(KickStarter.speechManager.displayNarrationForever && speaker == null && KickStarter.speechManager.allowGameplaySpeechSkipping && IsBackgroundSpeech ()))
 					{
 						KickStarter.playerInput.ResetMouseClick ();
 						
@@ -638,7 +717,8 @@ namespace AC
 			
 			if (holdForever)
 			{
-				EndMessage ();
+				//EndMessage ();
+				continueFromSpeech = true;
 			}
 
 			// Call events
@@ -980,41 +1060,10 @@ namespace AC
 		 */
 		public bool MenuCanShow (Menu menu)
 		{
-			if (menu.speechMenuLimit == SpeechMenuLimit.All ||
-			    (menu.speechMenuLimit == SpeechMenuLimit.BlockingOnly && !isBackground) ||
-			    (menu.speechMenuLimit == SpeechMenuLimit.BackgroundOnly && isBackground))
+			if (menu != null)
 			{
-				if (menu.speechMenuType == SpeechMenuType.All ||
-				    (menu.speechMenuType == SpeechMenuType.CharactersOnly && speaker != null) ||
-				    (menu.speechMenuType == SpeechMenuType.NarrationOnly && speaker == null))
-			    {
-			    	return true;
-			    }
-				else if (menu.speechMenuType == SpeechMenuType.SpecificCharactersOnly && GetSpeakingCharacter () != null)
-				{
-					if (menu.limitToCharacters.Contains (GetSpeaker ()))
-					{
-						return true;
-					}
-					else if (menu.limitToCharacters.Contains ("Player") && GetSpeakingCharacter () is Player)
-					{
-						return true;
-					}
-				}
-				else if (menu.speechMenuType == SpeechMenuType.AllExceptSpecificCharacters && GetSpeakingCharacter () != null)
-				{
-					if (menu.limitToCharacters.Contains (GetSpeaker ()))
-					{
-						return false;
-					}
-					else if (menu.limitToCharacters.Contains ("Player") && GetSpeakingCharacter () is Player)
-					{
-						return false;
-					}
-					return true;
-				}
+				return HasConditions (menu.speechMenuLimit, menu.speechMenuType, menu.limitToCharacters);
 			}
-			    
 			return false;
 		}
 

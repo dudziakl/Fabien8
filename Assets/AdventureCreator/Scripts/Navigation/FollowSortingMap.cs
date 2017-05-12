@@ -73,7 +73,10 @@ namespace AC
 			}
 			else
 			{
-				ACDebug.LogWarning ("FollowSortingMap on " + gameObject.name + " must be attached alongside a Renderer component.");
+				if (!affectChildren)
+				{
+					ACDebug.LogWarning ("FollowSortingMap on " + gameObject.name + " must be attached alongside a Renderer component.");
+				}
 			}
 			SetOriginalDepth ();
 		}
@@ -288,10 +291,26 @@ namespace AC
 			}
 			#endif
 
-			if (lockSorting || sortingMap == null || _renderer == null)
+			if (lockSorting || sortingMap == null)
 			{
 				return;
 			}
+
+			if (affectChildren)
+			{
+				if (renderers == null || renderers.Length == 0)
+				{
+					return;
+				}
+			}
+			else
+			{
+				if (_renderer == null)
+				{
+					return;
+				}
+			}
+
 			
 			#if UNITY_EDITOR
 			if (!Application.isPlaying && !livePreview && sortingMap != null && sortingMap.affectScale)

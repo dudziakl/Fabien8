@@ -18,6 +18,7 @@ MonoBehaviour:
   narrationTextScrollCLip: {fileID: 0}
   playScrollAudioEveryCharacter: 1
   displayForever: 0
+  displayNarrationForever: 0
   canSkipWithMouseClicks: 1
   minimumDisplayTime: 0.5
   screenTimeFactor: 0.1

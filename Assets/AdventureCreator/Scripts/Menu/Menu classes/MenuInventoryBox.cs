@@ -476,6 +476,17 @@ namespace AC
 						}
 						uiSlots[_slot].SetImage (tex);
 					}
+
+					if (KickStarter.settingsManager.SelectInteractionMethod () == SelectInteractions.CyclingMenuAndClickingHotspot &&
+						inventoryBoxType == AC_InventoryBoxType.HotspotBased &&
+						items[_slot + offset].id == KickStarter.playerInteraction.GetActiveInvButtonID ())
+					{
+						// Select through script, not by mouse-over
+						if (uiSlots[_slot].uiButton != null)
+						{
+							uiSlots[_slot].uiButton.Select ();
+						}
+					}
 				}
 			}
 		}
@@ -483,7 +494,7 @@ namespace AC
 
 		private bool ItemIsSelected (InvItem item)
 		{
-			if (item != null && item == KickStarter.runtimeInventory.selectedItem && (!KickStarter.settingsManager.inventoryDragDrop || KickStarter.playerInput.GetDragState () == DragState.Inventory))
+			if (item != null && item == KickStarter.runtimeInventory.selectedItem && (! KickStarter.settingsManager.InventoryDragDrop || KickStarter.playerInput.GetDragState () == DragState.Inventory))
 			{
 				return true;
 			}
@@ -927,7 +938,6 @@ namespace AC
 			}
 			else if (isActive && KickStarter.settingsManager.activeWhenHover)
 			{
-				
 				return _item.activeTex;
 			}
 			return _item.tex;

@@ -122,7 +122,10 @@ MonoBehaviour:
     label: Look at
     lineID: 65
     id: 2
-  unhandledCursorInteractions: []
+  unhandledCursorInteractions:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   passUnhandledHotspotAsParameter: 0
   lookUseCursorAction: 0
   lookCursor_ID: 0

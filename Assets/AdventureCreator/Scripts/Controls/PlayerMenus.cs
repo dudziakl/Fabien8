@@ -1,7 +1,7 @@
 /*
  *
  *	Adventure Creator
- *	by Chris Burton, 2013-2016
+ *	by Chris Burton, 2013-2017
  *	
  *	"PlayerMenus.cs"
  * 
@@ -1169,6 +1169,15 @@ namespace AC
 			
 			else if (menu.appearType == AppearType.OnInteraction)
 			{
+				if (KickStarter.player != null && KickStarter.player.hotspotDetector != null && KickStarter.settingsManager.closeInteractionMenusIfPlayerLeavesVicinity)
+				{
+					if (menu.GetTargetHotspot () != null && !KickStarter.player.hotspotDetector.IsHotspotInTrigger (menu.GetTargetHotspot ()))
+					{
+						menu.TurnOff ();
+						return;
+					}
+				}
+
 				if (KickStarter.settingsManager.CanClickOffInteractionMenu ())
 				{
 					if (menu.IsEnabled () && (KickStarter.stateHandler.gameState == GameState.Normal || menu.pauseWhenEnabled))
@@ -1722,7 +1731,7 @@ namespace AC
 									CheckContinuousClick (menu, menu.elements[j], i, KickStarter.playerInput.GetMouseState ());
 								}
 							}
-							else if (menu.IsUnityUI () && KickStarter.runtimeInventory.selectedItem == null && KickStarter.settingsManager.inventoryDragDrop && KickStarter.playerInput.GetMouseState () == MouseState.HeldDown && KickStarter.playerInput.GetDragState () == DragState.None)
+							else if (menu.IsUnityUI () && KickStarter.runtimeInventory.selectedItem == null &&  KickStarter.settingsManager.InventoryDragDrop && KickStarter.playerInput.GetMouseState () == MouseState.HeldDown && KickStarter.playerInput.GetDragState () == DragState.None)
 							{
 								if (menu.elements[j] is MenuInventoryBox || menu.elements[j] is MenuCrafting)
 								{
@@ -1732,7 +1741,7 @@ namespace AC
 							}
 							else if (KickStarter.playerInteraction.IsDroppingInventory () && CanElementBeDroppedOnto (menu.elements[j]))
 							{
-								if (menu.IsUnityUI () && KickStarter.settingsManager.inventoryDragDrop && (menu.elements[j] is MenuInventoryBox || menu.elements[j] is MenuCrafting))
+								if (menu.IsUnityUI () &&  KickStarter.settingsManager.InventoryDragDrop && (menu.elements[j] is MenuInventoryBox || menu.elements[j] is MenuCrafting))
 								{
 									// End UI drag drop
 									menu.elements[j].ProcessClick (menu, i, MouseState.SingleClick);
@@ -2540,7 +2549,7 @@ namespace AC
 					{
 						if (!onlyPausing || (onlyPausing && menu.IsBlocking ()))
 						{
-							menu.ForceOff ();
+							menu.ForceOff (true);
 						}
 					}
 				}
@@ -2614,7 +2623,7 @@ namespace AC
 					   (speechMenuLimit == SpeechMenuLimit.BlockingOnly && menu.speech != null && !menu.speech.isBackground) ||
 					   (speechMenuLimit == SpeechMenuLimit.BlockingOnly && menu.speech != null && menu.speech.isBackground))
 					{
-						menu.ForceOff ();
+						menu.ForceOff (true);
 					}
 				}
 			}
@@ -2628,7 +2637,7 @@ namespace AC
 					   (speechMenuLimit == SpeechMenuLimit.BlockingOnly && menu.speech != null && !menu.speech.isBackground) ||
 					   (speechMenuLimit == SpeechMenuLimit.BlockingOnly && menu.speech != null && menu.speech.isBackground))
 					{
-						menu.ForceOff ();
+						menu.ForceOff (true);
 					}
 				}
 			}
@@ -2666,7 +2675,7 @@ namespace AC
 						MenuSavesList saveList = (MenuSavesList) element;
 						if (saveList.saveListType == AC_SaveListType.Save)
 						{
-							menu.ForceOff ();
+							menu.ForceOff (true);
 							break;
 						}
 					}

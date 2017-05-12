@@ -410,6 +410,7 @@ MonoBehaviour:
   limitToCharacters: 
   selected_element: {fileID: 0}
   selected_slot: 0
+  autoSelectFirstVisibleElement: 0
   firstSelectedElement: 
   elements:
   - {fileID: 114892454513360518}
@@ -562,6 +563,7 @@ MonoBehaviour:
   limitToCharacters: 
   selected_element: {fileID: 0}
   selected_slot: 0
+  autoSelectFirstVisibleElement: 0
   firstSelectedElement: 
   elements:
   - {fileID: 114998872681379278}
@@ -891,6 +893,7 @@ MonoBehaviour:
   items: []
   displayType: 1
   uiHideStyle: 0
+  actionListOnWrongIngredients: {fileID: 0}
 --- !u!114 &114189751209050062
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1135,6 +1138,7 @@ MonoBehaviour:
   limitToCharacters: 
   selected_element: {fileID: 0}
   selected_slot: 0
+  autoSelectFirstVisibleElement: 0
   firstSelectedElement: 
   elements:
   - {fileID: 114633553231706950}
@@ -1283,6 +1287,7 @@ MonoBehaviour:
   limitToCharacters: 
   selected_element: {fileID: 0}
   selected_slot: 0
+  autoSelectFirstVisibleElement: 0
   firstSelectedElement: 
   elements:
   - {fileID: 114625045675657646}
@@ -1917,6 +1922,7 @@ MonoBehaviour:
   items: []
   displayType: 1
   uiHideStyle: 0
+  actionListOnWrongIngredients: {fileID: 0}
 --- !u!114 &114465593490023248
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2225,6 +2231,7 @@ MonoBehaviour:
   limitToCharacters: 
   selected_element: {fileID: 0}
   selected_slot: 0
+  autoSelectFirstVisibleElement: 0
   firstSelectedElement: 
   elements:
   - {fileID: 114425931941632480}
@@ -2313,6 +2320,7 @@ MonoBehaviour:
   limitToCharacters: 
   selected_element: {fileID: 0}
   selected_slot: 0
+  autoSelectFirstVisibleElement: 0
   firstSelectedElement: 
   elements:
   - {fileID: 114069702560954648}
@@ -2959,6 +2967,7 @@ MonoBehaviour:
   limitToCharacters: 
   selected_element: {fileID: 0}
   selected_slot: 0
+  autoSelectFirstVisibleElement: 0
   firstSelectedElement: 
   elements:
   - {fileID: 114695144456010708}
@@ -3542,6 +3551,7 @@ MonoBehaviour:
   limitToCharacters: 
   selected_element: {fileID: 0}
   selected_slot: 0
+  autoSelectFirstVisibleElement: 0
   firstSelectedElement: 
   elements:
   - {fileID: 114568528727597438}
@@ -4027,6 +4037,7 @@ MonoBehaviour:
   limitToCharacters: 
   selected_element: {fileID: 0}
   selected_slot: 0
+  autoSelectFirstVisibleElement: 0
   firstSelectedElement: 
   elements:
   - {fileID: 114493393993501734}
@@ -4183,6 +4194,7 @@ MonoBehaviour:
   limitToCharacters: 
   selected_element: {fileID: 0}
   selected_slot: 0
+  autoSelectFirstVisibleElement: 0
   firstSelectedElement: 
   elements:
   - {fileID: 114367221369674730}
@@ -4526,6 +4538,7 @@ MonoBehaviour:
   limitToCharacters: 
   selected_element: {fileID: 0}
   selected_slot: 0
+  autoSelectFirstVisibleElement: 0
   firstSelectedElement: 
   elements:
   - {fileID: 114875568443217748}
@@ -4821,6 +4834,7 @@ MonoBehaviour:
   limitToCharacters: 
   selected_element: {fileID: 0}
   selected_slot: 0
+  autoSelectFirstVisibleElement: 0
   firstSelectedElement: 
   elements:
   - {fileID: 114539767183001568}
@@ -5051,6 +5065,7 @@ MonoBehaviour:
   limitToCharacters: 
   selected_element: {fileID: 0}
   selected_slot: 0
+  autoSelectFirstVisibleElement: 0
   firstSelectedElement: 
   elements:
   - {fileID: 114054593656958050}

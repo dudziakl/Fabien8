@@ -261,7 +261,7 @@ namespace AC
 					}
 				}
 
-				if (KickStarter.settingsManager.inventoryDragDrop && KickStarter.playerInput.GetDragState () != DragState.Inventory)
+				if ( KickStarter.settingsManager.InventoryDragDrop && KickStarter.playerInput.GetDragState () != DragState.Inventory)
 				{
 					DrawMainCursor ();
 				}
@@ -591,7 +591,7 @@ namespace AC
 		
 		
 		private void DrawActiveInventoryCursor ()
-		{
+		{	
 			InvItem invItem = KickStarter.runtimeInventory.selectedItem;
 			if (invItem == null)
 			{

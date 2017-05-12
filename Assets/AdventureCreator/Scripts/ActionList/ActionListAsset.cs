@@ -160,6 +160,16 @@ namespace AC
 
 
 		/**
+		 * <summary>Runs the ActionList asset file from a set point.</summary>
+		 * <param name = "index">The index number of actions to start from</param>
+		 */
+		public void RunFromIndex (int index)
+		{
+			AdvGame.RunActionListAsset (this, index, true);
+		}
+
+
+		/**
 		 * <summary>Runs the ActionList asset file, after setting the value of an integer parameter if it has one.</summary>
 		 * <param name = "parameterID">The ID of the Integer parameter to set</param>
 		 * <param name = "parameterValue">The value to set the Integer parameter to</param>

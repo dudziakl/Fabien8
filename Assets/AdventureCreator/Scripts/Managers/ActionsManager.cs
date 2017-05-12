@@ -435,7 +435,7 @@ namespace AC
 				int numFinds = SearchActionsForType (list.GetActions (), actionType);
 				if (numFinds > 0)
 				{
-					ACDebug.Log (sceneLabel + " Found " + numFinds + " instances in '" + list.gameObject.name + "'");
+					ACDebug.Log (sceneLabel + " Found " + numFinds + " instances in '" + list.gameObject.name + "'", list.gameObject);
 				}
 			}
 		}
@@ -459,7 +459,7 @@ namespace AC
 				int numFinds = SearchActionsForType (actionListAsset.actions, actionType);
 				if (numFinds > 0)
 				{
-					ACDebug.Log ("(Asset: " + actionListAsset.name + ") Found " + numFinds + " instances of '" + actionType.GetFullTitle () + "'");
+					ACDebug.Log ("(Asset: " + actionListAsset.name + ") Found " + numFinds + " instances of '" + actionType.GetFullTitle () + "'", actionListAsset);
 				}
 			}
 		}

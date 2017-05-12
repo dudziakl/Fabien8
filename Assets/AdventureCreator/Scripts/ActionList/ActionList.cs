@@ -150,6 +150,16 @@ namespace AC
 		{
 			Interact (0, true);
 		}
+
+
+		/**
+		 * <summary>Runs the Actions from a set point.</summary>
+		 * <param name = "index">The index number of actions to start from</param>
+		 */
+		public void RunFromIndex (int index)
+		{
+			Interact (index, true);
+		}
 		
 
 		/**

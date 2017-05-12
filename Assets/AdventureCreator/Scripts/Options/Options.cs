@@ -77,11 +77,12 @@ namespace AC
 		
 
 		/**
-		 * Saves the current options to the active profile.
+		 * <summary>Saves the current options to the active profile.</summary>
+		 * <param name = "updateVariables">If True, then the values of variables linked to options data will be updated in the options data</param>
 		 */
-		public static void SavePrefs ()
+		public static void SavePrefs (bool updateVariables = true)
 		{
-			if (Application.isPlaying)
+			if (Application.isPlaying && updateVariables)
 			{
 				// Linked Variables
 				GlobalVariables.DownloadAll ();
@@ -140,13 +141,13 @@ namespace AC
 					ACDebug.LogWarning ("Language set to an invalid index - reverting to original language.");
 				}
 				optionsData.language = 0;
-				SavePrefs ();
+				SavePrefs (false);
 			}
 			if (optionsData.language == 0 && KickStarter.speechManager && KickStarter.speechManager.ignoreOriginalText && KickStarter.speechManager.languages.Count > 1)
 			{
 				// Ignore original language
 				optionsData.language = 1;
-				SavePrefs ();
+				SavePrefs (false);
 			}
 			
 			if (Application.isPlaying)

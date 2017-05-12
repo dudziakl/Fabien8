@@ -104,7 +104,7 @@ namespace AC
 				ACDebug.Log ("No Speech Manager present");
 				return 0f;
 			}
-			
+
 			if (KickStarter.dialog && KickStarter.stateHandler)
 			{
 				if (!isRunning)
@@ -131,7 +131,7 @@ namespace AC
 						isRunning = false;
 						return 0;
 					}
-					
+
 					if (speech == null || !speech.isAlive)
 					{
 						if (KickStarter.speechManager.separateLines)
@@ -182,7 +182,9 @@ namespace AC
 					}
 					else
 					{
-						if ((!isBackground && KickStarter.speechManager.displayForever) || speech.IsPaused ())
+						if ((!isBackground && KickStarter.speechManager.displayForever) || 
+							(!isBackground && speech.GetSpeakingCharacter () == null && KickStarter.speechManager.displayNarrationForever) ||
+							speech.IsPaused ())
 						{
 							return defaultPauseTime;
 						}

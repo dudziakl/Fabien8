@@ -5,7 +5,47 @@
 \paperw11900\paperh16840\margl1440\margr1440\vieww20440\viewh15160\viewkind0
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 Version 1.56d:\
+\f0\fs24 \cf0 Version 1.56g:\
+\
+-Added: Option to the \'93Object: Add or remove\'94 Action to position the instantiated item relative to another GameObject\
+-Added: Option to the \'93Object: Teleport\'94 Action to position the teleported object relative to another GameObject\
+-Added: Ability to manually assign a Sprites Unity Complex-based character\'92s Animator component if the sprite child has no Animator\
+-Added: The Follow Sorting Map component will now work if is not added to a Sprite Renderer, but has Sprite Renderer children and \'93Also affect children?\'94 is checked\
+-Fixed: Rare issue with Hotspot icons when changing scene in Unity 5.6\
+-Fixed: \'93Menu: Set Input box text\'94 Action not updating Unity UI-based Input boxes\
+\
+\
+Version 1.56f:\
+\
+-Added: Ability to limit which characters stop speaking when using the \'93Dialogue: Stop speech\'94 Action\
+-Added: Option to reset the cursor icon when re-selecting a Hotspot if \'93Select interactions by\'94 is set to \'93Cycling Cursor And Clicking Hotspot\'94\
+-Added: Option to display narration text forever until user skips it\
+-Added: Ability to run an ActionList when the \'93Inventory: Crafting\'94 Action is used to update a Crafting element, but no suitable recipe is found\
+-Added: Functions to ActionList and ActionListAsset scripts to run Actions from a set index\
+-Added: Function to GameCamera2D component to manually set the horizontal and vertical panning offsets\
+-Added: Clicking Console outputs when searching for Action instances in Actions Manager will ping the associated ActionList\
+-Fixed: Delay in ending the \'93Dialogue: Play speech\'94 Action if the \'93Dialogue: Stop speech\'94 Action is used to end it\'92s line of speech\
+-Fixed: Issue when multiple ActionLists that un-pause the game simultaneously\
+-Fixed: Parameters set in the Highlight component\'92s custom events UI not being saved\
+-Fixed: Issue with Unity UI-based Slider menu elements\
+\
+\
+Version 1.56e:\
+\
+Upgrade note: A Menu\'92s \'93ActionList when turn off\'94 will now be run whenever another Menu forces it off - i.e. when crossfading\
+-Added: Option to Unity UI-sourced Menus to auto-select the first-visible Element, as opposed to referencing an Element by name\
+-Added: Option to close Interaction menus if the associated Hotspot is no longer in the Player\'92s vicinity, and the Hotspot detection method is set to Player Vicinity\
+-Added: When using a Unity UI-based Interaction menu with \'93Cycling Menu And Clicking Hotspot\'94 interaction mode, Interaction and InventoryBox elements are now highlighted\
+-Changed: If options data is reset in the Settings Manager, and player profiles are enabled, the default profile will be made active\
+-Fixed: Issue when displaying speech text with a [hold] tag at the same time as a Conversation\
+-Fixed: Menu property \'93ActionList when turn off\'94 not always running when it should\
+-Fixed: Various cursor issues when interactions are run by cycling cursors\
+-Fixed: Option-linked Variables not loading correctly in rare circumstances\
+-Fixed: Rare console error when using a Hotspot Detector\
+-Fixed: BackgroundCamera prefab showing gizmos in the Game window when building 2.5D games\
+\
+\
+Version 1.56d:\
 \
 -Added: If a Hotspot is passed as a GameObject parameter to the \'93Character: Move to point\'94 Action, the Hotspot\'92s \'93Walk-to Marker\'94 will be assigned as the destination\
 -Added: Option to move characters with their Rigidbody2D components if present, as opposed to moving their transforms\

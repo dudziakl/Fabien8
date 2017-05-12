@@ -123,6 +123,8 @@ namespace AC
 		public bool cycleInventoryCursors = true;
 		/** If True, then triggering an Interaction will cycle the cursor mode, if interactionMethod = AC_InteractionMethod.ChooseHotspotThenInteraction */
 		public bool autoCycleWhenInteract = false;
+		/** What happens to the cursor icon when a hotspot (or inventory item, depending) is reselected and selectInteractions = SelectInteractions.CyclingMenuAndClickingHotspot */
+		public WhenReselectHotspot whenReselectHotspot = WhenReselectHotspot.RestoreHotspotIcon;
 		/** If True, then the cursor will be locked in the centre of the screen when the game begins */
 		public bool lockCursorOnStart = false;
 		/** If True, then the cursor will be hidden whenever it is locked */
@@ -286,6 +288,8 @@ namespace AC
 
 		/** How Hotspots are detected (MouseOver, PlayerVicinity) */
 		public HotspotDetection hotspotDetection = HotspotDetection.MouseOver;
+		/** If True, and hotspotDetection = HotspotDetection.PlayerVicinity and interactionMethod = InteractionMethod.ChooseHotspotThenInteraction, then Interaction Menus will close if the Player is no longer in the active Hotspot's vicinity */
+		public bool closeInteractionMenusIfPlayerLeavesVicinity = false;
 		/** If True, and hotspotDetection = HotspotDetection.PlayerVicinity, then distant Hotspots will be placed on a different layer  */
 		public bool placeDistantHotspotsOnSeparateLayer = true;
 		/** What Hotspots gets detected, if hotspotDetection = HotspotDetection.PlayerVicinity (NearestOnly, CycleMultiple, ShowAll) */
@@ -644,6 +648,7 @@ namespace AC
 						if (selectInteractions == SelectInteractions.CyclingCursorAndClickingHotspot)
 						{
 							autoCycleWhenInteract = CustomGUILayout.ToggleLeft ("Auto-cycle after an Interaction?", autoCycleWhenInteract, "AC.KickStarter.settingsManager.autoCycleWhenInteract");
+							whenReselectHotspot = (WhenReselectHotspot) CustomGUILayout.EnumPopup ("When re-select Hotspot?", whenReselectHotspot, "AC.KickStarter.settingsManager.whenReselectHotspot");
 						}
 					
 						if (SelectInteractionMethod () == SelectInteractions.ClickingMenu)
@@ -659,6 +664,11 @@ namespace AC
 						else
 						{
 							cancelInteractions = CancelInteractions.CursorLeavesMenu;
+						}
+
+						if (hotspotDetection == HotspotDetection.PlayerVicinity && SelectInteractionMethod () != SelectInteractions.CyclingCursorAndClickingHotspot)
+						{
+							closeInteractionMenusIfPlayerLeavesVicinity = CustomGUILayout.ToggleLeft ("Close interactions if Player leaves Hotspot's vicinity?", closeInteractionMenusIfPlayerLeavesVicinity, "AC.KickStarter.settingsManager.closeInteractionMenusIfPlayerLeavesVicinity");
 						}
 					}
 				}
@@ -772,7 +782,7 @@ namespace AC
 
 				if (CanSelectItems (false))
 				{
-					inventoryDragDrop = CustomGUILayout.ToggleLeft ("Drag and drop Inventory interface?", inventoryDragDrop, "AC.KickStarter.settingsManager.inventoryDragDrop");
+					inventoryDragDrop = CustomGUILayout.ToggleLeft ("Drag and drop Inventory interface?", inventoryDragDrop, "AC. KickStarter.settingsManager.InventoryDragDrop");
 					if (!inventoryDragDrop)
 					{
 						if (interactionMethod == AC_InteractionMethod.ContextSensitive || inventoryInteractions == InventoryInteractions.Single)
@@ -989,7 +999,7 @@ namespace AC
 				hotspotDetection = (HotspotDetection) CustomGUILayout.EnumPopup ("Hotspot detection method:", hotspotDetection, "AC.KickStarter.settingsManager.hotspotDetection");
 				if (hotspotDetection == HotspotDetection.PlayerVicinity)
 				{
-					placeDistantHotspotsOnSeparateLayer = CustomGUILayout.ToggleLeft ("Place distance Hotspots on separate layer?", placeDistantHotspotsOnSeparateLayer, "AC.KickStarter.settingsManager.placeDistantHotspotsOnSeparateLayer");
+					placeDistantHotspotsOnSeparateLayer = CustomGUILayout.ToggleLeft ("Place distant Hotspots on separate layer?", placeDistantHotspotsOnSeparateLayer, "AC.KickStarter.settingsManager.placeDistantHotspotsOnSeparateLayer");
 				}
 				if (hotspotDetection == HotspotDetection.PlayerVicinity && (movementMethod == MovementMethod.Direct || IsInFirstPerson ()))
 				{
@@ -1147,6 +1157,7 @@ namespace AC
 					optionsData.showSubtitles = false;
 
 					Options.SavePrefsToID (0, optionsData, true);
+					Options.SwitchProfileID (0);
 				}
 			}
 		}
@@ -1243,7 +1254,7 @@ namespace AC
 
 			result = SmartAddInput (result, "FlashHotspots (Button)");
 			if (AdvGame.GetReferences ().speechManager != null &&
-			   (AdvGame.GetReferences ().speechManager.allowSpeechSkipping || AdvGame.GetReferences ().speechManager.displayForever))
+			   (AdvGame.GetReferences ().speechManager.allowSpeechSkipping || AdvGame.GetReferences ().speechManager.displayForever || AdvGame.GetReferences ().speechManager.displayNarrationForever))
 			{
 				result = SmartAddInput (result, "SkipSpeech (Button)");
 			}
@@ -1745,6 +1756,34 @@ namespace AC
 		}
 
 
+		/** If True, then inventory items can be drag-dropped (i.e. used on Hotspots and other items with a single mouse button press */
+		public bool InventoryDragDrop
+		{
+			get
+			{
+				if (CanSelectItems (false))
+				{
+					return inventoryDragDrop;
+				}
+				return false;
+			}
+		}
+
+
+		/** If True, Hotspots that have no interaction associated with a given inventory item will not be active while that item is selected */
+		public bool AutoDisableUnhandledHotspots
+		{
+			get
+			{
+				if (CanSelectItems (false))
+				{
+					return autoDisableUnhandledHotspots;
+				}
+				return false;
+			}
+		}
+
+
 		#if UNITY_EDITOR
 
 		private void AssignSaveScripts ()
@@ -2052,8 +2091,7 @@ namespace AC
 	/**
 	 * \mainpage Adventure Creator: Scripting guide
 	 *
-	 * Welcome to Adventure Creator's scripting guide!
-	 * You can use this guide to get detailed descriptions on all of ACs public functions and variables.
+	 * Welcome to Adventure Creator's scripting guide. You can use this guide to get detailed descriptions on all of ACs public functions and variables.<br><b>Please read this page before delving in!</b>
 	 * 
 	 * Adventure Creator's scripts are written in C#, and use the 'AC' namespace, so you'll need to add the following at the top of any script that accesses them:
 	 * 
@@ -2101,9 +2139,7 @@ namespace AC
 	 * AC.KickStarter.stateHandler.GatherObjects ();
 	 * \endcode
 	 * 
-	 * All-scene based ActionLists, inculding Cutscenes and Triggers, derive from the ActionList class.
-	 * 
-	 * You can run ActionListAsset assets from the AdvGame class, which contains a number of helpful general functions.
+	 * All-scene based ActionLists, inculding Cutscenes and Triggers, derive from the ActionList class.  Action List assets rely on the ActionListAsset class.  Both classes have an Interact function, which will cause their Actions to run.
 	 * 
 	 * Global and Local variables can be read and written to with static functions in the GlobalVariables and LocalVariables classes respectively:
 	 * 
@@ -2111,6 +2147,11 @@ namespace AC
 	 * AC.GlobalVariables.GetBooleanValue (int _id);
 	 * AC.LocalVariables.SetStringValue (int _id, string _value);
 	 * \endcode
+	 *
+	 * The best way to hook up custom code with AC is to use the EventManager.  Custom events allow you to hook up your own code whenever AC performs common tasks, such as playing speech or changing the camera.
+	 * A tutorial on writing custom events can be found <a href="http://www.adventurecreator.org/tutorials/calling-custom-events">here</a>.
+	 * 
+	 * If you're using this guide to help write an integration script with another Unity asset, check out the <a href="http://adventure-creator.wikia.com/wiki/Category:Integrations">Integrations page</a> of the <a href="http://adventure-creator.wikia.com/wiki/">AC wiki</a> - it may have what you're looking for!
 	 * 
 	 * More common functions and variables can be found under Section 12.7 of the <a href="http://www.adventurecreator.org/files/Manual.pdf">AC Manual</a>.  Happy scripting!
 	 */

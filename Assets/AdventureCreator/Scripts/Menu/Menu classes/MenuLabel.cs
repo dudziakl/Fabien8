@@ -450,7 +450,7 @@ namespace AC
 		public override void Display (GUIStyle _style, int _slot, float zoom, bool isActive)
 		{
 			base.Display (_style, _slot, zoom, isActive);
-			
+
 			_style.wordWrap = true;
 			_style.alignment = anchor;
 			if (zoom < 1f)

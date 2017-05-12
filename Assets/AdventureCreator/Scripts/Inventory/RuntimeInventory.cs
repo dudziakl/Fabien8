@@ -93,7 +93,7 @@ namespace AC
 				SetNull ();
 			}
 		}
-		
+
 
 		/**
 		 * De-selects the active inventory item.
@@ -131,6 +131,7 @@ namespace AC
 				{
 					SetSelectItemMode (_mode);
 					selectedItem = item;
+
 					PlayerMenus.ResetInventoryBoxes ();
 					KickStarter.eventManager.Call_OnChangeInventory (selectedItem, InventoryEventType.Select);
 					return;
@@ -1009,7 +1010,7 @@ namespace AC
 			
 			if (item2 == item1)
 			{
-				if ((KickStarter.settingsManager.interactionMethod != AC_InteractionMethod.ChooseHotspotThenInteraction || KickStarter.settingsManager.inventoryInteractions == InventoryInteractions.Single) && KickStarter.settingsManager.inventoryDragDrop && KickStarter.settingsManager.inventoryDropLook)
+				if ((KickStarter.settingsManager.interactionMethod != AC_InteractionMethod.ChooseHotspotThenInteraction || KickStarter.settingsManager.inventoryInteractions == InventoryInteractions.Single) &&  KickStarter.settingsManager.InventoryDragDrop && KickStarter.settingsManager.inventoryDropLook)
 				{
 					Look (item2);
 				}

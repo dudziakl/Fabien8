@@ -46,6 +46,8 @@ namespace AC
 
 		/** If True, then speech text will remain on the screen until the player skips it */
 		public bool displayForever = false;
+		/** If true, then narration text will remain on the screen until the player skips it.  This only has an effect if displayForever = false */
+		public bool displayNarrationForever = false;
 		/** If True, and subtitles can be skipped, then skipping can be achieved with mouse-clicks, as well as by invoking the SkipSpeech input */
 		public bool canSkipWithMouseClicks = true;
 		/** The minimum time, in seconds, that a speech line will be displayed (unless an AudioClip is setting it's length) */
@@ -175,13 +177,23 @@ namespace AC
 				}
 				
 				displayForever = CustomGUILayout.ToggleLeft ("Display subtitles forever until user skips it?", displayForever, "AC.KickStarter.speechManager.displayForever");
-				if (displayForever)
+				if (!displayForever)
 				{
-					endScrollBeforeSkip = CustomGUILayout.ToggleLeft ("Skipping speech first displays currently-scrolling text?", endScrollBeforeSkip, "AC.KickStarter.speechManager.endScrollBeforeSkip");
-					allowGameplaySpeechSkipping = CustomGUILayout.ToggleLeft ("Subtitles during gameplay can also be skipped?", allowGameplaySpeechSkipping, "AC.KickStarter.speechManager.allowGameplaySpeechSkipping");
-					skipThresholdTime = CustomGUILayout.FloatField ("Time before can skip (s):", skipThresholdTime, "AC.KickStarter.speechManager.skipThresholdTime");
+					displayNarrationForever = CustomGUILayout.ToggleLeft ("Display narration forever until user skips it?", displayNarrationForever, "AC.KickStarter.speechManager.displayNarrationForever");
 				}
-				else
+
+				if (displayForever || displayNarrationForever)
+				{
+					if (scrollSubtitles || scrollNarration)
+					{
+						endScrollBeforeSkip = CustomGUILayout.ToggleLeft ("Skipping speech first displays currently-scrolling text?", endScrollBeforeSkip, "AC.KickStarter.speechManager.endScrollBeforeSkip");
+					}
+					allowGameplaySpeechSkipping = CustomGUILayout.ToggleLeft ("Subtitles during gameplay can also be skipped?", allowGameplaySpeechSkipping, "AC.KickStarter.speechManager.allowGameplaySpeechSkipping");
+					//skipThresholdTime = CustomGUILayout.FloatField ("Time before can skip (s):", skipThresholdTime, "AC.KickStarter.speechManager.skipThresholdTime");
+				}
+
+				//else
+				if (displayForever && displayNarrationForever) {} else
 				{
 					minimumDisplayTime = CustomGUILayout.FloatField ("Minimum display time (s):", minimumDisplayTime, "AC.KickStarter.speechManager.minimumDisplayTime");
 					screenTimeFactor = CustomGUILayout.FloatField ("Display time factor:", screenTimeFactor, "AC.KickStarter.speechManager.screenTimeFactor");
@@ -190,16 +202,16 @@ namespace AC
 					if (allowSpeechSkipping)
 					{
 						allowGameplaySpeechSkipping = CustomGUILayout.ToggleLeft ("Subtitles during gameplay can also be skipped?", allowGameplaySpeechSkipping, "AC.KickStarter.speechManager.allowGameplaySpeechSkipping");
-						if (scrollSubtitles)
+						if (scrollSubtitles || scrollNarration)
 						{
 							endScrollBeforeSkip = CustomGUILayout.ToggleLeft ("Skipping subtitles first displays currently-scrolling text?", endScrollBeforeSkip, "AC.KickStarter.speechManager.endScrollBeforeSkip");
 						}
 					}
 				}
 
-				if (displayForever || allowSpeechSkipping)
+				if (displayForever || displayNarrationForever || allowSpeechSkipping)
 				{
-					canSkipWithMouseClicks = CustomGUILayout.ToggleLeft ("Can skip speech with mouse clicks?", canSkipWithMouseClicks, "AC.KickStarter.speechManager.canSkipWithMouseClicks");
+					canSkipWithMouseClicks = CustomGUILayout.ToggleLeft ("Can skip with mouse clicks?", canSkipWithMouseClicks, "AC.KickStarter.speechManager.canSkipWithMouseClicks");
 					skipThresholdTime = CustomGUILayout.FloatField ("Time before can skip (s):", skipThresholdTime, "AC.KickStarter.speechManager.skipThresholdTime");
 				}
 				

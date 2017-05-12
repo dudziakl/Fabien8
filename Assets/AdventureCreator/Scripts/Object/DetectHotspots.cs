@@ -81,7 +81,7 @@ namespace AC
 			{
 				if (AdvGame.GetReferences ().settingsManager.hotspotsInVicinity == HotspotsInVicinity.NearestOnly)
 				{
-					if (hotspots.Count > selected)
+					if (selected >= 0 && hotspots.Count > selected)
 					{
 						if (IsLayerCorrect (hotspots[selected].gameObject.layer))
 						{

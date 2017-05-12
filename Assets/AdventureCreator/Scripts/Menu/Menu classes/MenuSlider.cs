@@ -620,14 +620,23 @@ namespace AC
 				return;
 			}
 
-			if (KickStarter.settingsManager.inputMethod == InputMethod.KeyboardOrController)
+			if (uiSlider != null)
 			{
-				Change ();
+				visualAmount = uiSlider.value;
+				UpdateValue ();
 			}
 			else
 			{
-				Change (KickStarter.playerInput.GetMousePosition ().x - _menu.GetRect ().x);
+				if (KickStarter.settingsManager.inputMethod == InputMethod.KeyboardOrController)
+				{
+					Change ();
+				}
+				else
+				{
+					Change (KickStarter.playerInput.GetMousePosition ().x - _menu.GetRect ().x);
+				}
 			}
+
 			if (sliderType == AC_SliderType.CustomScript)
 			{
 				MenuSystem.OnElementClick (_menu, this, 0, (int) _mouseState);

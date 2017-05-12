@@ -159,7 +159,7 @@ namespace AC
 	public enum AlignDragMovement { AlignToCamera, AlignToPlane };
 	public enum DragRotationType { None, Roll, Screw };
 	public enum TriggerDetects { Player, AnyObjectWithComponent, AnyObject, SetObject, AnyObjectWithTag };
-	public enum PositionRelativeTo { Nothing, RelativeToActiveCamera, RelativeToPlayer };
+	public enum PositionRelativeTo { Nothing, RelativeToActiveCamera, RelativeToPlayer, RelativeToGameObject };
 
 	public enum CursorRendering { Software, Hardware };
 	public enum SeeInteractions { ClickOnHotspot, CursorOverHotspot, ViaScriptOnly };
@@ -229,5 +229,6 @@ namespace AC
 	public enum MovieMaterialMethod { PlayMovie, PauseMovie, StopMovie };
 	public enum FirstPersonHeadBobMethod { BuiltIn, CustomAnimation, CustomScript };
 	public enum ForceGameplayCursor { None, KeepLocked, KeepUnlocked };
+	public enum WhenReselectHotspot { RestoreHotspotIcon, ResetIcon };
 
 }

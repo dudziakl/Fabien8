@@ -65,14 +65,13 @@ namespace AC
 				if (menuElement is MenuInput)
 				{
 					MenuInput menuInput = (MenuInput) menuElement;
-
 					if (setMenuInputBoxSource == SetMenuInputBoxSource.EnteredHere)
 					{
-						menuInput.label = newLabel;
+						menuInput.SetLabel (newLabel);
 					}
 					else if (setMenuInputBoxSource == SetMenuInputBoxSource.FromGlobalVariable)
 					{
-						menuInput.label = GlobalVariables.GetStringValue (varID);
+						menuInput.SetLabel (GlobalVariables.GetStringValue (varID));
 					}
 				}
 			}

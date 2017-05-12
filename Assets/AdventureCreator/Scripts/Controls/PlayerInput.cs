@@ -854,7 +854,7 @@ namespace AC
 			{
 				if (mouseState == MouseState.Normal)
 				{
-					if (KickStarter.runtimeInventory.selectedItem != null && KickStarter.settingsManager.inventoryDragDrop)
+					if (KickStarter.runtimeInventory.selectedItem != null &&  KickStarter.settingsManager.InventoryDragDrop)
 					{
 						return true;
 					}
@@ -1689,7 +1689,7 @@ namespace AC
 		{
 			DragState oldDragState = dragState;
 
-			if (KickStarter.runtimeInventory.selectedItem != null && KickStarter.settingsManager.inventoryDragDrop && (KickStarter.stateHandler.gameState == GameState.Normal || KickStarter.stateHandler.gameState == GameState.Paused))
+			if (KickStarter.runtimeInventory.selectedItem != null &&  KickStarter.settingsManager.InventoryDragDrop && (KickStarter.stateHandler.gameState == GameState.Normal || KickStarter.stateHandler.gameState == GameState.Paused))
 			{
 				if (dragVector.magnitude >= KickStarter.settingsManager.dragDropThreshold)
 				{
@@ -1753,7 +1753,7 @@ namespace AC
 
 		private void SetDragStateTouchScreen ()
 		{
-			if (KickStarter.runtimeInventory.selectedItem != null && KickStarter.settingsManager.inventoryDragDrop && (KickStarter.stateHandler.gameState == GameState.Normal || KickStarter.stateHandler.gameState == GameState.Paused))
+			if (KickStarter.runtimeInventory.selectedItem != null &&  KickStarter.settingsManager.InventoryDragDrop && (KickStarter.stateHandler.gameState == GameState.Normal || KickStarter.stateHandler.gameState == GameState.Paused))
 			{}
 			else if (activeDragElement != null && (KickStarter.stateHandler.gameState == GameState.Normal || KickStarter.stateHandler.gameState == GameState.Paused))
 			{}

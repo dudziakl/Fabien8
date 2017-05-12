@@ -22,13 +22,10 @@ namespace AC
 			_target.callEvents = EditorGUILayout.Toggle ("Call custom events?", _target.callEvents);
 			if (_target.callEvents)
 			{
-				var serializedObject = new UnityEditor.SerializedObject (_target);
-
-				SerializedProperty onHighlightOn = serializedObject.FindProperty ("onHighlightOn");
-				SerializedProperty onHighlightOff = serializedObject.FindProperty ("onHighlightOff");
-
-				EditorGUILayout.PropertyField (onHighlightOn, true);
-				EditorGUILayout.PropertyField (onHighlightOff, true);
+				this.serializedObject.Update ();
+				EditorGUILayout.PropertyField (this.serializedObject.FindProperty ("onHighlightOn"), true);
+				EditorGUILayout.PropertyField (this.serializedObject.FindProperty ("onHighlightOff"), true);
+	            this.serializedObject.ApplyModifiedProperties ();
 			}
 
 			UnityVersionHandler.CustomSetDirty (_target);

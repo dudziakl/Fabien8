@@ -41,6 +41,12 @@ namespace AC
 			EditorGUILayout.LabelField ("Mecanim parameters:", EditorStyles.boldLabel);
 			
 			character.spriteChild = (Transform) EditorGUILayout.ObjectField ("Sprite child:", character.spriteChild, typeof (Transform), true);
+
+			if (character.spriteChild != null && character.spriteChild.GetComponent <Animator>() == null)
+			{
+				character.customAnimator = (Animator) EditorGUILayout.ObjectField ("Animator (if not on s.c.):", character.customAnimator, typeof (Animator), true);
+			}
+
 			character.moveSpeedParameter = EditorGUILayout.TextField ("Move speed float:", character.moveSpeedParameter);
 			character.turnParameter = EditorGUILayout.TextField ("Turn float:", character.turnParameter);
 			character.directionParameter = EditorGUILayout.TextField ("Direction integer:", character.directionParameter);

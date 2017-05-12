@@ -1,7 +1,7 @@
 /*
  *
  *	Adventure Creator
- *	by Chris Burton, 2013-2016
+ *	by Chris Burton, 2013-2017
  *	
  *	"Menu.cs"
  * 
@@ -106,7 +106,9 @@ namespace AC
 		public MenuElement selected_element;
 		/** Which slot within an OnGUI MenuElement is currently active, when it is keyboard-controlled */
 		public int selected_slot = 0;
-		/** The name of the Unity UI MenuElement to automatically select */
+		/** If Truel, the first visible Unity UI MenuElement will be automatically selected when the Menu is turned on */
+		public bool autoSelectFirstVisibleElement = false;
+		/** The name of the Unity UI MenuElement to automatically select when the Menu is turned on */
 		public string firstSelectedElement;
 
 		/** A List of MenuElement subclasses that are drawn within the Menu */
@@ -197,6 +199,7 @@ namespace AC
 			actionListOnTurnOn = null;
 			actionListOnTurnOff = null;
 			firstSelectedElement = "";
+			autoSelectFirstVisibleElement = false;
 			
 			fadeSpeed = 0f;
 			transitionType = MenuTransition.None;
@@ -268,6 +271,7 @@ namespace AC
 			selected_element = null;
 			selected_slot = 0;
 			firstSelectedElement = _menu.firstSelectedElement;
+			autoSelectFirstVisibleElement = _menu.autoSelectFirstVisibleElement;
 
 			spacing = _menu.spacing;
 			sizeType = _menu.sizeType;
@@ -761,8 +765,12 @@ namespace AC
 				rectTransformID = Menu.FieldToID <RectTransform> (rectTransform, rectTransformID);
 				rectTransform = Menu.IDToField <RectTransform> (rectTransform, rectTransformID, menuSource);
 
-				firstSelectedElement = CustomGUILayout.TextField ("First selected Element:", firstSelectedElement, apiPrefix + ".firstSelectedElement");
-				EditorGUILayout.HelpBox ("For UIs to be keyboard-controlled, the name of the first selected element must be entered above.", MessageType.Info);
+				autoSelectFirstVisibleElement = CustomGUILayout.ToggleLeft ("Auto-select first visible Element?", autoSelectFirstVisibleElement, apiPrefix + ".autoSelectFirstVisibleElement");
+				if (!autoSelectFirstVisibleElement)
+				{
+					firstSelectedElement = CustomGUILayout.TextField ("First selected Element:", firstSelectedElement, apiPrefix + ".firstSelectedElement");
+				}
+				EditorGUILayout.HelpBox ("For UIs to be keyboard-controlled, an element to select must be defind above.", MessageType.Info);
 			}
 		}
 
@@ -1717,12 +1725,18 @@ namespace AC
 		
 
 		/**
-		 * Forces the Menu off instantly.
+		 * <summary>Forces the Menu off instantly.</summary>
+		 * <param name = "ignoreActionList">If True, and actionListOnTurnOff is assigned, then it will not be run</param>
 		 */
-		public void ForceOff ()
+		public void ForceOff (bool ignoreActionList = false)
 		{
 			if (isEnabled || isFading)
 			{
+				if (!ignoreActionList && actionListOnTurnOff != null && !isFading)
+				{
+					AdvGame.RunActionListAsset (actionListOnTurnOff);
+				}
+
 				transitionProgress = 0f;
 				UpdateTransition ();
 				isFading = false;
@@ -2410,15 +2424,28 @@ namespace AC
 		 */
 		public GameObject GetObjectToSelect ()
 		{
-			if (firstSelectedElement == "")
+			if (autoSelectFirstVisibleElement)
 			{
-				return null;
-			}
-			foreach (MenuElement element in visibleElements)
-			{
-				if (element.title == firstSelectedElement)
+				foreach (MenuElement element in visibleElements)
 				{
-					return element.GetObjectToSelect ();
+					if (element.isVisible)
+					{
+						return element.GetObjectToSelect ();
+					}
+				}
+			}
+			else
+			{
+				if (firstSelectedElement == "")
+				{
+					return null;
+				}
+				foreach (MenuElement element in visibleElements)
+				{
+					if (element.title == firstSelectedElement)
+					{
+						return element.GetObjectToSelect ();
+					}
 				}
 			}
 			return null;

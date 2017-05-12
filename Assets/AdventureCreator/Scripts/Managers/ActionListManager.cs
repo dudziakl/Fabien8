@@ -207,8 +207,8 @@ namespace AC
 
 			return false;
 		}
-		
-		
+
+
 		/**
 		 * <summary>Checks if any currently-running ActionListAssets pause gameplay and unfreeze 'Pause' Menus.</summary>
 		 * <returns>True if any currently-running ActionListAssets pause gameplay and unfreeze 'Pause' Menus.</returns>
@@ -217,7 +217,7 @@ namespace AC
 		{
 			foreach (ActiveList activeList in activeLists)
 			{
-				if (activeList.CanUnfreezePauseMenus ())
+				if (activeList.CanUnfreezePauseMenus () && activeList.IsRunning ())
 				{
 					return true;
 				}
@@ -225,7 +225,7 @@ namespace AC
 
 			foreach (ActiveList activeList in KickStarter.actionListAssetManager.activeLists)
 			{
-				if (activeList.CanUnfreezePauseMenus ())
+				if (activeList.CanUnfreezePauseMenus () && activeList.IsRunning ())
 				{
 					return true;
 				}
@@ -357,7 +357,6 @@ namespace AC
 					activeLists.RemoveAt (i);
 				}
 			}
-
 			addToSkipQueue = CanAddToSkipQueue (actionList, addToSkipQueue);
 			activeLists.Add (new ActiveList (actionList, addToSkipQueue, _startIndex));
 
@@ -381,7 +380,6 @@ namespace AC
 			{
 				return;
 			}
-
 			for (int i=0; i<activeLists.Count; i++)
 			{
 				if (activeLists[i].IsFor (actionList))
@@ -414,6 +412,7 @@ namespace AC
 					{
 						ResetSkipVars ();
 					}
+					PurgeLists ();
 				}
 				else
 				{
@@ -485,8 +484,9 @@ namespace AC
 		{
 			if (KickStarter.stateHandler != null)
 			{
-				if (KickStarter.playerMenus.ArePauseMenusOn (null))
+				if (KickStarter.playerMenus.ArePauseMenusOn (null) && !IsGameplayBlockedAndUnfrozen ())
 				{
+					// Only pause the game again if no unfreezing ActionLists are running
 					KickStarter.mainCamera.PauseGame ();
 				}
 				else

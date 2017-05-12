@@ -40,6 +40,8 @@ namespace AC
 		public ConversationDisplayType displayType = ConversationDisplayType.IconOnly;
 		/** The method which this element (or slots within it) are hidden from view when made invisible (DisableObject, ClearContent) */
 		public UIHideStyle uiHideStyle = UIHideStyle.DisableObject;
+		/** If craftingType = CraftingElementType.Output, the ActionList to run if a crafting attempt is made but no succesful recipe is possible. This only works if crafting is performed manually via the Inventory: Crafting Action. */
+		public ActionListAsset actionListOnWrongIngredients;
 
 		private Recipe activeRecipe;
 		private bool[] isFilled;
@@ -61,6 +63,7 @@ namespace AC
 			craftingType = CraftingElementType.Ingredients;
 			displayType = ConversationDisplayType.IconOnly;
 			uiHideStyle = UIHideStyle.DisableObject;
+			actionListOnWrongIngredients = null;
 			items = new List<InvItem>();
 		}
 
@@ -89,6 +92,7 @@ namespace AC
 			craftingType = _element.craftingType;
 			displayType = _element.displayType;
 			uiHideStyle = _element.uiHideStyle;
+			actionListOnWrongIngredients = _element.actionListOnWrongIngredients;
 
 			PopulateList (MenuSource.AdventureCreator);
 			
@@ -194,6 +198,11 @@ namespace AC
 			else
 			{
 				numSlots = 1;
+				actionListOnWrongIngredients = ActionListAssetMenu.AssetGUI ("ActionList on fail:", actionListOnWrongIngredients, apiPrefix + ".actionListOnWrongIngredients", "ActionList_On_Fail_Recipe");
+				if (actionListOnWrongIngredients != null)
+				{
+					EditorGUILayout.HelpBox ("This ActionList will only be run if the result is calculated manually via the 'Inventory: Crafting' Action.", MessageType.Info);
+				}
 			}
 
 			if (source != MenuSource.AdventureCreator)
@@ -543,6 +552,13 @@ namespace AC
 						newItem.count = 1;
 						items.Add (newItem);
 					}
+				}
+			}
+			else
+			{
+				if (!autoCreate && actionListOnWrongIngredients != null)
+				{
+					actionListOnWrongIngredients.Interact ();
 				}
 			}
 

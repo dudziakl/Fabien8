@@ -73,7 +73,7 @@ namespace AC
 
 			addToSkipQueue = KickStarter.actionListManager.CanAddToSkipQueue (runtimeActionList, addToSkipQueue);
 			activeLists.Add (new ActiveList (runtimeActionList, addToSkipQueue, _startIndex));
-			
+
 			if (runtimeActionList.actionListType == ActionListType.PauseGameplay && !runtimeActionList.unfreezePauseMenus && KickStarter.playerMenus.ArePauseMenusOn (null))
 			{
 				// Don't affect the gamestate if we want to remain frozen

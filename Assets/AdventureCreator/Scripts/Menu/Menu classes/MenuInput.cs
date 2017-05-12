@@ -199,6 +199,21 @@ namespace AC
 
 
 		/**
+		 * <summary>Set the contents of the text box manually.</summary>
+		 * <param name = "_label">The new label for the text box.</param>
+		 */
+		public void SetLabel (string _label)
+		{
+			label = _label;
+
+			if (uiInput != null && uiInput.textComponent != null)
+			{
+				uiInput.text = _label;
+			}
+		}
+
+
+		/**
 		 * <summary>Performs all calculations necessary to display the element.</summary>
 		 * <param name = "_slot">Ignored by this subclass</param>
 		 * <param name = "languageNumber">The index number of the language to display text in</param>

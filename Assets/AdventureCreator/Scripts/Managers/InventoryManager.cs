@@ -1028,12 +1028,12 @@ namespace AC
 					
 					selectedRecipe.autoCreate = CustomGUILayout.Toggle ("Result is automatic?", selectedRecipe.autoCreate, apiPrefix + ".autoCreate");
 					selectedRecipe.useSpecificSlots = CustomGUILayout.Toggle ("Requires specific pattern?", selectedRecipe.useSpecificSlots, apiPrefix + ".useSpecificSlots");
-					selectedRecipe.actionListOnCreate = ActionListAssetMenu.AssetGUI ("ActionList when create:", selectedRecipe.actionListOnCreate, apiPrefix + ".actionListOnCreate");
-					
+					selectedRecipe.actionListOnCreate = ActionListAssetMenu.AssetGUI ("ActionList when create:", selectedRecipe.actionListOnCreate, apiPrefix + ".actionListOnCreate", "ActionList_On_Create_" + selectedRecipe.label);
+
 					selectedRecipe.onCreateRecipe = (OnCreateRecipe) CustomGUILayout.EnumPopup ("When click on result:", selectedRecipe.onCreateRecipe, apiPrefix + ".onCreateRecipe");
 					if (selectedRecipe.onCreateRecipe == OnCreateRecipe.RunActionList)
 					{
-						selectedRecipe.invActionList = ActionListAssetMenu.AssetGUI ("ActionList when click:", selectedRecipe.invActionList, apiPrefix + ".invActionList");
+						selectedRecipe.invActionList = ActionListAssetMenu.AssetGUI ("ActionList when click:", selectedRecipe.invActionList, apiPrefix + ".invActionList", "ActionList_On_Click_" + selectedRecipe.label);
 					}
 					
 					EditorGUILayout.Space ();

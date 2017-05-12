@@ -1,7 +1,7 @@
 ﻿/*
  *
  *	Adventure Creator
- *	by Chris Burton, 2013-2016
+ *	by Chris Burton, 2013-2017
  *	
  *	"ActionSendMessage.cs"
  * 
@@ -35,7 +35,7 @@ namespace AC
 			this.isDisplayed = true;
 			category = ActionCategory.Object;
 			title = "Call event";
-			description = "Sends a given message to a GameObject. Can be either a message commonly-used by Adventure Creator (Interact, TurnOn, etc) or a custom one, with an integer argument.";
+			description = "Calls a given function on a GameObject.";
 		}
 		
 
@@ -68,11 +68,11 @@ namespace AC
 		{
 			var serializedObject = new UnityEditor.SerializedObject (this);
 
+			serializedObject.Update ();
 			SerializedProperty eventProperty = serializedObject.FindProperty ("unityEvent");
 			EditorGUILayout.PropertyField (eventProperty, true);
 
 			ignoreWhenSkipping = EditorGUILayout.Toggle ("Ignore when skipping?", ignoreWhenSkipping);
-
 			if (ignoreWhenSkipping)
 			{
 				SerializedProperty skipEventProperty = serializedObject.FindProperty ("skipEvent");
@@ -80,6 +80,8 @@ namespace AC
 			}
 
 			serializedObject.ApplyModifiedProperties ();
+
+			EditorGUILayout.HelpBox ("Parameters passed from here cannot be set, unfortunately, due to a Unity limitation.", MessageType.Warning);
 
 			AfterRunningOption ();
 		}

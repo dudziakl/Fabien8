@@ -53,7 +53,7 @@ MonoBehaviour:
   rectTransformID: 710880
   uiTransitionType: 1
   uiPositionType: 0
-  isEditing: 0
+  isEditing: 1
   isLocked: 0
   id: 0
   title: Options
@@ -88,6 +88,7 @@ MonoBehaviour:
   limitToCharacters: 
   selected_element: {fileID: 0}
   selected_slot: 0
+  autoSelectFirstVisibleElement: 0
   firstSelectedElement: 
   elements:
   - {fileID: 11400020}
@@ -183,6 +184,7 @@ MonoBehaviour:
   limitToCharacters: 
   selected_element: {fileID: 0}
   selected_slot: 0
+  autoSelectFirstVisibleElement: 0
   firstSelectedElement: 
   elements:
   - {fileID: 11400030}
@@ -274,6 +276,7 @@ MonoBehaviour:
   limitToCharacters: 
   selected_element: {fileID: 0}
   selected_slot: 0
+  autoSelectFirstVisibleElement: 0
   firstSelectedElement: 
   elements:
   - {fileID: 11400036}
@@ -365,6 +368,7 @@ MonoBehaviour:
   limitToCharacters: 
   selected_element: {fileID: 0}
   selected_slot: 0
+  autoSelectFirstVisibleElement: 0
   firstSelectedElement: 
   elements:
   - {fileID: 11400042}
@@ -454,6 +458,7 @@ MonoBehaviour:
   limitToCharacters: 
   selected_element: {fileID: 0}
   selected_slot: 0
+  autoSelectFirstVisibleElement: 0
   firstSelectedElement: 
   elements:
   - {fileID: 11400050}
@@ -542,6 +547,7 @@ MonoBehaviour:
   limitToCharacters: 
   selected_element: {fileID: 0}
   selected_slot: 0
+  autoSelectFirstVisibleElement: 0
   firstSelectedElement: 
   elements:
   - {fileID: 11400052}
@@ -633,6 +639,7 @@ MonoBehaviour:
   limitToCharacters: 
   selected_element: {fileID: 0}
   selected_slot: 0
+  autoSelectFirstVisibleElement: 0
   firstSelectedElement: 
   elements:
   - {fileID: 11400056}
@@ -732,6 +739,7 @@ MonoBehaviour:
   limitToCharacters: 
   selected_element: {fileID: 0}
   selected_slot: 0
+  autoSelectFirstVisibleElement: 0
   firstSelectedElement: 
   elements:
   - {fileID: 11400068}
@@ -1817,6 +1825,7 @@ MonoBehaviour:
   limitToCharacters: 
   selected_element: {fileID: 0}
   selected_slot: 0
+  autoSelectFirstVisibleElement: 0
   firstSelectedElement: 
   elements:
   - {fileID: 11400064}
@@ -3088,6 +3097,7 @@ MonoBehaviour:
   limitToCharacters: 
   selected_element: {fileID: 0}
   selected_slot: 0
+  autoSelectFirstVisibleElement: 0
   firstSelectedElement: 
   elements:
   - {fileID: 11400088}
@@ -3331,6 +3341,7 @@ MonoBehaviour:
   items: []
   displayType: 1
   uiHideStyle: 0
+  actionListOnWrongIngredients: {fileID: 0}
 --- !u!114 &11400092
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3520,6 +3531,7 @@ MonoBehaviour:
   items: []
   displayType: 1
   uiHideStyle: 0
+  actionListOnWrongIngredients: {fileID: 0}
 --- !u!114 &11400098
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3871,6 +3883,7 @@ MonoBehaviour:
   limitToCharacters: 
   selected_element: {fileID: 0}
   selected_slot: 0
+  autoSelectFirstVisibleElement: 0
   firstSelectedElement: 
   elements:
   - {fileID: 11400110}
@@ -3985,7 +3998,7 @@ MonoBehaviour:
   rectTransformID: 310968
   uiTransitionType: 1
   uiPositionType: 0
-  isEditing: 1
+  isEditing: 0
   isLocked: 0
   id: 12
   title: Pause
@@ -4018,6 +4031,7 @@ MonoBehaviour:
   limitToCharacters: 
   selected_element: {fileID: 0}
   selected_slot: 0
+  autoSelectFirstVisibleElement: 0
   firstSelectedElement: 
   elements:
   - {fileID: 11400132}
@@ -4790,6 +4804,7 @@ MonoBehaviour:
   limitToCharacters: 
   selected_element: {fileID: 0}
   selected_slot: 0
+  autoSelectFirstVisibleElement: 0
   firstSelectedElement: 
   elements:
   - {fileID: 11410476}

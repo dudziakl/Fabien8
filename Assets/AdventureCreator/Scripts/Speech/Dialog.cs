@@ -331,23 +331,27 @@ namespace AC
 		 * <param name = "forceMenusOff">True if subtitles should be turned off immediately</param>
 		 * <param name = "speechMenuLimit">The type of speech to kill (All, BlockingOnly, BackgroundOnly)</param>
 		 */
-		public void KillDialog (bool stopCharacter, bool forceMenusOff, SpeechMenuLimit speechMenuLimit = SpeechMenuLimit.All)
+		public void KillDialog (bool stopCharacter, bool forceMenusOff, SpeechMenuLimit speechMenuLimit = SpeechMenuLimit.All, SpeechMenuType speechMenuType = SpeechMenuType.All, string limitToCharacters = "")
 		{
+			bool hadEffect = false;
+
 			for (int i=0; i<speechList.Count; i++)
 			{
-				if (speechMenuLimit == SpeechMenuLimit.All ||
-				   (speechMenuLimit == SpeechMenuLimit.BackgroundOnly && speechList[i].isBackground) ||
-				   (speechMenuLimit == SpeechMenuLimit.BlockingOnly && !speechList[i].isBackground))
+				if (speechList[i].HasConditions (speechMenuLimit, speechMenuType, limitToCharacters))
 				{
 					EndSpeech (i, stopCharacter);
+					hadEffect = true;
 					i=0;
 				}
 			}
-			
-			KickStarter.stateHandler.UpdateAllMaxVolumes ();
-			if (forceMenusOff)
+
+			if (hadEffect)
 			{
-				KickStarter.playerMenus.ForceOffSubtitles ();
+				KickStarter.stateHandler.UpdateAllMaxVolumes ();
+				if (forceMenusOff)
+				{
+					KickStarter.playerMenus.ForceOffSubtitles ();
+				}
 			}
 		}
 
@@ -644,6 +648,7 @@ namespace AC
 					oldSpeech.EndSpeechAudio ();
 				}
 			}
+			oldSpeech.isAlive = false;
 			speechList.RemoveAt (i);
 			
 			if (oldSpeech.hasAudio)

@@ -454,9 +454,7 @@ MonoBehaviour:
   - fileName: ActionEvent
     category: 11
     title: Call event
-    description: Sends a given message to a GameObject. Can be either a message commonly-used
-      by Adventure Creator (Interact, TurnOn, etc) or a custom one, with an integer
-      argument.
+    description: Calls a given function on a GameObject.
     isEnabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
   - fileName: ActionChangeMaterial
@@ -1165,9 +1163,7 @@ MonoBehaviour:
   - fileName: ActionEvent
     category: 11
     title: Call event
-    description: Sends a given message to a GameObject. Can be either a message commonly-used
-      by Adventure Creator (Interact, TurnOn, etc) or a custom one, with an integer
-      argument.
+    description: Calls a given function on a GameObject.
     isEnabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
   - fileName: ActionChangeMaterial

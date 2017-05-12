@@ -33,6 +33,10 @@ namespace AC
 		public int replaceParameterID = -1;
 		public int replaceConstantID = 0;
 
+		public GameObject relativeGameObject = null;
+		public int relativeGameObjectID = 0;
+		public int relativeGameObjectParameterID = -1;
+
 		public InvAction invAction;
 		public PositionRelativeTo positionRelativeTo = PositionRelativeTo.Nothing;
 		private GameObject _gameObject;
@@ -56,6 +60,10 @@ namespace AC
 				if (invAction == InvAction.Replace)
 				{
 					replaceGameObject = AssignFile (parameters, replaceParameterID, replaceConstantID, replaceGameObject);
+				}
+				else if (invAction == InvAction.Add)
+				{
+					relativeGameObject = AssignFile (parameters, relativeGameObjectParameterID, relativeGameObjectID, relativeGameObject);
 				}
 			}
 			else if (invAction == InvAction.Remove)
@@ -105,6 +113,15 @@ namespace AC
 							Transform playerTranform = KickStarter.player.transform;
 							position = playerTranform.position + (playerTranform.forward * forward) + (playerTranform.right * right) + (playerTranform.up * up);
 							rotation.eulerAngles += playerTranform.rotation.eulerAngles;
+						}
+					}
+					else if (positionRelativeTo == PositionRelativeTo.RelativeToGameObject)
+					{
+						if (relativeGameObject != null)
+						{
+							Transform relativeTransform = relativeGameObject.transform;
+							position = relativeTransform.position + (relativeTransform.forward * forward) + (relativeTransform.right * right) + (relativeTransform.up * up);
+							rotation.eulerAngles += relativeTransform.rotation.eulerAngles;
 						}
 					}
 				}
@@ -176,6 +193,23 @@ namespace AC
 			if (invAction == InvAction.Add)
 			{
 				positionRelativeTo = (PositionRelativeTo) EditorGUILayout.EnumPopup ("Position relative to:", positionRelativeTo);
+
+				if (positionRelativeTo == PositionRelativeTo.RelativeToGameObject)
+				{
+					relativeGameObjectParameterID = Action.ChooseParameterGUI ("Relative GameObject:", parameters, relativeGameObjectParameterID, ParameterType.GameObject);
+					if (relativeGameObjectParameterID >= 0)
+					{
+						relativeGameObjectID = 0;
+						relativeGameObject = null;
+					}
+					else
+					{
+						relativeGameObject = (GameObject) EditorGUILayout.ObjectField ("Relative GameObject:", relativeGameObject, typeof (GameObject), true);
+						
+						relativeGameObjectID = FieldToID (relativeGameObject, relativeGameObjectID);
+						relativeGameObject = IDToField (relativeGameObject, relativeGameObjectID, false);
+					}
+				}
 			}
 			else if (invAction == InvAction.Replace)
 			{

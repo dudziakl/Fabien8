@@ -255,6 +255,13 @@ namespace AC
 				{
 					uiText.text = label;
 				}
+
+				if (KickStarter.settingsManager.SelectInteractionMethod () == SelectInteractions.CyclingMenuAndClickingHotspot &&
+					iconID == KickStarter.playerInteraction.GetActiveUseButtonIconID ())
+				{
+					// Select through script, not by mouse-over
+					uiButton.Select ();
+				}
 			}
 		}
 		

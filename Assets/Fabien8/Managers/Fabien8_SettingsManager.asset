@@ -36,6 +36,7 @@ MonoBehaviour:
   stopPlayerOnClickHotspot: 0
   cycleInventoryCursors: 1
   autoCycleWhenInteract: 0
+  whenReselectHotspot: 0
   lockCursorOnStart: 0
   hideLockedCursor: 0
   disableFreeAimWhenDragging: 0
@@ -102,6 +103,7 @@ MonoBehaviour:
   cameraPerspective: 0
   movingTurning: 3
   hotspotDetection: 0
+  closeInteractionMenusIfPlayerLeavesVicinity: 0
   placeDistantHotspotsOnSeparateLayer: 1
   hotspotsInVicinity: 0
   hotspotIconDisplay: 0
@@ -140,8 +142,8 @@ MonoBehaviour:
   speechAttentuationParameter: speechVolume
   defaultLanguage: 0
   defaultShowSubtitles: 0
-  defaultSfxVolume: 0.9
-  defaultMusicVolume: 0.6
+  defaultSfxVolume: 0.53530073
+  defaultMusicVolume: 0.5931711
   defaultSpeechVolume: 1
   showDebugLogs: 0
   printActionCommentsInConsole: 0

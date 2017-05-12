@@ -109,7 +109,7 @@ namespace AC
 						}
 						else
 						{
-							ACDebug.LogWarning ("Cannot save at this time - either blocking ActionLists, a Converation is active, or saving has been manually locked.");
+							ACDebug.LogWarning ("Cannot save at this time - either blocking ActionLists, a Conversation is active, or saving has been manually locked.");
 						}
 						return 0f;
 					}
@@ -166,7 +166,7 @@ namespace AC
 				}
 				else
 				{
-					ACDebug.LogWarning ("Cannot save at this time - either blocking ActionLists, a Converation is active, or saving has been manually locked.");
+					ACDebug.LogWarning ("Cannot save at this time - either blocking ActionLists, a Conversation is active, or saving has been manually locked.");
 				}
 			}
 			return 0f;

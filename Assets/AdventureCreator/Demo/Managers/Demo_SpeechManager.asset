@@ -18,6 +18,7 @@ MonoBehaviour:
   narrationTextScrollCLip: {fileID: 0}
   playScrollAudioEveryCharacter: 0
   displayForever: 0
+  displayNarrationForever: 0
   canSkipWithMouseClicks: 1
   minimumDisplayTime: 1
   screenTimeFactor: 0.1
@@ -1812,7 +1813,12 @@ MonoBehaviour:
   - UH/EH/DH/AE/IY
   lipSyncSpeed: 1
   maxID: -1
-  sceneFiles: []
+  sceneFiles:
+  - Assets/_Scenes/Default.unity
+  - Assets/_Scenes/LasZielarza.unity
+  - Assets/_Scenes/OgrodZielarza.unity
+  - Assets/_Scenes/DomZielarza.unity
+  - Assets/_Scenes/PiwnicaZielarza.unity
   activeLineID: 54
   mergeMatchingSpeechIDs: 0
   useSpeechTags: 0

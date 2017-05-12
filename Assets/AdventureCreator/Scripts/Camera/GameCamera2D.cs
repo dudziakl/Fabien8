@@ -336,6 +336,16 @@ namespace AC
 			return perspectiveOffset;
 		}
 
+
+		/**
+		 * <summary>Sets the actual horizontal and vertical panning offsets. Be aware that the camera will still be subject to the movement set by the target, so it will move back to its original position afterwards unless you also change the target.</summary>
+		 * <param name = "_perspectiveOffset">The new offsets</param>
+		 */
+		public void SetPerspectiveOffset (Vector2 _perspectiveOffset)
+		{
+			perspectiveOffset = _perspectiveOffset;
+		}
+
 	}
 
 }

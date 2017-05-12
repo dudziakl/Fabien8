@@ -30,6 +30,10 @@ namespace AC
 		public int markerParameterID = -1;
 		public int markerID = 0;
 
+		public GameObject relativeGameObject = null;
+		public int relativeGameObjectID = 0;
+		public int relativeGameObjectParameterID = -1;
+
 		public PositionRelativeTo positionRelativeTo = PositionRelativeTo.Nothing;
 
 		public bool recalculateActivePathFind = false;
@@ -53,6 +57,7 @@ namespace AC
 		{
 			obToMove = AssignFile (parameters, obToMoveParameterID, obToMoveID, obToMove);
 			teleporter = AssignFile <Marker> (parameters, markerParameterID, markerID, teleporter);
+			relativeGameObject = AssignFile (parameters, relativeGameObjectParameterID, relativeGameObjectID, relativeGameObject);
 
 			if (isPlayer && KickStarter.player)
 			{
@@ -91,6 +96,20 @@ namespace AC
 						
 						position = playerTranform.position + (playerTranform.forward * forward) + (playerTranform.right * right) + (playerTranform.up * up);
 						rotation.eulerAngles += playerTranform.rotation.eulerAngles;
+					}
+				}
+				else if (positionRelativeTo == PositionRelativeTo.RelativeToGameObject)
+				{
+					if (relativeGameObject != null)
+					{
+						Transform relativeTransform = relativeGameObject.transform;
+
+						float right = teleporter.transform.position.x;
+						float up = teleporter.transform.position.y;
+						float forward = teleporter.transform.position.z;
+						
+						position = relativeTransform.position + (relativeTransform.forward * forward) + (relativeTransform.right * right) + (relativeTransform.up * up);
+						rotation.eulerAngles += relativeTransform.rotation.eulerAngles;
 					}
 				}
 
@@ -165,6 +184,24 @@ namespace AC
 			}
 			
 			positionRelativeTo = (PositionRelativeTo) EditorGUILayout.EnumPopup ("Position relative to:", positionRelativeTo);
+
+			if (positionRelativeTo == PositionRelativeTo.RelativeToGameObject)
+			{
+				relativeGameObjectParameterID = Action.ChooseParameterGUI ("Relative GameObject:", parameters, relativeGameObjectParameterID, ParameterType.GameObject);
+				if (relativeGameObjectParameterID >= 0)
+				{
+					relativeGameObjectID = 0;
+					relativeGameObject = null;
+				}
+				else
+				{
+					relativeGameObject = (GameObject) EditorGUILayout.ObjectField ("Relative GameObject:", relativeGameObject, typeof (GameObject), true);
+					
+					relativeGameObjectID = FieldToID (relativeGameObject, relativeGameObjectID);
+					relativeGameObject = IDToField (relativeGameObject, relativeGameObjectID, false);
+				}
+			}
+
 			copyRotation = EditorGUILayout.Toggle ("Copy rotation?", copyRotation);
 
 			if (isPlayer)

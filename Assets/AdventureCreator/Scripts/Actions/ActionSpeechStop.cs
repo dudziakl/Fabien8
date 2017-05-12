@@ -25,6 +25,10 @@ namespace AC
 
 		public bool forceMenus;
 		public SpeechMenuLimit speechMenuLimit = SpeechMenuLimit.All;
+		public SpeechMenuType speechMenuType = SpeechMenuType.All;
+		public string limitToCharacters = "";
+		//public enum SpeechMenuLimit { All, BlockingOnly, BackgroundOnly };
+		//public enum SpeechMenuType { All, CharactersOnly, NarrationOnly, SpecificCharactersOnly, AllExceptSpecificCharacters };
 
 
 		public ActionSpeechStop ()
@@ -38,7 +42,7 @@ namespace AC
 		
 		override public float Run ()
 		{
-			KickStarter.dialog.KillDialog (true, forceMenus, speechMenuLimit);
+			KickStarter.dialog.KillDialog (true, forceMenus, speechMenuLimit, speechMenuType, limitToCharacters);
 
 			return 0f;
 		}
@@ -49,6 +53,19 @@ namespace AC
 		override public void ShowGUI ()
 		{
 			speechMenuLimit = (SpeechMenuLimit) EditorGUILayout.EnumPopup ("Speech to stop:", speechMenuLimit);
+			speechMenuType = (SpeechMenuType) EditorGUILayout.EnumPopup ("Characters to stop", speechMenuType);
+
+			if (speechMenuType == SpeechMenuType.SpecificCharactersOnly)
+			{
+				limitToCharacters = EditorGUILayout.TextField ("Character(s) to stop:", limitToCharacters);
+				EditorGUILayout.HelpBox ("Multiple character names should be separated by a colon ';'", MessageType.Info);
+			}
+			else if (speechMenuType == SpeechMenuType.AllExceptSpecificCharacters)
+			{
+				limitToCharacters = EditorGUILayout.TextField ("Character(s) to not stop:", limitToCharacters);
+				EditorGUILayout.HelpBox ("Multiple character names should be separated by a colon ';'", MessageType.Info);
+			}
+
 			forceMenus = EditorGUILayout.Toggle ("Force off subtitles?", forceMenus);
 
 			AfterRunningOption ();

@@ -581,6 +581,8 @@ namespace AC
 		 */
 		public bool IsOn ()
 		{
+			if (this == null || gameObject == null) return false;
+
 			if (gameObject.layer == LayerMask.NameToLayer (KickStarter.settingsManager.deactivatedLayer) && !isOn)
 			{
 				return false;
