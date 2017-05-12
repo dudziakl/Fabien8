@@ -60,7 +60,7 @@ MonoBehaviour:
     combineID: 
     unhandledActionList: {fileID: 0}
     unhandledCombineActionList: {fileID: 0}
-  - label: Klucz do domu
+  - label: Klucz
     id: 1
     altLabel: 
     carryOnStart: 0
@@ -91,7 +91,7 @@ MonoBehaviour:
     lineID: -1
     useIconID: 0
     binID: -1
-    isEditing: 0
+    isEditing: 1
     recipeSlot: -1
     lastInteractionIndex: 0
     overrideUseSyntax: 0
@@ -523,7 +523,7 @@ MonoBehaviour:
     lineID: -1
     useIconID: 0
     binID: -1
-    isEditing: 1
+    isEditing: 0
     recipeSlot: -1
     lastInteractionIndex: 0
     overrideUseSyntax: 0
