@@ -1675,7 +1675,7 @@ MonoBehaviour:
   rectTransformID: 14532472
   uiTransitionType: 1
   uiPositionType: 0
-  isEditing: 0
+  isEditing: 1
   isLocked: 0
   id: 9
   title: Subtitles
@@ -5139,7 +5139,7 @@ MonoBehaviour:
   rectTransformID: 0
   uiTransitionType: 1
   uiPositionType: 0
-  isEditing: 1
+  isEditing: 0
   isLocked: 0
   id: 13
   title: Title

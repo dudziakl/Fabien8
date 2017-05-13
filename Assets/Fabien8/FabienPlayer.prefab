@@ -182,7 +182,7 @@ MonoBehaviour:
   speechLabel: 
   lineID: -1
   displayLineID: -1
-  speechColor: {r: 0.85294116, g: 0.5539792, b: 0.17560555, a: 1}
+  speechColor: {r: 1, g: 1, b: 1, a: 1}
   portraitIcon:
     texture: {fileID: 0}
     isAnimated: 0
