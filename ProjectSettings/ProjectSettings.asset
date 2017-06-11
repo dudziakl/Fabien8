@@ -44,7 +44,7 @@ PlayerSettings:
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1920
   defaultScreenHeight: 1080
-  defaultScreenWidthWeb: 1024
+  defaultScreenWidthWeb: 1366
   defaultScreenHeightWeb: 768
   m_StereoRenderingPath: 0
   m_ActiveColorSpace: 0
@@ -515,7 +515,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: Fabien8
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: Fabien 8
   metroCommandLineArgsFile: 
   metroTileShowName: 0
   metroMediumTileShowName: 0
